@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 
 export default function UploadFile() {
+  // use localhost if environment url does not exist
+  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
   // State Hook
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -29,13 +32,13 @@ export default function UploadFile() {
     // Request made to the backend api
     // Send formData object
     // axios.post("api/v1/all_maps/", formData);
-    axios.post("http://localhost:8000/api/v1/all_maps/", formData);
+    axios.post(`${baseURL}/api/v1/all_maps/`, formData);
   };
 
   // get uploaded file from database and extract data
   const getDatabaseFile = () => {
     axios
-      .get("http://localhost:8000/api/v1/all_maps/")
+      .get(`${baseURL}/api/v1/all_maps/`)
       .then((resp) => {
         console.log(`getDatabaseFile -> resp`, resp.data.data[0].data);
         document.getElementById("database_file").textContent =
