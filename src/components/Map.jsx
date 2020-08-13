@@ -31,7 +31,7 @@ export default function Map() {
   return (
     <div>
       <h1>Map</h1>
-      <div id='map'></div>
+      <div id='map' className='container text-center'></div>
       {createMap()}
     </div>
   );

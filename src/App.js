@@ -5,7 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //Components
-import Map from "./components/Map";
+import AllTrips from "./components/AllTrips";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
@@ -30,7 +30,7 @@ function App() {
           <LandingPage getSession={getSession} sessionUser={sessionUser} />
         </Route>
         <Route exact path='/all_trips'>
-          <Map />
+          <AllTrips />
         </Route>
         <Route exact path='/new_trip'>
           <UploadFile />
