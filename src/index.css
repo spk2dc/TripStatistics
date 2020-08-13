@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -15,11 +20,6 @@ code {
 #map {
   height: 400px;
   width: 400px;
-}
-
-body {
-  padding-top: 70px;
-  padding-bottom: 50px;
 }
 
 #div-landing {
@@ -32,4 +32,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+table caption {
+  caption-side: top;
 }
