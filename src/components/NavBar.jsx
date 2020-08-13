@@ -23,15 +23,13 @@ export default function NavBar({ getSession, sessionUser }) {
       className='fixed-top'
     >
       <Navbar.Brand id='nav-title' href='/'>
-        <i class='fas fa-map-marked-alt fa-lg mx-2'></i>
+        <i className='fas fa-map-marked-alt fa-lg mx-2'></i>
         Trip Statistics
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'>
-          <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/signup'>Sign Up</Nav.Link>
           {
             /*sessionUser*/ true ? (
               <>
@@ -47,7 +45,10 @@ export default function NavBar({ getSession, sessionUser }) {
                 </Button>
               </>
             ) : (
-              <Nav.Link href='/login'>Login</Nav.Link>
+              <>
+                <Nav.Link href='/signup'>Sign Up</Nav.Link>
+                <Nav.Link href='/login'>Login</Nav.Link>
+              </>
             )
           }
         </Nav>
