@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Map from "./components/Map";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   // State Hook
@@ -25,6 +26,9 @@ function App() {
     <div className='App'>
       <NavBar getSession={getSession} sessionUser={sessionUser} />
       <Switch>
+        <Route exact path='/'>
+          <LandingPage getSession={getSession} sessionUser={sessionUser} />
+        </Route>
         <Route exact path='/all_trips'>
           <UploadFile />
           <Map />
