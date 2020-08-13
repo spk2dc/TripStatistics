@@ -1,6 +1,10 @@
+// React
 import React, { useState } from "react";
+import { Switch, Route } from "react-router-dom";
+//CSS and Bootstrap
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+//Components
 import Map from "./components/Map";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
@@ -20,8 +24,12 @@ function App() {
   return (
     <div className='App'>
       <NavBar getSession={getSession} sessionUser={sessionUser} />
-      <UploadFile />
-      <Map />
+      <Switch>
+        <Route exact path='/all_trips'>
+          <UploadFile />
+          <Map />
+        </Route>
+      </Switch>
     </div>
   );
 }

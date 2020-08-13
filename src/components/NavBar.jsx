@@ -17,7 +17,7 @@ export default function NavBar({ getSession, sessionUser }) {
   return (
     <Navbar
       collapseOnSelect
-      expand='lg'
+      expand='md'
       bg='dark'
       variant='dark'
       className='fixed-top'
@@ -32,22 +32,24 @@ export default function NavBar({ getSession, sessionUser }) {
         <Nav className='mr-auto'>
           <Nav.Link href='/'>Home</Nav.Link>
           <Nav.Link href='/signup'>Sign Up</Nav.Link>
-          {sessionUser ? (
-            <>
-              <Nav.Link href='/profile'>Profile</Nav.Link>
-              <Nav.Link href='/all_trips'>All Trips</Nav.Link>
-              <Button
-                type='button'
-                id='btnLogout'
-                onClick={destroySession}
-                href='/'
-              >
-                Logout
-              </Button>
-            </>
-          ) : (
-            <Nav.Link href='/login'>Login</Nav.Link>
-          )}
+          {
+            /*sessionUser*/ true ? (
+              <>
+                <Nav.Link href='/profile'>Profile</Nav.Link>
+                <Nav.Link href='/all_trips'>All Trips</Nav.Link>
+                <Button
+                  type='button'
+                  id='btnLogout'
+                  onClick={destroySession}
+                  href='/'
+                >
+                  Logout
+                </Button>
+              </>
+            ) : (
+              <Nav.Link href='/login'>Login</Nav.Link>
+            )
+          }
         </Nav>
       </Navbar.Collapse>
     </Navbar>
