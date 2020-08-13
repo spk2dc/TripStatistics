@@ -6,7 +6,7 @@ export default function Map() {
   const createMap = () => {
     // Create the script tag, set the appropriate attributes
     var script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.API_KEY_1}&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap`;
     script.defer = true;
 
     // Attach your callback function to the `window` object
