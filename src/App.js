@@ -30,8 +30,10 @@ function App() {
           <LandingPage getSession={getSession} sessionUser={sessionUser} />
         </Route>
         <Route exact path='/all_trips'>
-          <UploadFile />
           <Map />
+        </Route>
+        <Route exact path='/new_trip'>
+          <UploadFile />
         </Route>
       </Switch>
     </div>

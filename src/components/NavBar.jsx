@@ -35,6 +35,7 @@ export default function NavBar({ getSession, sessionUser }) {
               <>
                 <Nav.Link href='/profile'>Profile</Nav.Link>
                 <Nav.Link href='/all_trips'>All Trips</Nav.Link>
+                <Nav.Link href='/new_trip'>New Trip</Nav.Link>
                 <Button
                   type='button'
                   id='btnLogout'
