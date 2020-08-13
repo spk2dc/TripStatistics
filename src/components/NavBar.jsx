@@ -22,8 +22,8 @@ export default function NavBar({ getSession, sessionUser }) {
       variant='dark'
       className='fixed-top'
     >
-      <img id='favicon' src='/favicon.ico' alt='' />
       <Navbar.Brand id='nav-title' href='/'>
+        <i class='fas fa-map-marked-alt fa-lg mx-2'></i>
         Trip Statistics
       </Navbar.Brand>
 
