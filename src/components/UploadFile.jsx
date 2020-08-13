@@ -86,12 +86,16 @@ export default function UploadFile() {
       <form encType='multipart/form-data'>
         <input
           type='file'
+          name='file'
+          className=''
           onChange={(e) => {
             onFileChange(e);
           }}
         />
         <button
           type='submit'
+          name='submit'
+          className='btn btn-primary'
           onClick={(e) => {
             onFileUpload(e);
           }}
