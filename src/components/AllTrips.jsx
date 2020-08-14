@@ -8,9 +8,10 @@ export default function AllTrips() {
 
   // State Hook
   const [allData, setAllData] = useState([]);
-  const [sortedData, setSortedData] = useState([]);
-  let places = [];
-  let activities = [];
+  const [sortedData, setSortedData] = useState({
+    places: [],
+    activities: [],
+  });
 
   // sort data every time it is changed
   useEffect(() => {
@@ -35,28 +36,39 @@ export default function AllTrips() {
   };
 
   const sortData = () => {
+    let temp_places = [];
+    let temp_activities = [];
+
     allData.map((oneFile, i) => {
       // console.log(`Sorting data: `, oneFile.data);
       const jsonFile = JSON.parse(oneFile.data);
       if (jsonFile.hasOwnProperty("timelineObjects")) {
-        console.log(`Sorting file ${i}: `, jsonFile);
+        // console.log(`Sorting file ${i}: `, jsonFile);
         jsonFile.timelineObjects.map((item, j) => {
           if (item.hasOwnProperty("activitySegment")) {
             // console.log(`activity item ${j}`, item.activitySegment);
-            activities = [...activities, item.activitySegment];
+            temp_activities = [...temp_activities, item.activitySegment];
           }
           if (item.hasOwnProperty("placeVisit")) {
             // console.log(`places item ${j}`, item.placeVisit);
-            places = [...places, item.placeVisit];
+            temp_places = [...temp_places, item.placeVisit];
           }
+          return true;
         });
       } else {
         console.log(`Error, data is incorrectly formatted.`, oneFile);
       }
+
+      setSortedData({
+        places: [...temp_places],
+        activities: [...temp_activities],
+      });
+      return true;
     });
 
-    console.log(`Sorted places: `, places);
-    console.log(`Sorted activities: `, activities);
+    // console.log(`Sorted places: `, temp_places);
+    // console.log(`Sorted activities: `, temp_activities);
+    return true;
   };
 
   return (
@@ -83,10 +95,10 @@ export default function AllTrips() {
           </tr>
         </thead>
         <tbody>
-          {places.map((val, i) => {
+          {sortedData.places.map((val, i) => {
             if (val.hasOwnProperty("location")) {
               return (
-                <tr>
+                <tr key={`row${i}-${val.location.placeId}`}>
                   <td>{val.location.name}</td>
                   <td>{val.location.address}</td>
                   <td>{val.location.startTimestampMs}</td>
@@ -124,10 +136,10 @@ export default function AllTrips() {
           </tr>
         </thead>
         <tbody>
-          {activities.map((val, i) => {
+          {sortedData.activities.map((val, i) => {
             if (val.hasOwnProperty("distance")) {
               return (
-                <tr>
+                <tr key={`row${i}-${val.duration.startTimestampMs}`}>
                   <td>{val.distance}</td>
                   <td>{val.activityType}</td>
                   <td>{val.duration.startTimestampMs}</td>
@@ -159,7 +171,7 @@ export default function AllTrips() {
           })}
         </tbody>
       </table>
-      {/* <Map /> */}
+      <Map />
     </div>
   );
 }
