@@ -19,12 +19,11 @@ export default function OneTrip() {
 
   // sort data every time it is changed
   useEffect(() => {
-    sortData();
-  }, [allData]);
+    getDatabaseFile();
+  }, []);
 
   // get uploaded file from database and extract data
-  const getDatabaseFile = (event) => {
-    event.preventDefault();
+  const getDatabaseFile = () => {
     // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
 
     axios
@@ -33,17 +32,18 @@ export default function OneTrip() {
         console.log(`getDatabaseFile -> resp`, resp.data.data);
         // document.getElementById("database_file").textContent = resp.data.data[0].data;
         setAllData([...resp.data.data]);
+        sortData([...resp.data.data]);
       })
       .catch((err) => {
         console.log(`getDatabaseFile -> err`, err);
       });
   };
 
-  const sortData = () => {
+  const sortData = (trip) => {
     let temp_places = [];
     let temp_activities = [];
 
-    allData.map((oneFile, i) => {
+    trip.map((oneFile, i) => {
       // console.log(`Sorting data: `, oneFile.data);
       const jsonFile = JSON.parse(oneFile.data);
       if (jsonFile.hasOwnProperty("timelineObjects")) {
@@ -78,13 +78,6 @@ export default function OneTrip() {
   return (
     <div>
       <h1>Trip ID: {params.id}</h1>
-      <button
-        onClick={(e) => {
-          getDatabaseFile(e);
-        }}
-      >
-        Refresh Data
-      </button>
 
       <table className='table table-bordered table-hover table-striped'>
         <caption>Places </caption>
