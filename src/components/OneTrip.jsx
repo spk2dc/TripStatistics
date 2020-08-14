@@ -94,14 +94,17 @@ export default function OneTrip() {
         <tbody>
           {sortedData.places.map((val, i) => {
             if (val.hasOwnProperty("location")) {
+              const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
+              const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
+
               return (
                 <tr key={`row${i}-${val.location.placeId}`}>
                   <td>{val.location.name}</td>
                   <td>{val.location.address}</td>
-                  <td>{val.location.startTimestampMs}</td>
-                  <td>{val.location.endTimestampMs}</td>
-                  <td>{val.location.latitudeE7}</td>
-                  <td>{val.location.longitudeE7}</td>
+                  <td>{new Date(startTimeRaw).toLocaleString()}</td>
+                  <td>{new Date(endTimeRaw).toLocaleString()}</td>
+                  <td>{val.location.latitudeE7 / 10000000}</td>
+                  <td>{val.location.longitudeE7 / 10000000}</td>
                 </tr>
               );
             } else {
@@ -135,21 +138,24 @@ export default function OneTrip() {
         <tbody>
           {sortedData.activities.map((val, i) => {
             if (val.hasOwnProperty("distance")) {
+              const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
+              const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
+
               return (
                 <tr key={`row${i}-${val.duration.startTimestampMs}`}>
                   <td>{val.distance}</td>
                   <td>{val.activityType}</td>
-                  <td>{val.duration.startTimestampMs}</td>
-                  <td>{val.duration.endTimestampMs}</td>
+                  <td>{new Date(startTimeRaw).toLocaleString()}</td>
+                  <td>{new Date(endTimeRaw).toLocaleString()}</td>
                   <td>
-                    {val.startLocation.latitudeE7 +
+                    {val.startLocation.latitudeE7 / 10000000 +
                       ", " +
-                      val.startLocation.longitudeE7}
+                      val.startLocation.longitudeE7 / 10000000}
                   </td>
                   <td>
-                    {val.endLocation.latitudeE7 +
+                    {val.endLocation.latitudeE7 / 10000000 +
                       ", " +
-                      val.endLocation.longitudeE7}
+                      val.endLocation.longitudeE7 / 10000000}
                   </td>
                 </tr>
               );
@@ -168,7 +174,7 @@ export default function OneTrip() {
           })}
         </tbody>
       </table>
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 }
