@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
 
@@ -8,8 +8,14 @@ export default function AllTrips() {
 
   // State Hook
   const [allData, setAllData] = useState([]);
-  const [places, setPlaces] = useState([]);
-  const [activities, setActivities] = useState([]);
+  const [sortedData, setSortedData] = useState([]);
+  let places = [];
+  let activities = [];
+
+  // sort data every time it is changed
+  useEffect(() => {
+    sortData();
+  }, [allData]);
 
   // get uploaded file from database and extract data
   const getDatabaseFile = (event) => {
@@ -22,31 +28,26 @@ export default function AllTrips() {
         console.log(`getDatabaseFile -> resp`, resp.data.data);
         // document.getElementById("database_file").textContent = resp.data.data[0].data;
         setAllData([...resp.data.data]);
-        sortData(resp.data.data);
       })
       .catch((err) => {
         console.log(`getDatabaseFile -> err`, err);
       });
   };
 
-  const sortData = (databaseEntries) => {
-    // reset arrays
-    setActivities([]);
-    setPlaces([]);
-
-    databaseEntries.map((oneFile, i) => {
+  const sortData = () => {
+    allData.map((oneFile, i) => {
       // console.log(`Sorting data: `, oneFile.data);
       const jsonFile = JSON.parse(oneFile.data);
       if (jsonFile.hasOwnProperty("timelineObjects")) {
         console.log(`Sorting file ${i}: `, jsonFile);
         jsonFile.timelineObjects.map((item, j) => {
           if (item.hasOwnProperty("activitySegment")) {
-            console.log(`activity item ${j}`, item.activitySegment);
-            setActivities([...activities, item.activitySegment]);
+            // console.log(`activity item ${j}`, item.activitySegment);
+            activities = [...activities, item.activitySegment];
           }
           if (item.hasOwnProperty("placeVisit")) {
-            console.log(`places item ${j}`, item.placeVisit);
-            setPlaces([...places, item.placeVisit]);
+            // console.log(`places item ${j}`, item.placeVisit);
+            places = [...places, item.placeVisit];
           }
         });
       } else {
