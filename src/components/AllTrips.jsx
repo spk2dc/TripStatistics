@@ -14,24 +14,37 @@ export default function AllTrips() {
   // get uploaded file from database and extract data
   const getDatabaseFile = (event) => {
     event.preventDefault();
+    // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
+
     axios
       .get(`${baseURL}/api/v1/all_maps/`)
       .then((resp) => {
         console.log(`getDatabaseFile -> resp`, resp.data.data);
         // document.getElementById("database_file").textContent = resp.data.data[0].data;
         setAllData([...resp.data.data]);
-        sortTrips();
+        sortData(resp.data.data);
       })
       .catch((err) => {
         console.log(`getDatabaseFile -> err`, err);
       });
   };
 
-  const sortTrips = () => {
-    allData.map((val, i) => {
-      val.timelineObjects.map((item, j) => {
-        return;
-      });
+  const sortData = (databaseEntries) => {
+    databaseEntries.map((oneFile, i) => {
+      console.log(`Sorting data: `, oneFile);
+      const jsonFile = JSON.parse(oneFile);
+      if (jsonFile.hasOwnProperty("timelineObjects")) {
+        jsonFile.timelineObjects.map((item, j) => {
+          if (item.hasOwnProperty("activitySegment")) {
+            setActivities([...activities, item]);
+          }
+          if (item.hasOwnProperty("placeVisit")) {
+            setPlaces([...places, item]);
+          }
+        });
+      } else {
+        console.log(`Error, data is incorrectly formatted.`, oneFile);
+      }
     });
   };
 
@@ -50,14 +63,23 @@ export default function AllTrips() {
         <thead>
           <tr>
             <th>Place</th>
-            <th></th>
+            <th>Address</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
           </tr>
         </thead>
         <tbody>
-          {allData.map((val, i) => {
+          {places.map((val, i) => {
             return (
               <tr>
-                <td>{val.data[0]}</td>
+                <td>{val.location.name}</td>
+                <td>{val.location.address}</td>
+                <td>{val.location.startTimestampMs}</td>
+                <td>{val.location.endTimestampMs}</td>
+                <td>{val.location.latitudeE7}</td>
+                <td>{val.location.longitudeE7}</td>
               </tr>
             );
           })}

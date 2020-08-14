@@ -31,7 +31,7 @@ export default function UploadFile() {
 
     // Request made to the backend api
     // Send formData object
-    // axios.post("api/v1/all_maps/", formData);
+    // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
     axios.post(`${baseURL}/api/v1/all_maps/`, formData);
   };
 
