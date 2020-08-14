@@ -30,22 +30,32 @@ export default function AllTrips() {
   };
 
   const sortData = (databaseEntries) => {
+    // reset arrays
+    setActivities([]);
+    setPlaces([]);
+
     databaseEntries.map((oneFile, i) => {
-      console.log(`Sorting data: `, oneFile);
-      const jsonFile = JSON.parse(oneFile);
+      // console.log(`Sorting data: `, oneFile.data);
+      const jsonFile = JSON.parse(oneFile.data);
       if (jsonFile.hasOwnProperty("timelineObjects")) {
+        console.log(`Sorting data: `, jsonFile);
         jsonFile.timelineObjects.map((item, j) => {
           if (item.hasOwnProperty("activitySegment")) {
-            setActivities([...activities, item]);
+            console.log(`activity item`, item.activitySegment);
+            setActivities([...activities, item.activitySegment]);
           }
           if (item.hasOwnProperty("placeVisit")) {
-            setPlaces([...places, item]);
+            console.log(`places item`, item.placeVisit);
+            setPlaces([...places, item.placeVisit]);
           }
         });
       } else {
         console.log(`Error, data is incorrectly formatted.`, oneFile);
       }
     });
+
+    console.log(`Sorted places: `, places);
+    console.log(`Sorted activities: `, activities);
   };
 
   return (
@@ -72,20 +82,33 @@ export default function AllTrips() {
         </thead>
         <tbody>
           {places.map((val, i) => {
-            return (
-              <tr>
-                <td>{val.location.name}</td>
-                <td>{val.location.address}</td>
-                <td>{val.location.startTimestampMs}</td>
-                <td>{val.location.endTimestampMs}</td>
-                <td>{val.location.latitudeE7}</td>
-                <td>{val.location.longitudeE7}</td>
-              </tr>
-            );
+            if (val.hasOwnProperty("location")) {
+              return (
+                <tr>
+                  <td>{val.location.name}</td>
+                  <td>{val.location.address}</td>
+                  <td>{val.location.startTimestampMs}</td>
+                  <td>{val.location.endTimestampMs}</td>
+                  <td>{val.location.latitudeE7}</td>
+                  <td>{val.location.longitudeE7}</td>
+                </tr>
+              );
+            } else {
+              return (
+                <tr>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                </tr>
+              );
+            }
           })}
         </tbody>
       </table>
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 }
