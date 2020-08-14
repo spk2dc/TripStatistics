@@ -7,6 +7,7 @@ export default function UploadFile() {
 
   // State Hook
   const [selectedFile, setSelectedFile] = useState(null);
+  const [trip_name, setTrip_Name] = useState("");
 
   // On file select (from the pop up)
   const onFileChange = (event) => {
@@ -23,7 +24,8 @@ export default function UploadFile() {
 
     // Update the formData object
     formData.append("data", selectedFile);
-    formData.append("name", selectedFile.name);
+    formData.append("trip_name", trip_name);
+    formData.append("filename", selectedFile.name);
     formData.append("user", "user5");
 
     // Details of the uploaded file
@@ -31,7 +33,7 @@ export default function UploadFile() {
 
     // Request made to the backend api
     // Send formData object
-    // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
+    // console.log(`onFileUpload -> selectedFile`, selectedFile);
     axios.post(`${baseURL}/api/v1/all_maps/`, formData);
   };
 
@@ -83,10 +85,24 @@ export default function UploadFile() {
   return (
     <div>
       <h1>Upload File</h1>
+      <br />
       <form encType='multipart/form-data'>
+        <label htmlFor='trip_name' className='lead mx-2'>
+          Trip Name{" "}
+        </label>
+        <input
+          type='text'
+          name='trip_name'
+          className=''
+          value={trip_name}
+          onChange={(event) => {
+            setTrip_Name(event.currentTarget.value);
+          }}
+        />
+        <br />
         <input
           type='file'
-          name='file'
+          name='filename'
           className=''
           onChange={(e) => {
             onFileChange(e);

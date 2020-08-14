@@ -60,8 +60,8 @@ export default function AllTrips() {
                   }
                 >
                   <td>{val.id}</td>
-                  <td>{"val.name"}</td>
-                  <td>{val.name}</td>
+                  <td>{val.trip_name}</td>
+                  <td>{val.filename}</td>
                   <td>{val.created_at}</td>
                 </tr>
               );
