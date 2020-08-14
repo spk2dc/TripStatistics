@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Map from "./Map";
+import { useParams } from "react-router-dom";
 
 export default function OneTrip() {
   // use localhost if environment url does not exist
   const baseURL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+
+  //URL query parameters from react router hook useParams
+  const params = useParams();
 
   // State Hook
   const [allData, setAllData] = useState([]);
@@ -73,7 +77,7 @@ export default function OneTrip() {
 
   return (
     <div>
-      <h1>All Trips</h1>
+      <h1>Trip ID: {params.id}</h1>
       <button
         onClick={(e) => {
           getDatabaseFile(e);
@@ -184,5 +188,7 @@ https://engineering.universe.com/building-a-google-map-in-react-b103b4ee97f1
 https://developers.google.com/maps/documentation/javascript/overview#all
 
 https://developers.google.com/maps/documentation/javascript/earthquakes
+
+https://blog.logrocket.com/react-router-hooks-will-make-your-component-cleaner/
 
 */

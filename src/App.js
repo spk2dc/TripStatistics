@@ -9,6 +9,7 @@ import AllTrips from "./components/AllTrips";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
+import OneTrip from "./components/OneTrip";
 
 function App() {
   // State Hook
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path='/all_trips'>
           <AllTrips />
+        </Route>
+        <Route exact path='/all_trips/:id'>
+          <OneTrip />
         </Route>
         <Route exact path='/new_trip'>
           <UploadFile />
