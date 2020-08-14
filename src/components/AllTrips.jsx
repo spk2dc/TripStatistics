@@ -38,14 +38,14 @@ export default function AllTrips() {
       // console.log(`Sorting data: `, oneFile.data);
       const jsonFile = JSON.parse(oneFile.data);
       if (jsonFile.hasOwnProperty("timelineObjects")) {
-        console.log(`Sorting data: `, jsonFile);
+        console.log(`Sorting file ${i}: `, jsonFile);
         jsonFile.timelineObjects.map((item, j) => {
           if (item.hasOwnProperty("activitySegment")) {
-            console.log(`activity item`, item.activitySegment);
+            console.log(`activity item ${j}`, item.activitySegment);
             setActivities([...activities, item.activitySegment]);
           }
           if (item.hasOwnProperty("placeVisit")) {
-            console.log(`places item`, item.placeVisit);
+            console.log(`places item ${j}`, item.placeVisit);
             setPlaces([...places, item.placeVisit]);
           }
         });
@@ -68,8 +68,9 @@ export default function AllTrips() {
       >
         Refresh Data
       </button>
+
       <table>
-        <caption>File Name: </caption>
+        <caption>Places </caption>
         <thead>
           <tr>
             <th>Place</th>
@@ -91,6 +92,55 @@ export default function AllTrips() {
                   <td>{val.location.endTimestampMs}</td>
                   <td>{val.location.latitudeE7}</td>
                   <td>{val.location.longitudeE7}</td>
+                </tr>
+              );
+            } else {
+              return (
+                <tr>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                  <td>{"null"}</td>
+                </tr>
+              );
+            }
+          })}
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Activities </caption>
+        <thead>
+          <tr>
+            <th>Distance</th>
+            <th>Type</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Start (Lat,Long)</th>
+            <th>End (Lat,Long)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {activities.map((val, i) => {
+            if (val.hasOwnProperty("distance")) {
+              return (
+                <tr>
+                  <td>{val.distance}</td>
+                  <td>{val.activityType}</td>
+                  <td>{val.duration.startTimestampMs}</td>
+                  <td>{val.duration.endTimestampMs}</td>
+                  <td>
+                    {val.startLocation.latitudeE7 +
+                      ", " +
+                      val.startLocation.longitudeE7}
+                  </td>
+                  <td>
+                    {val.endLocation.latitudeE7 +
+                      ", " +
+                      val.endLocation.longitudeE7}
+                  </td>
                 </tr>
               );
             } else {
