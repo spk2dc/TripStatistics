@@ -13,14 +13,13 @@ export default function AllTrips() {
     activities: [],
   });
 
-  // sort data every time it is changed
+  // Pull data as soon as page loads
   useEffect(() => {
-    sortData();
-  }, [allData]);
+    getDatabaseFile();
+  }, []);
 
   // get uploaded file from database and extract data
-  const getDatabaseFile = (event) => {
-    event.preventDefault();
+  const getDatabaseFile = () => {
     // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
 
     axios
@@ -35,125 +34,35 @@ export default function AllTrips() {
       });
   };
 
-  const sortData = () => {
-    let temp_places = [];
-    let temp_activities = [];
-
-    allData.map((oneFile, i) => {
-      // console.log(`Sorting data: `, oneFile.data);
-      const jsonFile = JSON.parse(oneFile.data);
-      if (jsonFile.hasOwnProperty("timelineObjects")) {
-        // console.log(`Sorting file ${i}: `, jsonFile);
-        jsonFile.timelineObjects.map((item, j) => {
-          if (item.hasOwnProperty("activitySegment")) {
-            // console.log(`activity item ${j}`, item.activitySegment);
-            temp_activities = [...temp_activities, item.activitySegment];
-          }
-          if (item.hasOwnProperty("placeVisit")) {
-            // console.log(`places item ${j}`, item.placeVisit);
-            temp_places = [...temp_places, item.placeVisit];
-          }
-          return true;
-        });
-      } else {
-        console.log(`Error, data is incorrectly formatted.`, oneFile);
-      }
-
-      setSortedData({
-        places: [...temp_places],
-        activities: [...temp_activities],
-      });
-      return true;
-    });
-
-    // console.log(`Sorted places: `, temp_places);
-    // console.log(`Sorted activities: `, temp_activities);
-    return true;
-  };
-
   return (
     <div>
       <h1>All Trips</h1>
-      <button
-        onClick={(e) => {
-          getDatabaseFile(e);
-        }}
-      >
-        Refresh Data
-      </button>
 
-      <table>
-        <caption>Places </caption>
+      <table className='table table-bordered table-hover table-striped'>
+        <caption>Trips </caption>
         <thead>
           <tr>
-            <th>Place</th>
-            <th>Address</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
+            <th>ID</th>
+            <th>Trip Name</th>
+            <th>File Name</th>
+            <th>Upload Time</th>
           </tr>
         </thead>
         <tbody>
-          {sortedData.places.map((val, i) => {
-            if (val.hasOwnProperty("location")) {
+          {allData.map((val, i) => {
+            if (val.hasOwnProperty("id")) {
               return (
-                <tr key={`row${i}-${val.location.placeId}`}>
-                  <td>{val.location.name}</td>
-                  <td>{val.location.address}</td>
-                  <td>{val.location.startTimestampMs}</td>
-                  <td>{val.location.endTimestampMs}</td>
-                  <td>{val.location.latitudeE7}</td>
-                  <td>{val.location.longitudeE7}</td>
-                </tr>
-              );
-            } else {
-              return (
-                <tr>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                </tr>
-              );
-            }
-          })}
-        </tbody>
-      </table>
-
-      <table>
-        <caption>Activities </caption>
-        <thead>
-          <tr>
-            <th>Distance</th>
-            <th>Type</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Start (Lat,Long)</th>
-            <th>End (Lat,Long)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedData.activities.map((val, i) => {
-            if (val.hasOwnProperty("distance")) {
-              return (
-                <tr key={`row${i}-${val.duration.startTimestampMs}`}>
-                  <td>{val.distance}</td>
-                  <td>{val.activityType}</td>
-                  <td>{val.duration.startTimestampMs}</td>
-                  <td>{val.duration.endTimestampMs}</td>
-                  <td>
-                    {val.startLocation.latitudeE7 +
-                      ", " +
-                      val.startLocation.longitudeE7}
-                  </td>
-                  <td>
-                    {val.endLocation.latitudeE7 +
-                      ", " +
-                      val.endLocation.longitudeE7}
-                  </td>
+                <tr
+                  key={`row${i}-${val.id}`}
+                  className='clickable-row'
+                  onClick={() =>
+                    (window.location = `${window.location.href}/${val.id}`)
+                  }
+                >
+                  <td>{val.id}</td>
+                  <td>{"val.name"}</td>
+                  <td>{val.name}</td>
+                  <td>{val.created_at}</td>
                 </tr>
               );
             } else {

@@ -37,3 +37,7 @@ code {
 table caption {
   caption-side: top;
 }
+
+.clickable-row {
+  cursor: pointer;
+}
