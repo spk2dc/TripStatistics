@@ -6,6 +6,7 @@ import { Redirect } from "react-router-dom";
 export default function Register({ apiBaseURL, getSession }) {
   // State Hooks
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
 
@@ -15,30 +16,35 @@ export default function Register({ apiBaseURL, getSession }) {
     event.preventDefault();
 
     // Make signup request to server
-    const signupURL = `${apiBaseURL}/register`;
+    const signupURL = `${apiBaseURL}/user/register`;
+    console.log(`submitForm -> signupURL`, signupURL);
     const signupConfig = {
       method: "POST",
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ username, email, password }),
       headers: { "Content-Type": "application/json" },
     };
     const signup = await fetch(signupURL, signupConfig);
     const user = await signup.json();
+    console.log(`fetch success`, user);
 
     // Automatically log in user
-    const loginURL = `${apiBaseURL}/login`;
+    const loginURL = `${apiBaseURL}/user/login`;
     const loginConfig = {
       method: "POST",
       body: JSON.stringify({
         username: user.username,
+        email: user.email,
         password: user.password,
       }),
       headers: { "Content-Type": "application/json" },
     };
     const login = await fetch(loginURL, signupConfig);
+    console.log(`login successful`);
 
     // Store user in session storage
     if (login.status === 200) {
       sessionStorage.setItem("user", JSON.stringify(user));
+      console.log(`login status 200`, signupURL);
       getSession();
     }
 
@@ -58,6 +64,16 @@ export default function Register({ apiBaseURL, getSession }) {
         id='name'
         value={username}
         onChange={(event) => setUsername(event.currentTarget.value)}
+      />
+      <br />
+      <label htmlFor='email'>Email</label>
+      <br />
+      <input
+        type='text'
+        name='email'
+        id='email'
+        value={email}
+        onChange={(event) => setEmail(event.currentTarget.value)}
       />
       <br />
       <label htmlFor='password'>Password</label>

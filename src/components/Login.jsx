@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 // Component
 export default function Login({ apiBaseURL, getSession }) {
   // State Hooks
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
 
@@ -15,10 +15,10 @@ export default function Login({ apiBaseURL, getSession }) {
     event.preventDefault();
 
     // Make post request to server
-    const url = `${apiBaseURL}/login`;
+    const url = `${apiBaseURL}/user/login`;
     const config = {
       method: "POST",
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     };
     const response = await fetch(url, config);
@@ -38,15 +38,15 @@ export default function Login({ apiBaseURL, getSession }) {
   if (redirect) return <Redirect to='/' />;
   return (
     <form className='login text-center m-4' onSubmit={submitForm}>
-      <label htmlFor='username'>Username</label>
+      <label htmlFor='email'>Email</label>
       <br />
       <input
         type='text'
-        id='username'
-        name='username'
-        value={username}
+        id='email'
+        name='email'
+        value={email}
         onChange={(event) => {
-          setUsername(event.currentTarget.value);
+          setEmail(event.currentTarget.value);
         }}
       />
       <br />
