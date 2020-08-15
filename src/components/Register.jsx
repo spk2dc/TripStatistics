@@ -1,6 +1,7 @@
 // Imports
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
+import axios from "axios";
 
 // Component
 export default function Register({ apiBaseURL, getSession }) {
@@ -15,36 +16,29 @@ export default function Register({ apiBaseURL, getSession }) {
     // Prevent page reload
     event.preventDefault();
 
-    // Make signup request to server
-    const signupURL = `${apiBaseURL}/user/register`;
-    console.log(`submitForm -> signupURL`, signupURL);
-    const signupConfig = {
-      method: "POST",
-      body: JSON.stringify({ username, email, password }),
+    // Make register request to server
+    const data = {
+      username: username,
+      email: email,
+      password: password,
+    };
+    const options = {
       headers: { "Content-Type": "application/json" },
     };
-    const signup = await fetch(signupURL, signupConfig);
-    const user = await signup.json();
-    console.log(`fetch success`, user);
+    const register = await axios.post(
+      `${apiBaseURL}/user/register`,
+      data,
+      options
+    );
+    const user = register.data;
 
     // Automatically log in user
-    const loginURL = `${apiBaseURL}/user/login`;
-    const loginConfig = {
-      method: "POST",
-      body: JSON.stringify({
-        username: user.username,
-        email: user.email,
-        password: user.password,
-      }),
-      headers: { "Content-Type": "application/json" },
-    };
-    const login = await fetch(loginURL, signupConfig);
-    console.log(`login successful`);
+    const login = await axios.post(`${apiBaseURL}/user/login`, data, options);
 
     // Store user in session storage
     if (login.status === 200) {
       sessionStorage.setItem("user", JSON.stringify(user));
-      console.log(`login status 200`, signupURL);
+      console.log(`register and login status 200`, apiBaseURL);
       getSession();
     }
 
@@ -53,7 +47,7 @@ export default function Register({ apiBaseURL, getSession }) {
   };
 
   // Render
-  if (redirect) return <Redirect to='/' />;
+  if (redirect) return <Redirect to='/all_trips' />;
   return (
     <form className='signup text-center m-4' onSubmit={submitForm}>
       <label htmlFor='name'>Username</label>

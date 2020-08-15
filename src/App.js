@@ -55,7 +55,7 @@ function App() {
           <OneTrip />
         </Route>
         <Route exact path='/new_trip'>
-          <UploadFile />
+          <UploadFile apiBaseURL={baseURL} />
         </Route>
       </Switch>
     </div>

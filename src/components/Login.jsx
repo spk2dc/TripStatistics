@@ -1,6 +1,7 @@
 // Imports
 import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
+import axios from "axios";
 
 // Component
 export default function Login({ apiBaseURL, getSession }) {
@@ -15,16 +16,21 @@ export default function Login({ apiBaseURL, getSession }) {
     event.preventDefault();
 
     // Make post request to server
-    const url = `${apiBaseURL}/user/login`;
-    const config = {
-      method: "POST",
-      body: JSON.stringify({ email, password }),
+    const data = {
+      email: email,
+      password: password,
+    };
+    const options = {
       headers: { "Content-Type": "application/json" },
     };
-    const response = await fetch(url, config);
+    const response = await axios.post(
+      `${apiBaseURL}/user/login`,
+      data,
+      options
+    );
 
     // Store user in session storage
-    const user = await response.json();
+    const user = response.data;
     if (response.status === 200) {
       sessionStorage.setItem("user", JSON.stringify(user));
       getSession();
@@ -35,7 +41,7 @@ export default function Login({ apiBaseURL, getSession }) {
   };
 
   // Render
-  if (redirect) return <Redirect to='/' />;
+  if (redirect) return <Redirect to='/all_trips' />;
   return (
     <form className='login text-center m-4' onSubmit={submitForm}>
       <label htmlFor='email'>Email</label>

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function UploadFile() {
-  // use localhost if environment url does not exist
-  const baseURL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+const getUser = () => {
+  const rawString = sessionStorage.getItem("user");
+  const userObject = JSON.parse(rawString);
+  return userObject;
+};
 
+export default function UploadFile({ apiBaseURL }) {
   // State Hook
   const [selectedFile, setSelectedFile] = useState(null);
   const [trip_name, setTrip_Name] = useState("");
@@ -26,21 +29,21 @@ export default function UploadFile() {
     formData.append("data", selectedFile);
     formData.append("trip_name", trip_name);
     formData.append("filename", selectedFile.name);
-    formData.append("user", "user5");
+    formData.append("user", getUser().data.id);
 
     // Details of the uploaded file
-    console.log(`onFileUpload -> formData`, formData);
+    console.log(`onFileUpload -> user`, getUser().data);
 
     // Request made to the backend api
     // Send formData object
     // console.log(`onFileUpload -> selectedFile`, selectedFile);
-    axios.post(`${baseURL}/api/v1/all_maps/`, formData);
+    axios.post(`${apiBaseURL}/api/v1/all_maps/`, formData);
   };
 
   // get uploaded file from database and extract data
   const getDatabaseFile = () => {
     axios
-      .get(`${baseURL}/api/v1/all_maps/`)
+      .get(`${apiBaseURL}/api/v1/all_maps/`)
       .then((resp) => {
         console.log(`getDatabaseFile -> resp`, resp.data.data[0].data);
         document.getElementById("database_file").textContent =
