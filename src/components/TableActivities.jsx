@@ -3,7 +3,7 @@ import React from "react";
 export default function TableActivities({ activityArr }) {
   return (
     <table className='table table-bordered table-hover table-striped'>
-      <caption>Activities </caption>
+      {/* <caption>Activities </caption> */}
       <thead>
         <tr>
           <th>Distance</th>

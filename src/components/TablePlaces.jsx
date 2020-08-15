@@ -3,10 +3,10 @@ import React from "react";
 export default function TablePlaces({ placeArr }) {
   return (
     <table className='table table-bordered table-hover table-striped'>
-      <caption>Places </caption>
+      {/* <caption>Places </caption> */}
       <thead>
         <tr>
-          <th>Place</th>
+          <th>Name</th>
           <th>Address</th>
           <th>Start Time</th>
           <th>End Time</th>

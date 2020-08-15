@@ -83,16 +83,16 @@ export default function OneTrip() {
       {allData[0] ? <h1>Trip: {allData[0].trip_name}</h1> : <h1>Unnamed</h1>}
       <h3>Trip ID: {params.id}</h3>
 
-      <Tabs defaultActiveKey='profile' id='uncontrolled-tab-example'>
-        <Tab eventKey='home' title='Home'>
+      <Tabs defaultActiveKey='places'>
+        <Tab eventKey='places' title='Places'>
           <TablePlaces placeArr={sortedData.places} />
         </Tab>
-        <Tab eventKey='profile' title='Profile'>
+        <Tab eventKey='activities' title='Activities'>
           <TableActivities activityArr={sortedData.activities} />
         </Tab>
       </Tabs>
 
-      {/* <Map /> */}
+      <Map />
     </div>
   );
 }
