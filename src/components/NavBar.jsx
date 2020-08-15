@@ -1,12 +1,23 @@
 // Imports
 import React, { useEffect } from "react";
 import { Nav, Navbar, Button } from "react-bootstrap";
+import axios from "axios";
 
-export default function NavBar({ getSession, sessionUser }) {
+export default function NavBar({ apiBaseURL, getSession, sessionUser }) {
   // Logout on click handler
   const destroySession = () => {
     sessionStorage.setItem("user", "");
     getSession();
+
+    // Make logout request to server
+    axios
+      .get(`${apiBaseURL}/user/logout`)
+      .then((response) => {
+        console.log(`destroySession -> response`, response);
+      })
+      .catch((err) => {
+        console.log(`destroySession -> err`, err);
+      });
   };
 
   useEffect(() => {

@@ -37,7 +37,11 @@ function App() {
   // Render
   return (
     <div className='App'>
-      <NavBar getSession={getSession} sessionUser={sessionUser} />
+      <NavBar
+        apiBaseURL={baseURL}
+        getSession={getSession}
+        sessionUser={sessionUser}
+      />
       <Switch>
         <Route exact path='/'>
           <LandingPage getSession={getSession} sessionUser={sessionUser} />
