@@ -8,10 +8,6 @@ export default function AllTrips() {
 
   // State Hook
   const [allData, setAllData] = useState([]);
-  const [sortedData, setSortedData] = useState({
-    places: [],
-    activities: [],
-  });
 
   // Pull data as soon as page loads
   useEffect(() => {

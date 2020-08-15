@@ -5,12 +5,23 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 //Components
+import Login from "./components/Login";
 import AllTrips from "./components/AllTrips";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import OneTrip from "./components/OneTrip";
 
+// Configuration
+const API = {
+  local: "http://localhost:8000",
+  deployed: "https://tripstatistics-backend.herokuapp.com",
+  user: "/user/",
+  all_maps: "/api/v1/all_maps/",
+};
+const baseURL = process.env.REACT_APP_API_URL ? API.deployed : API.local;
+
+// Component
 function App() {
   // State Hook
   const [sessionUser, setSessionUser] = useState("");
@@ -29,6 +40,12 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <LandingPage getSession={getSession} sessionUser={sessionUser} />
+        </Route>
+        <Route exact path='/register'>
+          <Register apiBaseURL={baseURL} getSession={getSession} />
+        </Route>
+        <Route exact path='/login'>
+          <Login apiBaseURL={baseURL} getSession={getSession} />
         </Route>
         <Route exact path='/all_trips'>
           <AllTrips />
