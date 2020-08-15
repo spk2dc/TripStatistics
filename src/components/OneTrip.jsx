@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import TablePlaces from "./TablePlaces";
+import TableActivities from "./TableActivities";
 import Map from "./Map";
 import { useParams } from "react-router-dom";
+import { Tab, Tabs } from "react-bootstrap";
 
 export default function OneTrip() {
   // use localhost if environment url does not exist
@@ -77,103 +80,18 @@ export default function OneTrip() {
 
   return (
     <div>
-      <h1>Trip ID: {params.id}</h1>
+      {allData[0] ? <h1>Trip: {allData[0].trip_name}</h1> : <h1>Unnamed</h1>}
+      <h3>Trip ID: {params.id}</h3>
 
-      <table className='table table-bordered table-hover table-striped'>
-        <caption>Places </caption>
-        <thead>
-          <tr>
-            <th>Place</th>
-            <th>Address</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedData.places.map((val, i) => {
-            if (val.hasOwnProperty("location")) {
-              const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
-              const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
+      <Tabs defaultActiveKey='profile' id='uncontrolled-tab-example'>
+        <Tab eventKey='home' title='Home'>
+          <TablePlaces placeArr={sortedData.places} />
+        </Tab>
+        <Tab eventKey='profile' title='Profile'>
+          <TableActivities activityArr={sortedData.activities} />
+        </Tab>
+      </Tabs>
 
-              return (
-                <tr key={`row${i}-${val.location.placeId}`}>
-                  <td>{val.location.name}</td>
-                  <td>{val.location.address}</td>
-                  <td>{new Date(startTimeRaw).toLocaleString()}</td>
-                  <td>{new Date(endTimeRaw).toLocaleString()}</td>
-                  <td>{val.location.latitudeE7 / 10000000}</td>
-                  <td>{val.location.longitudeE7 / 10000000}</td>
-                </tr>
-              );
-            } else {
-              return (
-                <tr>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                </tr>
-              );
-            }
-          })}
-        </tbody>
-      </table>
-
-      <table className='table table-bordered table-hover table-striped'>
-        <caption>Activities </caption>
-        <thead>
-          <tr>
-            <th>Distance</th>
-            <th>Type</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Start (Lat,Long)</th>
-            <th>End (Lat,Long)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedData.activities.map((val, i) => {
-            if (val.hasOwnProperty("distance")) {
-              const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
-              const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
-
-              return (
-                <tr key={`row${i}-${val.duration.startTimestampMs}`}>
-                  <td>{val.distance}</td>
-                  <td>{val.activityType}</td>
-                  <td>{new Date(startTimeRaw).toLocaleString()}</td>
-                  <td>{new Date(endTimeRaw).toLocaleString()}</td>
-                  <td>
-                    {val.startLocation.latitudeE7 / 10000000 +
-                      ", " +
-                      val.startLocation.longitudeE7 / 10000000}
-                  </td>
-                  <td>
-                    {val.endLocation.latitudeE7 / 10000000 +
-                      ", " +
-                      val.endLocation.longitudeE7 / 10000000}
-                  </td>
-                </tr>
-              );
-            } else {
-              return (
-                <tr>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                  <td>{"null"}</td>
-                </tr>
-              );
-            }
-          })}
-        </tbody>
-      </table>
       {/* <Map /> */}
     </div>
   );
