@@ -12,6 +12,7 @@ import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import OneTrip from "./components/OneTrip";
+import Error from "./components/Error";
 
 // Configuration
 const API = {
@@ -61,6 +62,7 @@ function App() {
         <Route exact path='/new_trip'>
           <UploadFile apiBaseURL={baseURL} />
         </Route>
+        <Route component={Error} />
       </Switch>
     </div>
   );
