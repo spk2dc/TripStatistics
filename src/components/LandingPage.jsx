@@ -12,8 +12,8 @@ export default function LandingPage({ getSession, sessionUser }) {
       <h1>Trip Statistics</h1>
       <div>
         <p>Sign Up or Login to analyze your trips!</p>
-        <a className='btn btn-outline-success m-2' href='/signup'>
-          Sign Up
+        <a className='btn btn-outline-success m-2' href='/register'>
+          Register
         </a>
         <a className='btn btn-outline-success m-2' href='/login'>
           Login

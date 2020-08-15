@@ -15,7 +15,7 @@ export default function Register({ apiBaseURL, getSession }) {
     event.preventDefault();
 
     // Make signup request to server
-    const signupURL = `${apiBaseURL}/signup`;
+    const signupURL = `${apiBaseURL}/register`;
     const signupConfig = {
       method: "POST",
       body: JSON.stringify({ username, password }),
@@ -71,7 +71,7 @@ export default function Register({ apiBaseURL, getSession }) {
       />
       <br />
       <button className='btn btn-primary m-2' type='submit'>
-        Sign up
+        Register
       </button>
     </form>
   );
