@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Map({ mapMarkers }) {
   let map;
 
-  const createMap = () => {
-    // Create the script tag, set the appropriate attributes
-    var script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap`;
-    script.defer = true;
+  // only create map once
+  useEffect(() => {
+    createMap();
+  }, [mapMarkers]);
 
+  const createMap = () => {
     // Attach your callback function to the `window` object
     window.initMap = function () {
       var latLng = new window.google.maps.LatLng(43.642567, -79.387054);
@@ -26,8 +26,17 @@ export default function Map({ mapMarkers }) {
       createMarkers(map);
     };
 
-    // Append the 'script' element to 'head'
-    document.head.appendChild(script);
+    // If google maps script does not exist then add it
+    if (!document.getElementById("script-google-maps")) {
+      // Create the script tag, set the appropriate attributes
+      var script = document.createElement("script");
+      script.setAttribute("id", "script-google-maps");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap`;
+      script.defer = true;
+
+      // Append the 'script' element to 'head'
+      document.head.appendChild(script);
+    }
   };
 
   const createMarkers = (embeddedMap) => {
@@ -55,7 +64,6 @@ export default function Map({ mapMarkers }) {
     <div>
       <h1>Map</h1>
       <div id='map' className='container text-center'></div>
-      {createMap()}
     </div>
   );
 }
