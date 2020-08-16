@@ -19,7 +19,7 @@ code {
 
 #map {
   height: 400px;
-  width: 400px;
+  /* width: 400px; */
 }
 
 #div-landing {

@@ -39,10 +39,12 @@ export default function Map({ mapMarkers }) {
 
     console.log(`createMarkers -> mapMarkers`, mapMarkers);
     mapMarkers.map((place, i) => {
+      // Coordinates for marker, converted to a valid number
       let latLng = new window.google.maps.LatLng(
         place.location.latitudeE7 / 1e7,
         place.location.longitudeE7 / 1e7
       );
+      // Marker with a static label and hover title
       let marker = new window.google.maps.Marker({
         position: latLng,
         map: embeddedMap,
@@ -53,11 +55,35 @@ export default function Map({ mapMarkers }) {
           fontSize: "14px",
         },
       });
+      // Info window with details in html text
+      let infowindow = new window.google.maps.InfoWindow({
+        maxWidth: 300, // number in pixels
+        content: `
+        <div class='marker-infowindow-text'>
+        <h6><u>${place.location.name}</u></h6>
+        <span><b>Address:</b> ${place.location.address}</span>
+        <br />
+        <span><b>Start Time:</b> ${new Date(
+          parseInt(place.duration.startTimestampMs, 10)
+        ).toLocaleString()}</span>
+        <br />
+        <span><b>End Time:</b> ${new Date(
+          parseInt(place.duration.endTimestampMs, 10)
+        ).toLocaleString()}</span>
+        </div>
+        `,
+      });
 
+      // Enable info window to display when marker is clicked
+      marker.addListener("click", () => {
+        infowindow.open(embeddedMap, marker);
+      });
+      // Resize boundary to fit new marker
       bounds.extend(latLng);
       return marker;
     });
 
+    // Fit map to boundary containing all markers
     embeddedMap.fitBounds(bounds);
   };
 
