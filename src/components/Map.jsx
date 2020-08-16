@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Map() {
+export default function Map({ mapMarkers }) {
   let map;
 
   const createMap = () => {
@@ -22,10 +22,33 @@ export default function Map() {
         position: latLng,
         map: map,
       });
+
+      createMarkers(map);
     };
 
     // Append the 'script' element to 'head'
     document.head.appendChild(script);
+  };
+
+  const createMarkers = (embeddedMap) => {
+    let bounds = new window.google.maps.LatLngBounds();
+
+    console.log(`createMarkers -> mapMarkers`, mapMarkers);
+    mapMarkers.map((place, i) => {
+      let latLng = new window.google.maps.LatLng(
+        place.location.latitudeE7,
+        place.location.longitudeE7
+      );
+      let marker = new window.google.maps.Marker({
+        position: latLng,
+        map: embeddedMap,
+      });
+
+      bounds.extend(latLng);
+      return marker;
+    });
+
+    embeddedMap.fitBounds(bounds);
   };
 
   return (
