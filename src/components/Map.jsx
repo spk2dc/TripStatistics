@@ -6,7 +6,7 @@ export default function Map({ mapMarkers }) {
   // only create map once
   useEffect(() => {
     createMap();
-  }, [mapMarkers]);
+  });
 
   const createMap = () => {
     // Attach your callback function to the `window` object
@@ -18,11 +18,6 @@ export default function Map({ mapMarkers }) {
         zoom: 8,
       });
 
-      var marker = new window.google.maps.Marker({
-        position: latLng,
-        map: map,
-      });
-
       createMarkers(map);
     };
 
@@ -31,7 +26,7 @@ export default function Map({ mapMarkers }) {
       // Create the script tag, set the appropriate attributes
       var script = document.createElement("script");
       script.setAttribute("id", "script-google-maps");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places`;
       script.defer = true;
 
       // Append the 'script' element to 'head'
@@ -45,12 +40,18 @@ export default function Map({ mapMarkers }) {
     console.log(`createMarkers -> mapMarkers`, mapMarkers);
     mapMarkers.map((place, i) => {
       let latLng = new window.google.maps.LatLng(
-        place.location.latitudeE7,
-        place.location.longitudeE7
+        place.location.latitudeE7 / 1e7,
+        place.location.longitudeE7 / 1e7
       );
       let marker = new window.google.maps.Marker({
         position: latLng,
         map: embeddedMap,
+        title: place.location.address,
+        label: {
+          text: place.location.name,
+          color: "black",
+          fontSize: "14px",
+        },
       });
 
       bounds.extend(latLng);

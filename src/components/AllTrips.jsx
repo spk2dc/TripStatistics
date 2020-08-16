@@ -74,7 +74,6 @@ export default function AllTrips() {
           })}
         </tbody>
       </table>
-      <Map />
     </div>
   );
 }
