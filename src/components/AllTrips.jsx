@@ -51,9 +51,7 @@ export default function AllTrips() {
                 <tr
                   key={`row${i}-${val.id}`}
                   className='clickable-row'
-                  onClick={() =>
-                    (window.location = `${window.location.href}/${val.id}`)
-                  }
+                  onClick={() => (window.location = `/trip/${val.id}`)}
                 >
                   <td>{val.id}</td>
                   <td>{val.trip_name}</td>

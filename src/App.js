@@ -56,7 +56,7 @@ function App() {
         <Route exact path='/all_trips'>
           <AllTrips />
         </Route>
-        <Route exact path='/all_trips/:id'>
+        <Route exact path='/trip/:id'>
           <OneTrip />
         </Route>
         <Route exact path='/new_trip'>
