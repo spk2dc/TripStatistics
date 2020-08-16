@@ -93,7 +93,7 @@ export default function OneTrip() {
         </Tab>
       </Tabs>
 
-      <Map mapMarkers={sortData.places} />
+      <Map mapMarkers={sortedData.places} />
     </div>
   );
 }
