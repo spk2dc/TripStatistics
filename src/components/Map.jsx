@@ -6,7 +6,7 @@ export default function Map({ mapMarkers }) {
   // only create map once
   useEffect(() => {
     createMap();
-  });
+  }, [mapMarkers]);
 
   const createMap = () => {
     // Attach your callback function to the `window` object
