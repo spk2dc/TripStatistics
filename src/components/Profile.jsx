@@ -5,7 +5,12 @@ import { Card } from "react-bootstrap";
 // Component
 export default function Profile({ sessionUser }) {
   return (
-    <Card bg='success' key='profile-card' text='white' className='w-50 m-auto'>
+    <Card
+      border='success'
+      key='profile-card'
+      text='black'
+      className='w-50 m-auto'
+    >
       <Card.Header as='h3'>Profile</Card.Header>
       <Card.Body>
         <Card.Title>{"Welcome " + sessionUser.username}!</Card.Title>
@@ -13,7 +18,7 @@ export default function Profile({ sessionUser }) {
           <b>Email: </b>
           {sessionUser.email}
         </Card.Text>
-        <Card.Text>
+        <Card.Text className='text-muted'>
           Click on the new trips tab to upload a '.json' file from Google Maps
           Location History.
           <br />
