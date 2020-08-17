@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
 
@@ -12,6 +13,7 @@ export default function UploadFile({ apiBaseURL }) {
   // State Hook
   const [selectedFile, setSelectedFile] = useState(null);
   const [trip_name, setTrip_Name] = useState("");
+  const [redirect, setRedirect] = useState(false);
 
   // On file select (from the pop up)
   const onFileChange = (event) => {
@@ -51,6 +53,13 @@ export default function UploadFile({ apiBaseURL }) {
         document.getElementById(
           "card-footer-upload"
         ).innerHTML = `<p>Status: ${response.data.status.code}</p><p>Message: ${response.data.status.message}</p>`;
+
+        if (response.data.status.code === 201) {
+          // Change redirect state to true in order to trigger redirect
+          setTimeout(() => {
+            setRedirect(true);
+          }, 1500);
+        }
       })
       .catch((err) => {
         console.log(`onFileUpload -> err`, err);
@@ -109,6 +118,7 @@ export default function UploadFile({ apiBaseURL }) {
     }
   };
 
+  if (redirect) return <Redirect to='/all_trips' />;
   return (
     <Card border='dark' key='upload-card' text='black' className='w-75 m-auto'>
       <Card.Header as='h3'>New Trip</Card.Header>
