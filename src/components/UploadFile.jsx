@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Card } from "react-bootstrap";
 import axios from "axios";
 
 const getUser = () => {
@@ -61,69 +62,81 @@ export default function UploadFile({ apiBaseURL }) {
       console.log(`fileData -> selectedFile`, selectedFile);
 
       return (
-        <div>
-          <h2>File Details:</h2>
-          <p>File Name: {selectedFile.name}</p>
-          <p>File Type: {selectedFile.type}</p>
-          <p>
+        <div className='mt-4 pt-4'>
+          <Card.Title>File Details:</Card.Title>
+          <Card.Text>File Name: {selectedFile.name}</Card.Text>
+          <Card.Text>File Type: {selectedFile.type}</Card.Text>
+          <Card.Text>
             Last Modified:{" "}
             {selectedFile.lastModifiedDate.toLocaleDateString("en-US")}
-          </p>
-          <p>Size: {(selectedFile.size / 1024).toFixed(3)} KiB</p>
-          <p>Database File: </p>
+          </Card.Text>
+          <Card.Text>
+            Size: {(selectedFile.size / 1024).toFixed(3)} KiB
+          </Card.Text>
+          {/* <p>Database File: </p>
           {getDatabaseFile()}
-          <p id='database_file'></p>
+          <p id='database_file'></p> */}
         </div>
       );
     } else {
       return (
-        <div>
-          <br />
-          <h4>Choose before Pressing the Upload button</h4>
+        <div className='mt-4 pt-4'>
+          <Card.Title>
+            Choose a Google Maps Location History .json file to upload.
+          </Card.Title>
         </div>
       );
     }
   };
 
   return (
-    <div>
-      <h1>Upload File</h1>
-      <br />
-      <form encType='multipart/form-data'>
-        <label htmlFor='trip_name' className='lead mx-2'>
-          Trip Name{" "}
-        </label>
-        <input
-          type='text'
-          name='trip_name'
-          className=''
-          value={trip_name}
-          onChange={(event) => {
-            setTrip_Name(event.currentTarget.value);
-          }}
-        />
-        <br />
-        <input
-          type='file'
-          name='filename'
-          className=''
-          onChange={(e) => {
-            onFileChange(e);
-          }}
-        />
-        <button
-          type='submit'
-          name='submit'
-          className='btn btn-primary'
-          onClick={(e) => {
-            onFileUpload(e);
-          }}
+    <Card border='dark' key='upload-card' text='black' className='w-75 m-auto'>
+      <Card.Header as='h3'>New Trip</Card.Header>
+      <Card.Body>
+        <Card.Title>Upload JSON File</Card.Title>
+        <form
+          encType='multipart/form-data'
+          className='p-4 border border-success rounded'
         >
-          Upload
-        </button>
-      </form>
-      {fileData()}
-    </div>
+          <label htmlFor='trip_name' className='lead mx-2'>
+            Trip Name{" "}
+          </label>
+          <input
+            type='text'
+            name='trip_name'
+            className=''
+            value={trip_name}
+            onChange={(event) => {
+              setTrip_Name(event.currentTarget.value);
+            }}
+          />
+          <br />
+          <input
+            type='file'
+            name='filename'
+            className=''
+            onChange={(e) => {
+              onFileChange(e);
+            }}
+          />
+          <button
+            type='submit'
+            name='submit'
+            className='btn btn-primary'
+            onClick={(e) => {
+              onFileUpload(e);
+            }}
+          >
+            Upload
+          </button>
+        </form>
+        {fileData()}
+      </Card.Body>
+      <Card.Footer className='text-muted'>
+        *Note: Please ensure file is less than 65535 bytes (65 KB) in size as
+        due to Heroku PostgreSQL database limitations
+      </Card.Footer>
+    </Card>
   );
 }
 

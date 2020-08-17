@@ -6,7 +6,7 @@ import { Card } from "react-bootstrap";
 export default function Profile({ sessionUser }) {
   return (
     <Card bg='success' key='profile-card' text='white' className='w-50 m-auto'>
-      <Card.Header>Profile</Card.Header>
+      <Card.Header as='h3'>Profile</Card.Header>
       <Card.Body>
         <Card.Title>{"Welcome " + sessionUser.username}!</Card.Title>
         <Card.Text>
