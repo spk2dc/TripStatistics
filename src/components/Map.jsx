@@ -16,6 +16,7 @@ export default function Map({ mapMarkers }) {
       map = new window.google.maps.Map(document.getElementById("map"), {
         center: latLng,
         zoom: 8,
+        streetViewControl: false,
       });
 
       createMarkers(map);
@@ -26,7 +27,7 @@ export default function Map({ mapMarkers }) {
       // Create the script tag, set the appropriate attributes
       var script = document.createElement("script");
       script.setAttribute("id", "script-google-maps");
-      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places`;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places,visualization`;
       script.defer = true;
 
       // Append the 'script' element to 'head'
@@ -36,6 +37,7 @@ export default function Map({ mapMarkers }) {
 
   const createMarkers = (embeddedMap) => {
     let bounds = new window.google.maps.LatLngBounds();
+    let heatmapLoc = [];
 
     console.log(`createMarkers -> mapMarkers`, mapMarkers);
     mapMarkers.map((place, i) => {
@@ -80,11 +82,22 @@ export default function Map({ mapMarkers }) {
       });
       // Resize boundary to fit new marker
       bounds.extend(latLng);
+      // Add coordinates to heatmap location array
+      heatmapLoc.push(latLng);
       return marker;
     });
 
     // Fit map to boundary containing all markers
     embeddedMap.fitBounds(bounds);
+
+    // Add heatmap layer to map
+    let heatmap = new window.google.maps.visualization.HeatmapLayer({
+      data: heatmapLoc,
+      dissipating: true, //heatmap disappear on zoom
+      radius: 250, //radius for each point in pixels
+      opacity: 0.35, //scale 0-1
+      map: embeddedMap,
+    });
   };
 
   return (

@@ -12,6 +12,7 @@ export default function TablePlaces({ placeArr }) {
           <th>End Time</th>
           <th>Latitude</th>
           <th>Longitude</th>
+          {/* <th>Place ID</th> */}
         </tr>
       </thead>
       <tbody>
@@ -21,18 +22,19 @@ export default function TablePlaces({ placeArr }) {
             const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
 
             return (
-              <tr key={`row${i}-${val.location.placeId}`}>
+              <tr key={`table-place-row${i}`}>
                 <td>{val.location.name}</td>
                 <td>{val.location.address}</td>
                 <td>{new Date(startTimeRaw).toLocaleString()}</td>
                 <td>{new Date(endTimeRaw).toLocaleString()}</td>
                 <td>{val.location.latitudeE7 / 10000000}</td>
                 <td>{val.location.longitudeE7 / 10000000}</td>
+                {/* <td>{val.location.placeId}</td> */}
               </tr>
             );
           } else {
             return (
-              <tr>
+              <tr key={`table-place-row${i}`}>
                 <td>{"null"}</td>
                 <td>{"null"}</td>
                 <td>{"null"}</td>

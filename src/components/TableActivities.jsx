@@ -21,7 +21,7 @@ export default function TableActivities({ activityArr }) {
             const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
 
             return (
-              <tr key={`row${i}-${val.duration.startTimestampMs}`}>
+              <tr key={`table-activity-row${i}`}>
                 <td>{val.distance}</td>
                 <td>{val.activityType}</td>
                 <td>{new Date(startTimeRaw).toLocaleString()}</td>
@@ -40,7 +40,7 @@ export default function TableActivities({ activityArr }) {
             );
           } else {
             return (
-              <tr>
+              <tr key={`table-activity-row${i}`}>
                 <td>{"null"}</td>
                 <td>{"null"}</td>
                 <td>{"null"}</td>
