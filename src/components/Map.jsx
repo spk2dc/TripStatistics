@@ -1,12 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Map({ mapMarkers }) {
   let map;
+  let mapLoaded = false;
 
   // only create map once
   useEffect(() => {
     createMap();
-  }, [mapMarkers]);
+    console.log(`createMarkers condition`, mapLoaded);
+    if (mapLoaded) {
+      createMarkers(map);
+    }
+  }, [mapMarkers, mapLoaded]);
 
   const createMap = () => {
     // Attach your callback function to the `window` object
@@ -19,6 +24,7 @@ export default function Map({ mapMarkers }) {
         streetViewControl: false,
       });
 
+      mapLoaded = true;
       createMarkers(map);
     };
 
@@ -36,6 +42,7 @@ export default function Map({ mapMarkers }) {
   };
 
   const createMarkers = (embeddedMap) => {
+    mapLoaded = true;
     let bounds = new window.google.maps.LatLngBounds();
     let heatmapLoc = [];
 
