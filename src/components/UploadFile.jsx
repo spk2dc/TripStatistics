@@ -38,8 +38,13 @@ export default function UploadFile({ apiBaseURL }) {
     // Request made to the backend api
     // Send formData object
     // console.log(`onFileUpload -> selectedFile`, selectedFile);
+    const options = {
+      headers: { "Content-Type": "application/json" },
+      withCredentials: true,
+    };
+
     axios
-      .post(`${apiBaseURL}/api/v1/all_maps/`, formData)
+      .post(`${apiBaseURL}/api/v1/all_maps/`, formData, options)
       .then((response) => {
         console.log(`onFileUpload -> response`, response);
         // Display status message for login in case of error
