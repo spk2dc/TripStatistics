@@ -41,7 +41,7 @@ export default function Login({ apiBaseURL, getSession }) {
   };
 
   // Render
-  if (redirect) return <Redirect to='/all_trips' />;
+  if (redirect) return <Redirect to='/profile' />;
   return (
     <form className='login text-center m-4' onSubmit={submitForm}>
       <label htmlFor='email'>Email</label>

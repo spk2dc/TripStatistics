@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 //Components
 import Register from "./components/Register";
 import Login from "./components/Login";
+import Profile from "./components/Profile";
 import AllTrips from "./components/AllTrips";
 import UploadFile from "./components/UploadFile";
 import NavBar from "./components/NavBar";
@@ -52,6 +53,9 @@ function App() {
         </Route>
         <Route exact path='/login'>
           <Login apiBaseURL={baseURL} getSession={getSession} />
+        </Route>
+        <Route exact path='/profile'>
+          <Profile sessionUser={sessionUser} />
         </Route>
         <Route exact path='/all_trips'>
           <AllTrips />

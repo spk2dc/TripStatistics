@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Map from "./Map";
 
 export default function AllTrips() {
   // use localhost if environment url does not exist
