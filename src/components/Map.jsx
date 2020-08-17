@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Map({ mapMarkers }) {
   let map;
-  const [mapLoaded, setMapLoaded] = useState(false);
+  let mapLoaded = false;
 
   // only create map once
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function Map({ mapMarkers }) {
         streetViewControl: false,
       });
 
-      setMapLoaded(true);
+      mapLoaded = true;
       createMarkers(map);
     };
 
@@ -42,7 +42,7 @@ export default function Map({ mapMarkers }) {
   };
 
   const createMarkers = (embeddedMap) => {
-    setMapLoaded(true);
+    mapLoaded = true;
     let bounds = new window.google.maps.LatLngBounds();
     let heatmapLoc = [];
 
