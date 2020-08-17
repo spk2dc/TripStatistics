@@ -8,10 +8,14 @@ export default function NavBar({ apiBaseURL, getSession, sessionUser }) {
   const destroySession = () => {
     sessionStorage.setItem("user", "");
     getSession();
+    const options = {
+      headers: { "Content-Type": "application/json" },
+      withCredentials: true,
+    };
 
     // Make logout request to server
     axios
-      .get(`${apiBaseURL}/user/logout`)
+      .get(`${apiBaseURL}/user/logout`, options)
       .then((response) => {
         console.log(`destroySession -> response`, response);
       })
