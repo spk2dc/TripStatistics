@@ -6,7 +6,7 @@ import { Card } from "react-bootstrap";
 const Error = () => {
   return (
     <Card bg='danger' key='error-card' text='white' className='w-50 m-auto'>
-      <Card.Header>Error 404</Card.Header>
+      <Card.Header as='h3'>Error 404</Card.Header>
       <Card.Body>
         <Card.Title>Page Not Found</Card.Title>
         <Card.Text>
