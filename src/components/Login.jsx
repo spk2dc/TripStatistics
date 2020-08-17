@@ -34,20 +34,21 @@ export default function Login({ apiBaseURL, getSession }) {
     // Store user in session storage
     const user = response.data;
     console.log(`submitForm -> login response`, response);
-    if (response.data.status.code === 200) {
-      sessionStorage.setItem("user", JSON.stringify(user));
-      getSession();
-    }
 
     // Display status message for login in case of error
     document.getElementById(
       "card-footer-login"
     ).innerHTML = `<p>Status: ${response.data.status.code}</p><p>Message: ${response.data.status.message}</p>`;
 
-    // Change redirect state to true in order to trigger redirect
-    setTimeout(() => {
-      setRedirect(true);
-    }, 1500);
+    if (response.data.status.code === 200) {
+      sessionStorage.setItem("user", JSON.stringify(user));
+      getSession();
+
+      // Change redirect state to true in order to trigger redirect
+      setTimeout(() => {
+        setRedirect(true);
+      }, 1500);
+    }
   };
 
   // Render
