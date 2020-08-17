@@ -38,7 +38,22 @@ export default function UploadFile({ apiBaseURL }) {
     // Request made to the backend api
     // Send formData object
     // console.log(`onFileUpload -> selectedFile`, selectedFile);
-    axios.post(`${apiBaseURL}/api/v1/all_maps/`, formData);
+    axios
+      .post(`${apiBaseURL}/api/v1/all_maps/`, formData)
+      .then((response) => {
+        console.log(`onFileUpload -> response`, response);
+        // Display status message for login in case of error
+        document.getElementById(
+          "card-footer-upload"
+        ).innerHTML = `<p>Status: ${response.data.status.code}</p><p>Message: ${response.data.status.message}</p>`;
+      })
+      .catch((err) => {
+        console.log(`onFileUpload -> err`, err);
+
+        document.getElementById(
+          "card-footer-upload"
+        ).innerHTML = `<p>Status: ${err.data.status.code}</p><p>Message: ${err.data.status.message}</p>`;
+      });
   };
 
   // get uploaded file from database and extract data
@@ -132,7 +147,7 @@ export default function UploadFile({ apiBaseURL }) {
         </form>
         {fileData()}
       </Card.Body>
-      <Card.Footer className='text-muted'>
+      <Card.Footer className='text-muted' id='card-footer-upload'>
         *Note: Please ensure file is less than 65535 bytes (65 KB) in size as
         due to Heroku PostgreSQL database limitations
       </Card.Footer>
