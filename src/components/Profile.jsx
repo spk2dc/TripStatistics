@@ -11,12 +11,24 @@ export default function Profile({ sessionUser }) {
       text='black'
       className='w-50 m-auto'
     >
-      <Card.Header as='h3'>Profile</Card.Header>
+      {console.log("sessionuser: ", sessionUser)}
+      <Card.Header as='h3'>
+        {"Welcome " +
+          (sessionUser.hasOwnProperty("data")
+            ? sessionUser.data.username
+            : "null")}
+        !
+      </Card.Header>
       <Card.Body>
-        <Card.Title>{"Welcome " + sessionUser.username}!</Card.Title>
+        <Card.Title>
+          User ID:{" "}
+          {sessionUser.hasOwnProperty("data") ? sessionUser.data.id : "-1"}
+        </Card.Title>
         <Card.Text>
           <b>Email: </b>
-          {sessionUser.email}
+          {sessionUser.hasOwnProperty("data")
+            ? sessionUser.data.email
+            : "no email found"}
         </Card.Text>
         <Card.Text className='text-muted'>
           Click on the new trips tab to upload a '.json' file from Google Maps
