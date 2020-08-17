@@ -4,7 +4,7 @@ import TablePlaces from "./TablePlaces";
 import TableActivities from "./TableActivities";
 import Map from "./Map";
 import { useParams } from "react-router-dom";
-import { Tab, Tabs } from "react-bootstrap";
+import { Tab, Tabs, Card, Accordion } from "react-bootstrap";
 
 export default function OneTrip() {
   // use localhost if environment url does not exist
@@ -20,9 +20,15 @@ export default function OneTrip() {
     activities: [],
   });
 
-  // sort data every time it is changed
+  // On render get trip data and remove problematic bootstrap class
   useEffect(() => {
+    // Get all trip data
     getOneTrip();
+
+    // Remove bootstrap class automatically added to Tabs navigation that is messing up formatting inside of a card
+    document
+      .getElementsByClassName("tab-nested")[0]
+      .classList.remove("card-header-tabs");
   }, []);
 
   // get uploaded file from database and extract data
@@ -84,14 +90,30 @@ export default function OneTrip() {
       )}
       <h3>Trip ID: {params.id}</h3>
 
-      <Tabs defaultActiveKey='places'>
-        <Tab eventKey='places' title='Places'>
-          <TablePlaces placeArr={sortedData.places} />
-        </Tab>
-        <Tab eventKey='activities' title='Activities'>
-          <TableActivities activityArr={sortedData.activities} />
-        </Tab>
-      </Tabs>
+      <Accordion defaultActiveKey='0' className='m-2'>
+        <Card>
+          <Accordion.Toggle
+            as={Card.Header}
+            eventKey='0'
+            className='border border-primary'
+          >
+            Place and Activity Data
+          </Accordion.Toggle>
+          <Accordion.Collapse
+            eventKey='0'
+            className='p-3 border border-primary'
+          >
+            <Tabs defaultActiveKey='places' className='tab-nested'>
+              <Tab eventKey='places' title='Places'>
+                <TablePlaces placeArr={sortedData.places} />
+              </Tab>
+              <Tab eventKey='activities' title='Activities'>
+                <TableActivities activityArr={sortedData.activities} />
+              </Tab>
+            </Tabs>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
 
       <Map mapMarkers={sortedData.places} />
     </div>
