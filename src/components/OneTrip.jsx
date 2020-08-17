@@ -76,7 +76,7 @@ export default function OneTrip() {
   };
 
   return (
-    <div>
+    <div className='container-fluid'>
       {oneTrip.hasOwnProperty("trip_name") ? (
         <h1>Trip: {oneTrip.trip_name}</h1>
       ) : (

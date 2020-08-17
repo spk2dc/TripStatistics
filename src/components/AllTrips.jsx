@@ -30,11 +30,11 @@ export default function AllTrips() {
   };
 
   return (
-    <div>
+    <div className='container-fluid'>
       <h1>All Trips</h1>
 
       <table className='table table-bordered table-hover table-striped'>
-        <caption>Trips </caption>
+        {/* <caption>Trips </caption> */}
         <thead>
           <tr>
             <th>ID</th>
