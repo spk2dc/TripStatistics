@@ -24,6 +24,7 @@ export default function Register({ apiBaseURL, getSession }) {
     };
     const options = {
       headers: { "Content-Type": "application/json" },
+      withCredentials: true,
     };
     const register = await axios.post(
       `${apiBaseURL}/user/register`,

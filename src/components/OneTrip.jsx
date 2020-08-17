@@ -34,9 +34,13 @@ export default function OneTrip() {
   // get uploaded file from database and extract data
   const getOneTrip = () => {
     // console.log(`getOneTrip -> baseURL`, `${baseURL}/api/v1/all_maps/`);
+    const options = {
+      headers: { "Content-Type": "application/json" },
+      withCredentials: true,
+    };
 
     axios
-      .get(`${baseURL}/api/v1/all_maps/${params.id}`)
+      .get(`${baseURL}/api/v1/all_maps/${params.id}`, options)
       .then((resp) => {
         console.log(`getOneTrip -> resp`, resp.data.data);
         // document.getElementById("database_file").textContent = resp.data.data[0].data;

@@ -22,6 +22,7 @@ export default function Login({ apiBaseURL, getSession }) {
     };
     const options = {
       headers: { "Content-Type": "application/json" },
+      withCredentials: true,
     };
     const response = await axios.post(
       `${apiBaseURL}/user/login`,

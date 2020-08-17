@@ -16,9 +16,13 @@ export default function AllTrips() {
   // get uploaded file from database and extract data
   const getDatabaseFile = () => {
     // console.log(`getDatabaseFile -> baseURL`, `${baseURL}/api/v1/all_maps/`);
+    const options = {
+      headers: { "Content-Type": "application/json" },
+      withCredentials: true,
+    };
 
     axios
-      .get(`${baseURL}/api/v1/all_maps/`)
+      .get(`${baseURL}/api/v1/all_maps/`, options)
       .then((resp) => {
         console.log(`getDatabaseFile -> resp`, resp.data.data);
         // document.getElementById("database_file").textContent = resp.data.data[0].data;
