@@ -58,7 +58,6 @@ export default function Login({ apiBaseURL, getSession }) {
     >
       <Card.Header as='h3'>Login</Card.Header>
       <Card.Body>
-        <Card.Title>Upload JSON File</Card.Title>
         <form className='login text-center m-4' onSubmit={submitForm}>
           <label htmlFor='email'>Email</label>
           <br />
