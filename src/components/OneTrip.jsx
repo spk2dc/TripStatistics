@@ -3,7 +3,7 @@ import axios from "axios";
 import TablePlaces from "./TablePlaces";
 import TableActivities from "./TableActivities";
 import Map from "./Map";
-import { useParams } from "react-router-dom";
+import { Redirect, useParams } from "react-router-dom";
 import { Tab, Tabs, Card, Accordion } from "react-bootstrap";
 
 export default function OneTrip() {
@@ -14,6 +14,7 @@ export default function OneTrip() {
   const params = useParams();
 
   // State Hook
+  const [redirect, setRedirect] = useState(false);
   const [oneTrip, setOneTrip] = useState({});
   const [sortedData, setSortedData] = useState({
     places: [],
@@ -42,8 +43,13 @@ export default function OneTrip() {
     axios
       .get(`${baseURL}/api/v1/all_maps/${params.id}`, options)
       .then((resp) => {
-        console.log(`getOneTrip -> resp`, resp.data.data);
-        // document.getElementById("database_file").textContent = resp.data.data[0].data;
+        console.log(`getOneTrip -> resp`, resp);
+        if (resp.data.status.code === 500) {
+          console.log(
+            `Error, this trip does not belong to the currently logged in user.`
+          );
+          setRedirect(true);
+        }
         setOneTrip(resp.data.data);
         sortData(resp.data.data);
       })
@@ -85,6 +91,8 @@ export default function OneTrip() {
     return true;
   };
 
+  // Render
+  if (redirect) return <Redirect to='/invalid_trip_id' />;
   return (
     <div className='container-fluid'>
       {oneTrip.hasOwnProperty("trip_name") ? (

@@ -41,7 +41,7 @@ export default function AllTrips() {
         {/* <caption>Trips </caption> */}
         <thead>
           <tr>
-            <th>ID</th>
+            <th>Database ID</th>
             <th>Trip Name</th>
             <th>File Name</th>
             <th>Upload Time</th>
