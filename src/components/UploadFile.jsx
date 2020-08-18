@@ -174,6 +174,62 @@ export default function UploadFile({ apiBaseURL }) {
           to Heroku PostgreSQL database limitations
         </Card.Footer>
       </Card>
+
+      <br />
+      <br />
+      <Card
+        border='dark'
+        key='upload-card'
+        text='black'
+        className='w-75 mx-auto my-3'
+      >
+        <Card.Header as='h3'>Demo Files</Card.Header>
+        <Card.Body>
+          <Card.Title>
+            Choose a provided file below to try out if you do not have your own!
+          </Card.Title>
+          <form encType='multipart/form-data' className='p-4'>
+            <button
+              type='submit'
+              name='submit'
+              className='btn btn-outline-primary mx-3'
+              onClick={(e) => {
+                setTrip_Name("Demo File 1");
+                setSelectedFile("./2019_AUGUST_small.json");
+                onFileUpload(e);
+              }}
+            >
+              Upload Demo 1
+            </button>
+
+            <button
+              type='submit'
+              name='submit'
+              className='btn btn-outline-primary mx-3'
+              onClick={(e) => {
+                setTrip_Name("Demo File 2");
+                setSelectedFile("./2019_AUGUST_small.json");
+                onFileUpload(e);
+              }}
+            >
+              Upload Demo 2
+            </button>
+
+            <button
+              type='submit'
+              name='submit'
+              className='btn btn-outline-primary mx-3 my-1'
+              onClick={(e) => {
+                setTrip_Name("Demo File 3");
+                setSelectedFile("./2019_AUGUST_small.json");
+                onFileUpload(e);
+              }}
+            >
+              Upload Demo 3
+            </button>
+          </form>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
