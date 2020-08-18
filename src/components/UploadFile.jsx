@@ -163,8 +163,8 @@ export default function UploadFile({ apiBaseURL }) {
         {fileData()}
       </Card.Body>
       <Card.Footer className='text-muted' id='card-footer-upload'>
-        *Note: Please ensure file is less than 65535 bytes (65 KB) in size as
-        due to Heroku PostgreSQL database limitations
+        *Note: Please ensure file is less than 65535 bytes (65 KB) in size due
+        to Heroku PostgreSQL database limitations
       </Card.Footer>
     </Card>
   );
