@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
+import demoFile1 from "../srcData/2019_AUGUST_small.json";
 
 const getUser = () => {
   const rawString = sessionStorage.getItem("user");
@@ -195,7 +196,8 @@ export default function UploadFile({ apiBaseURL }) {
               className='btn btn-outline-primary mx-3'
               onClick={(e) => {
                 setTrip_Name("Demo File 1");
-                setSelectedFile("./2019_AUGUST_small.json");
+                // const demoFile1 = require("../srcData/2019_AUGUST_small.json");
+                setSelectedFile(demoFile1);
                 onFileUpload(e);
               }}
             >
