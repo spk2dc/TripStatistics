@@ -37,7 +37,7 @@ export default function AllTrips() {
     <div className='container-fluid'>
       <h1>All Trips</h1>
 
-      <table className='table table-bordered table-hover table-striped'>
+      <table className='table table-bordered table-hover table-striped table-responsive-lg'>
         {/* <caption>Trips </caption> */}
         <thead>
           <tr>

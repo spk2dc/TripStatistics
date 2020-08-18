@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TableActivities({ activityArr }) {
   return (
-    <table className='table table-bordered table-hover table-striped'>
+    <table className='table table-bordered table-hover table-striped table-responsive-lg'>
       {/* <caption>Activities </caption> */}
       <thead>
         <tr>
