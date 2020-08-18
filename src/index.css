@@ -41,3 +41,11 @@ table caption {
 .clickable-row {
   cursor: pointer;
 }
+
+.tab-pane {
+  max-height: 500px;
+}
+
+.card-header-clickable {
+  cursor: pointer;
+}

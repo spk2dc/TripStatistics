@@ -99,7 +99,7 @@ export default function OneTrip() {
           <Accordion.Toggle
             as={Card.Header}
             eventKey='0'
-            className='border border-primary'
+            className='border border-primary card-header-clickable'
           >
             Place and Activity Data
           </Accordion.Toggle>
@@ -108,10 +108,14 @@ export default function OneTrip() {
             className='p-3 border border-primary'
           >
             <Tabs defaultActiveKey='places' className='tab-nested'>
-              <Tab eventKey='places' title='Places'>
+              <Tab eventKey='places' title='Places' className='overflow-auto'>
                 <TablePlaces placeArr={sortedData.places} />
               </Tab>
-              <Tab eventKey='activities' title='Activities'>
+              <Tab
+                eventKey='activities'
+                title='Activities'
+                className='overflow-auto'
+              >
                 <TableActivities activityArr={sortedData.activities} />
               </Tab>
             </Tabs>

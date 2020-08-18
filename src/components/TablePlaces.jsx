@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TablePlaces({ placeArr }) {
   return (
-    <table className='table table-bordered table-hover table-striped table-responsive-lg'>
+    <table className='table table-bordered table-hover table-striped'>
       {/* <caption>Places </caption> */}
       <thead>
         <tr>
