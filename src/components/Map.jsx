@@ -1,40 +1,35 @@
 import React, { useState, useEffect } from "react";
 
 export default function Map({ mapMarkers }) {
-  let map;
-  const [mapLoaded, setMapLoaded] = useState(false);
+  const [map, setMap] = useState();
 
   // only create map once
   useEffect(() => {
     createMap();
-    console.log(`useEffect: `, mapMarkers.length, mapLoaded, window.google);
-    if (typeof window.google === "object") {
-      console.log(`useEffect markers: `, mapMarkers.length, map, window.google);
+    console.log(`useEffect`, mapMarkers.length, map);
+    if (typeof map === "object") {
+      // console.log(`useEffect markers: `, mapMarkers.length, map);
       createMarkers(map);
     }
-  }, [mapMarkers]);
+  }, [map, mapMarkers]);
 
   const createMap = () => {
     // Attach your callback function to the `window` object
-    console.log(`createMap begin`, mapMarkers.length, mapLoaded, window.google);
+    // console.log(`createMap begin`, mapMarkers.length, map);
     window.initMap = function () {
       var latLng = new window.google.maps.LatLng(43.642567, -79.387054);
-      console.log(
-        `initMap before`,
-        mapMarkers.length,
-        mapLoaded,
-        window.google
+      // console.log(`initMap before`, mapMarkers.length, map);
+
+      setMap(
+        new window.google.maps.Map(document.getElementById("map"), {
+          center: latLng,
+          zoom: 8,
+          streetViewControl: false,
+        })
       );
 
-      map = new window.google.maps.Map(document.getElementById("map"), {
-        center: latLng,
-        zoom: 8,
-        streetViewControl: false,
-      });
-
-      setMapLoaded(true);
-      console.log(`initMap after`, mapMarkers.length, mapLoaded, window.google);
-      createMarkers(map);
+      console.log(`initMap after`, mapMarkers.length, map);
+      // createMarkers(map);
     };
 
     // If google maps script does not exist then add it
@@ -45,23 +40,17 @@ export default function Map({ mapMarkers }) {
       script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places,visualization`;
       script.defer = true;
 
-      console.log(
-        `create script `,
-        mapMarkers.length,
-        mapLoaded,
-        window.google
-      );
+      console.log(`create script`, mapMarkers.length, map);
       // Append the 'script' element to 'head'
       document.head.appendChild(script);
     }
   };
 
   const createMarkers = (embeddedMap) => {
-    setMapLoaded(true);
     let bounds = new window.google.maps.LatLngBounds();
     let heatmapLoc = [];
 
-    console.log(`createMarkers -> mapMarkers`, mapMarkers);
+    console.log(`createMarkers`, mapMarkers.length, map);
     mapMarkers.map((place, i) => {
       // Coordinates for marker, converted to a valid number
       let latLng = new window.google.maps.LatLng(
@@ -116,7 +105,7 @@ export default function Map({ mapMarkers }) {
     let heatmap = new window.google.maps.visualization.HeatmapLayer({
       data: heatmapLoc,
       dissipating: true, //heatmap disappear on zoom
-      radius: 250, //radius for each point in pixels
+      radius: 80, //radius for each point in pixels
       opacity: 0.35, //scale 0-1
       map: embeddedMap,
     });
