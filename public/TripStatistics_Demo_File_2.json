@@ -1,0 +1,2264 @@
+{
+  "timelineObjects": [
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 415931129,
+          "longitudeE7": -727069938,
+          "placeId": "ChIJv1ZUJ6tL5okREJ_5CRgQ5sY",
+          "address": "125 Dove Ln\nMiddletown, CT 06457\nUSA",
+          "name": "125 Dove Ln",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1565649305000",
+          "endTimestampMs": "1565651978000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 415927087,
+            "longitudeE7": -727069791,
+            "placeId": "ChIJf_6Mdi1L5okRXaz1lezFOqc",
+            "semanticType": "TYPE_SEARCHED_ADDRESS",
+            "locationConfidence": 8.522162
+          },
+          {
+            "latitudeE7": 415916074,
+            "longitudeE7": -727077661,
+            "placeId": "ChIJZX6TGy1L5okRTsaENVC8OS0",
+            "semanticType": "TYPE_SEARCHED_ADDRESS",
+            "locationConfidence": 1.6307045
+          },
+          {
+            "latitudeE7": 415913597,
+            "longitudeE7": -726998753,
+            "placeId": "ChIJzdl98C1L5okRIdqmq31wVBs",
+            "locationConfidence": 1.1995194
+          },
+          {
+            "latitudeE7": 415916074,
+            "longitudeE7": -727077661,
+            "placeId": "ChIJZX6TGy1L5okRF8nfYOZWbWc",
+            "semanticType": "TYPE_SEARCHED_ADDRESS",
+            "locationConfidence": 0.76502675
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 415925893,
+          "longitudeE7": -727063217,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 416593610,
+          "longitudeE7": -727929025,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565651978000",
+          "endTimestampMs": "1565652795000"
+        },
+        "distance": 16338,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.70677489977878
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.23251077873652307
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.014248227957300633
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 415925788,
+              "lngE7": -727063522
+            },
+            {
+              "latE7": 416167488,
+              "lngE7": -726959838
+            },
+            {
+              "latE7": 416593704,
+              "lngE7": -727927551
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 416130087,
+              "lngE7": -726979343,
+              "timestampMs": "1565652271000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565652884868",
+          "location": {
+            "latitudeE7": 416593610,
+            "longitudeE7": -727929025,
+            "accuracyMetres": 36
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 416593310,
+          "longitudeE7": -727929964,
+          "placeId": "ChIJ-fsPsdyz54kRF0w7a_JLj84",
+          "address": "246 Hart St\nNew Britain, CT 06052\nUSA",
+          "name": "246 Hart St",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1565652795000",
+          "endTimestampMs": "1565697310000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 416592250,
+          "longitudeE7": -727928069,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417564092,
+          "longitudeE7": -726306410,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565697310000",
+          "endTimestampMs": "1565698851553"
+        },
+        "distance": 24309,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 93.96670906893254
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 5.907986872984727
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.075663522695031
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 416592292,
+              "lngE7": -727927474
+            },
+            {
+              "latE7": 416575012,
+              "lngE7": -727751846
+            },
+            {
+              "latE7": 416571540,
+              "lngE7": -727704772
+            },
+            {
+              "latE7": 416984481,
+              "lngE7": -727193679
+            },
+            {
+              "latE7": 416982498,
+              "lngE7": -727044067
+            },
+            {
+              "latE7": 417544670,
+              "lngE7": -726519012
+            },
+            {
+              "latE7": 417558975,
+              "lngE7": -726305084
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 416571593,
+              "lngE7": -727705037,
+              "timestampMs": "1565697523000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416981951,
+              "lngE7": -727212479,
+              "timestampMs": "1565698083000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416984634,
+              "lngE7": -727035166,
+              "timestampMs": "1565698190000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417526698,
+              "lngE7": -726545255,
+              "timestampMs": "1565698553000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565698851553",
+          "location": {
+            "latitudeE7": 417564092,
+            "longitudeE7": -726306410,
+            "accuracyMetres": 35
+          }
+        }
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417564092,
+          "longitudeE7": -726306410
+        },
+        "endLocation": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898
+        },
+        "duration": {
+          "startTimestampMs": "1565698851553",
+          "endTimestampMs": "1565698950809"
+        },
+        "distance": 154,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 93.96670906893254
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 5.907986872984727
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.075663522695031
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417558975,
+              "lngE7": -726305084
+            },
+            {
+              "latE7": 417542152,
+              "lngE7": -726300888
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "placeId": "ChIJ6xFeMe5T5okR9JWzgA5-emk",
+          "address": "East Hartford, CT 06118\nUSA",
+          "name": "Pratt & Whitney ETC",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 93.19713
+        },
+        "duration": {
+          "startTimestampMs": "1565698950809",
+          "endTimestampMs": "1565704287786"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417548713,
+        "centerLngE7": -726306393,
+        "visitConfidence": 96,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417546082,
+            "longitudeE7": -726306610,
+            "placeId": "ChIJs-sav-tT5okRoYiT_TZTeK8",
+            "semanticType": "TYPE_WORK",
+            "locationConfidence": 6.130271
+          },
+          {
+            "latitudeE7": 417562687,
+            "longitudeE7": -726286070,
+            "placeId": "ChIJWVYVBPFT5okRWBk3OdxoxDw",
+            "locationConfidence": 0.6138995
+          },
+          {
+            "latitudeE7": 417535703,
+            "longitudeE7": -726296894,
+            "placeId": "ChIJhRekq-9T5okRMg180dDeqv4",
+            "locationConfidence": 0.029567437
+          },
+          {
+            "latitudeE7": 417538256,
+            "longitudeE7": -726276420,
+            "placeId": "ChIJo27giO9T5okRZwov8IzC8EM",
+            "locationConfidence": 0.008930926
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417539754,
+          "longitudeE7": -726298162,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417586716,
+          "longitudeE7": -726255268,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565704287786",
+          "endTimestampMs": "1565704653793"
+        },
+        "distance": 1046,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 97.09785058856819
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 2.7090825824004217
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.1289631133882287
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417542457,
+              "lngE7": -726298751
+            },
+            {
+              "latE7": 417587928,
+              "lngE7": -726243972
+            },
+            {
+              "latE7": 417587356,
+              "lngE7": -726247863
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417600309,
+              "lngE7": -726253080,
+              "timestampMs": "1565704532764",
+              "accuracyMeters": 82
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565704714727",
+          "location": {
+            "latitudeE7": 417583441,
+            "longitudeE7": -726252298,
+            "accuracyMetres": 98
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417580501,
+          "longitudeE7": -726248336,
+          "placeId": "ChIJ931j9flT5okRZGAEg6HM8go",
+          "name": "United Technologies Research Center",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 99.490395
+        },
+        "duration": {
+          "startTimestampMs": "1565704653793",
+          "endTimestampMs": "1565714588000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417585732,
+        "centerLngE7": -726254702,
+        "visitConfidence": 95,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417578830,
+            "longitudeE7": -726271180,
+            "placeId": "ChIJt6tfgPBT5okR5egnB_Ak--w",
+            "locationConfidence": 0.15145911
+          },
+          {
+            "latitudeE7": 417599087,
+            "longitudeE7": -726253142,
+            "placeId": "ChIJ931j9flT5okRKj_ft8ZYPfE",
+            "locationConfidence": 0.11472056
+          },
+          {
+            "latitudeE7": 417597308,
+            "longitudeE7": -726257133,
+            "placeId": "ChIJ931j9flT5okRJc9acnPM3Uc",
+            "locationConfidence": 0.09561671
+          },
+          {
+            "latitudeE7": 417578830,
+            "longitudeE7": -726271180,
+            "placeId": "ChIJq7-3M_z15okROVVvl5nVeww",
+            "locationConfidence": 0.073688164
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED",
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417587737,
+              "lngE7": -726254894,
+              "timestampMs": "1565714306665",
+              "accuracyMeters": 15
+            },
+            {
+              "latE7": 417581514,
+              "lngE7": -726253239,
+              "timestampMs": "1565714509889",
+              "accuracyMeters": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417575752,
+          "longitudeE7": -726248842,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565714588000",
+          "endTimestampMs": "1565715019665"
+        },
+        "distance": 836,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 86.83860005270195
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 12.752219000189898
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.15460919161523676
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417575683,
+              "lngE7": -726249847
+            },
+            {
+              "latE7": 417558364,
+              "lngE7": -726248245
+            },
+            {
+              "latE7": 417559127,
+              "lngE7": -726273422
+            },
+            {
+              "latE7": 417541427,
+              "lngE7": -726306457
+            },
+            {
+              "latE7": 417542152,
+              "lngE7": -726300888
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417558275,
+              "lngE7": -726248652,
+              "timestampMs": "1565714714000",
+              "accuracyMeters": 5
+            },
+            {
+              "latE7": 417558461,
+              "lngE7": -726273266,
+              "timestampMs": "1565714776000",
+              "accuracyMeters": 10
+            },
+            {
+              "latE7": 417558419,
+              "lngE7": -726293683,
+              "timestampMs": "1565714897307",
+              "accuracyMeters": 52
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565715081645",
+          "location": {
+            "latitudeE7": 417546879,
+            "longitudeE7": -726306229,
+            "accuracyMetres": 76
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "placeId": "ChIJ6xFeMe5T5okR9JWzgA5-emk",
+          "address": "East Hartford, CT 06118\nUSA",
+          "name": "Pratt & Whitney ETC",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 94.244125
+        },
+        "duration": {
+          "startTimestampMs": "1565715019665",
+          "endTimestampMs": "1565722508610"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417547455,
+        "centerLngE7": -726306016,
+        "visitConfidence": 96,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417546082,
+            "longitudeE7": -726306610,
+            "placeId": "ChIJs-sav-tT5okRoYiT_TZTeK8",
+            "semanticType": "TYPE_WORK",
+            "locationConfidence": 5.322496
+          },
+          {
+            "latitudeE7": 417562687,
+            "longitudeE7": -726286070,
+            "placeId": "ChIJWVYVBPFT5okRWBk3OdxoxDw",
+            "locationConfidence": 0.41227973
+          },
+          {
+            "latitudeE7": 417535703,
+            "longitudeE7": -726296894,
+            "placeId": "ChIJhRekq-9T5okRMg180dDeqv4",
+            "locationConfidence": 0.005962049
+          },
+          {
+            "latitudeE7": 417529992,
+            "longitudeE7": -726295344,
+            "placeId": "ChIJHen3A-9T5okRncQ61BeMn3A",
+            "locationConfidence": 0.0032793318
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417555075,
+          "longitudeE7": -726303437,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417587761,
+          "longitudeE7": -726254895,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565722508610",
+          "endTimestampMs": "1565723124572"
+        },
+        "distance": 1317,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 87.37292398884678
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 12.047431328620412
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.308025763645742
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417559089,
+              "lngE7": -726304397
+            },
+            {
+              "latE7": 417521896,
+              "lngE7": -726400527
+            },
+            {
+              "latE7": 417581481,
+              "lngE7": -726335296
+            },
+            {
+              "latE7": 417626724,
+              "lngE7": -726267318
+            },
+            {
+              "latE7": 417589683,
+              "lngE7": -726248168
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417581872,
+              "lngE7": -726332113,
+              "timestampMs": "1565722753462",
+              "accuracyMeters": 98
+            },
+            {
+              "latE7": 417600309,
+              "lngE7": -726253080,
+              "timestampMs": "1565722874733",
+              "accuracyMeters": 56
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565723185587",
+          "location": {
+            "latitudeE7": 417587487,
+            "longitudeE7": -726254793,
+            "accuracyMetres": 76
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417580501,
+          "longitudeE7": -726248336,
+          "placeId": "ChIJ931j9flT5okRZGAEg6HM8go",
+          "name": "United Technologies Research Center",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 99.49296
+        },
+        "duration": {
+          "startTimestampMs": "1565723124572",
+          "endTimestampMs": "1565726469533"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417586795,
+        "centerLngE7": -726254963,
+        "visitConfidence": 94,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417599087,
+            "longitudeE7": -726253142,
+            "placeId": "ChIJ931j9flT5okRKj_ft8ZYPfE",
+            "locationConfidence": 0.14709312
+          },
+          {
+            "latitudeE7": 417578830,
+            "longitudeE7": -726271180,
+            "placeId": "ChIJt6tfgPBT5okR5egnB_Ak--w",
+            "locationConfidence": 0.13965635
+          },
+          {
+            "latitudeE7": 417597308,
+            "longitudeE7": -726257133,
+            "placeId": "ChIJ931j9flT5okRJc9acnPM3Uc",
+            "locationConfidence": 0.096407816
+          },
+          {
+            "latitudeE7": 417578830,
+            "longitudeE7": -726271180,
+            "placeId": "ChIJq7-3M_z15okROVVvl5nVeww",
+            "locationConfidence": 0.050179943
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417587597,
+          "longitudeE7": -726254602,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417546532,
+          "longitudeE7": -726307916,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565726469533",
+          "endTimestampMs": "1565726841564"
+        },
+        "distance": 900,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 96.96585483436698
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 2.8822240714183827
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.08239298686354052
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417587394,
+              "lngE7": -726247863
+            },
+            {
+              "latE7": 417605400,
+              "lngE7": -726276092
+            },
+            {
+              "latE7": 417541389,
+              "lngE7": -726306610
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417600309,
+              "lngE7": -726253080,
+              "timestampMs": "1565726593556",
+              "accuracyMeters": 98
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565726901666",
+          "location": {
+            "latitudeE7": 417546459,
+            "longitudeE7": -726306498,
+            "accuracyMetres": 75
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "placeId": "ChIJ6xFeMe5T5okR9JWzgA5-emk",
+          "address": "East Hartford, CT 06118\nUSA",
+          "name": "Pratt & Whitney ETC",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 93.61242
+        },
+        "duration": {
+          "startTimestampMs": "1565726841564",
+          "endTimestampMs": "1565731580000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417548939,
+        "centerLngE7": -726305118,
+        "visitConfidence": 95,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417546082,
+            "longitudeE7": -726306610,
+            "placeId": "ChIJs-sav-tT5okRoYiT_TZTeK8",
+            "semanticType": "TYPE_WORK",
+            "locationConfidence": 5.479548
+          },
+          {
+            "latitudeE7": 417562687,
+            "longitudeE7": -726286070,
+            "placeId": "ChIJWVYVBPFT5okRWBk3OdxoxDw",
+            "locationConfidence": 0.8437856
+          },
+          {
+            "latitudeE7": 417535703,
+            "longitudeE7": -726296894,
+            "placeId": "ChIJhRekq-9T5okRMg180dDeqv4",
+            "locationConfidence": 0.028339226
+          },
+          {
+            "latitudeE7": 417540698,
+            "longitudeE7": -726265019,
+            "placeId": "ChIJ-9GIJ4RT5okRwX6dbC-Hkw8",
+            "locationConfidence": 0.012084017
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 416683462,
+          "longitudeE7": -728156061,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565731580000",
+          "endTimestampMs": "1565734065000"
+        },
+        "distance": 23514,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.3089894568142
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.6328369909814201
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.01910411735805033
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417542152,
+              "lngE7": -726300888
+            },
+            {
+              "latE7": 417624664,
+              "lngE7": -726262664
+            },
+            {
+              "latE7": 417624664,
+              "lngE7": -726262664
+            },
+            {
+              "latE7": 417565193,
+              "lngE7": -726492004
+            },
+            {
+              "latE7": 416982002,
+              "lngE7": -727053756
+            },
+            {
+              "latE7": 416981124,
+              "lngE7": -727108840
+            },
+            {
+              "latE7": 416683425,
+              "lngE7": -728156051
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417624434,
+              "lngE7": -726263667,
+              "timestampMs": "1565731729000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417624431,
+              "lngE7": -726263666,
+              "timestampMs": "1565731744000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565734142059",
+          "location": {
+            "latitudeE7": 416683462,
+            "longitudeE7": -728156061,
+            "accuracyMetres": 44
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 416684148,
+          "longitudeE7": -728154208,
+          "placeId": "ChIJ-0C4UmWx54kRKDS1oBmTaDg",
+          "address": "963 W Main St\nNew Britain, CT 06053\nUSA",
+          "name": "Monro Auto Service And Tire Centers",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 98.26444
+        },
+        "duration": {
+          "startTimestampMs": "1565734065000",
+          "endTimestampMs": "1565738576000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 416682287,
+        "centerLngE7": -728153847,
+        "visitConfidence": 95,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 416685368,
+            "longitudeE7": -728161368,
+            "placeId": "ChIJvdso6vyx54kRpUV1sM85Vvo",
+            "locationConfidence": 0.32674587
+          },
+          {
+            "latitudeE7": 416685915,
+            "longitudeE7": -728173974,
+            "placeId": "ChIJxzqk4W-x54kRyq_QOJwX920",
+            "locationConfidence": 0.32312718
+          },
+          {
+            "latitudeE7": 416695657,
+            "longitudeE7": -728181288,
+            "placeId": "ChIJP5ztJHCx54kR76z8rzexxM4",
+            "locationConfidence": 0.29037878
+          },
+          {
+            "latitudeE7": 416686689,
+            "longitudeE7": -728165172,
+            "placeId": "ChIJcXNqAnCx54kRVqfPkOF-Mvs",
+            "locationConfidence": 0.2162595
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 416684148,
+          "longitudeE7": -728154208,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 416592873,
+          "longitudeE7": -727928780,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565738576000",
+          "endTimestampMs": "1565738851000"
+        },
+        "distance": 2633,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.0
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 416683120,
+              "lngE7": -728154602
+            },
+            {
+              "latE7": 416592941,
+              "lngE7": -727927474
+            }
+          ]
+        },
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 416593310,
+          "longitudeE7": -727929964,
+          "placeId": "ChIJ-fsPsdyz54kRF0w7a_JLj84",
+          "address": "246 Hart St\nNew Britain, CT 06052\nUSA",
+          "name": "246 Hart St",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1565738851000",
+          "endTimestampMs": "1565783933000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 416619449,
+            "longitudeE7": -727932274,
+            "placeId": "ChIJV75pIc-z54kR0Fi3YMOCTHg",
+            "locationConfidence": 0.1067256
+          },
+          {
+            "latitudeE7": 416640003,
+            "longitudeE7": -727869301,
+            "placeId": "ChIJUT1QUtGz54kRGDY9pafDH_g",
+            "locationConfidence": 0.044862438
+          },
+          {
+            "latitudeE7": 416622970,
+            "longitudeE7": -727912132,
+            "placeId": "ChIJ1dCPIMWz54kRHgOne0UJLks",
+            "locationConfidence": 0.03018581
+          },
+          {
+            "latitudeE7": 416599630,
+            "longitudeE7": -727892000,
+            "placeId": "ChIJnbdjfMSz54kRPBWmqVVgCvc",
+            "locationConfidence": 0.02823758
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 416444338,
+          "longitudeE7": -727708959,
+          "placeId": "ChIJRxSwWZCz54kRgjH90INxegc",
+          "address": "152 New Britain Rd\nBerlin, CT 06037\nUSA",
+          "name": "CITGO / Food Bag",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 55.82581
+        },
+        "duration": {
+          "startTimestampMs": "1565784306000",
+          "endTimestampMs": "1565784581000"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 416445441,
+        "centerLngE7": -727708918,
+        "visitConfidence": 85,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 416446585,
+            "longitudeE7": -727710235,
+            "placeId": "ChIJD96w95Cz54kR2veHFK-imIM",
+            "locationConfidence": 39.241314
+          },
+          {
+            "latitudeE7": 416440239,
+            "longitudeE7": -727711824,
+            "placeId": "ChIJgXTXT5Cz54kRRCRWpKMGAVo",
+            "locationConfidence": 1.546485
+          },
+          {
+            "latitudeE7": 416435885,
+            "longitudeE7": -727695152,
+            "placeId": "ChIJX0WPbpCz54kR3h7195KPYr4",
+            "locationConfidence": 0.83976567
+          },
+          {
+            "latitudeE7": 416443440,
+            "longitudeE7": -727706570,
+            "placeId": "ChIJoVjSWJCz54kRRERUrClByFQ",
+            "locationConfidence": 0.6600657
+          },
+          {
+            "latitudeE7": 416426242,
+            "longitudeE7": -727697780,
+            "placeId": "ChIJVcNqGJCz54kRmqY0Xuwug9o",
+            "locationConfidence": 0.6027124
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 416444338,
+          "longitudeE7": -727708959,
+          "placeId": "ChIJRxSwWZCz54kRgjH90INxegc",
+          "address": "152 New Britain Rd\nBerlin, CT 06037\nUSA",
+          "name": "CITGO / Food Bag",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 55.82581
+        },
+        "endLocation": {
+          "latitudeE7": 417580501,
+          "longitudeE7": -726248336,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565784581000",
+          "endTimestampMs": "1565786032000"
+        },
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.36806832430709
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.5112269226208933
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.05189525473423427
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 416593437,
+              "lngE7": -727927551
+            },
+            {
+              "latE7": 416570739,
+              "lngE7": -727925338
+            },
+            {
+              "latE7": 416559219,
+              "lngE7": -727924270
+            },
+            {
+              "latE7": 416463203,
+              "lngE7": -727901382
+            },
+            {
+              "latE7": 416442337,
+              "lngE7": -727705764
+            },
+            {
+              "latE7": 416218948,
+              "lngE7": -727274780
+            },
+            {
+              "latE7": 416524200,
+              "lngE7": -726716918
+            },
+            {
+              "latE7": 417165451,
+              "lngE7": -726492996
+            },
+            {
+              "latE7": 417576599,
+              "lngE7": -726250305
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 416559231,
+              "lngE7": -727924385,
+              "timestampMs": "1565783979000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416531616,
+              "lngE7": -727954540,
+              "timestampMs": "1565784027000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416469170,
+              "lngE7": -727895001,
+              "timestampMs": "1565784146000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416444205,
+              "lngE7": -727705901,
+              "timestampMs": "1565784565000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416236099,
+              "lngE7": -727220805,
+              "timestampMs": "1565784824000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 416562461,
+              "lngE7": -726708087,
+              "timestampMs": "1565785208000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417142709,
+              "lngE7": -726480547,
+              "timestampMs": "1565785488000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565786032000",
+          "location": {
+            "latitudeE7": 417580501,
+            "longitudeE7": -726248336,
+            "accuracyMetres": 63
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417580501,
+          "longitudeE7": -726248336,
+          "placeId": "ChIJ931j9flT5okRZGAEg6HM8go",
+          "name": "United Technologies Research Center",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 95.80945
+        },
+        "duration": {
+          "startTimestampMs": "1565786032000",
+          "endTimestampMs": "1565786490000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417579270,
+        "centerLngE7": -726251860,
+        "visitConfidence": 84,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417562687,
+            "longitudeE7": -726286070,
+            "placeId": "ChIJWVYVBPFT5okRWBk3OdxoxDw",
+            "locationConfidence": 3.8937888
+          },
+          {
+            "latitudeE7": 417555743,
+            "longitudeE7": -726222214,
+            "placeId": "ChIJOZO6MPtT5okR8d6MsY-Adnk",
+            "locationConfidence": 0.16499534
+          },
+          {
+            "latitudeE7": 417578830,
+            "longitudeE7": -726271180,
+            "placeId": "ChIJt6tfgPBT5okR5egnB_Ak--w",
+            "locationConfidence": 0.04147643
+          },
+          {
+            "latitudeE7": 417579429,
+            "longitudeE7": -726294654,
+            "placeId": "ChIJjVv2S5NT5okRWOshVjDp81g",
+            "locationConfidence": 0.025380583
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED",
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417573211,
+              "lngE7": -726255017,
+              "timestampMs": "1565786042000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417578985,
+              "lngE7": -726241140,
+              "timestampMs": "1565786062000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417584704,
+              "lngE7": -726254069,
+              "timestampMs": "1565786222997",
+              "accuracyMeters": 15
+            },
+            {
+              "latE7": 417574579,
+              "lngE7": -726248608,
+              "timestampMs": "1565786459000",
+              "accuracyMeters": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417580501,
+          "longitudeE7": -726248336,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565786490000",
+          "endTimestampMs": "1565786739012"
+        },
+        "distance": 833,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 92.55267763708422
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 7.063132446338173
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.24559416352383756
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417576599,
+              "lngE7": -726250305
+            },
+            {
+              "latE7": 417558364,
+              "lngE7": -726248245
+            },
+            {
+              "latE7": 417542152,
+              "lngE7": -726300888
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417559650,
+              "lngE7": -726250006,
+              "timestampMs": "1565786522000",
+              "accuracyMeters": 6
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565786799947",
+          "location": {
+            "latitudeE7": 417547155,
+            "longitudeE7": -726303210,
+            "accuracyMetres": 77
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417550423,
+          "longitudeE7": -726302898,
+          "placeId": "ChIJ6xFeMe5T5okR9JWzgA5-emk",
+          "address": "East Hartford, CT 06118\nUSA",
+          "name": "Pratt & Whitney ETC",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 95.873825
+        },
+        "duration": {
+          "startTimestampMs": "1565786739012",
+          "endTimestampMs": "1565818057000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417549007,
+        "centerLngE7": -726303429,
+        "visitConfidence": 93,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417546082,
+            "longitudeE7": -726306610,
+            "placeId": "ChIJs-sav-tT5okRoYiT_TZTeK8",
+            "semanticType": "TYPE_WORK",
+            "locationConfidence": 3.7480264
+          },
+          {
+            "latitudeE7": 417562687,
+            "longitudeE7": -726286070,
+            "placeId": "ChIJWVYVBPFT5okRWBk3OdxoxDw",
+            "locationConfidence": 0.35953668
+          },
+          {
+            "latitudeE7": 417535703,
+            "longitudeE7": -726296894,
+            "placeId": "ChIJhRekq-9T5okRMg180dDeqv4",
+            "locationConfidence": 0.005275185
+          },
+          {
+            "latitudeE7": 417538256,
+            "longitudeE7": -726276420,
+            "placeId": "ChIJo27giO9T5okRZwov8IzC8EM",
+            "locationConfidence": 0.0025557452
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417554610,
+          "longitudeE7": -726264583,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417404611,
+          "longitudeE7": -727140101,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565818057000",
+          "endTimestampMs": "1565819135000"
+        },
+        "distance": 12447,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.47145726637821
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.456876001908932
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.02567848785614212
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417554664,
+              "lngE7": -726264419
+            },
+            {
+              "latE7": 417656135,
+              "lngE7": -726695175
+            },
+            {
+              "latE7": 417644805,
+              "lngE7": -726697692
+            },
+            {
+              "latE7": 417524490,
+              "lngE7": -727021713
+            },
+            {
+              "latE7": 417404594,
+              "lngE7": -727139892
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417654992,
+              "lngE7": -726695458,
+              "timestampMs": "1565818555000",
+              "accuracyMeters": 4
+            },
+            {
+              "latE7": 417644764,
+              "lngE7": -726697363,
+              "timestampMs": "1565818585000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565819250722",
+          "location": {
+            "latitudeE7": 417404611,
+            "longitudeE7": -727140101,
+            "accuracyMetres": 48
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417407855,
+          "longitudeE7": -727123940,
+          "placeId": "ChIJX4S4-tSs54kRDMKPLPd5YkY",
+          "address": "475 Flatbush Ave\nHartford, CT 06106\nUSA",
+          "name": "Charter Oak Marketplace",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 97.73247
+        },
+        "duration": {
+          "startTimestampMs": "1565819135000",
+          "endTimestampMs": "1565820006000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 417397239,
+              "longitudeE7": -727135984,
+              "placeId": "ChIJ_5OT-dSs54kRiJHhINCdR2c",
+              "address": "495 Flatbush Ave\nHartford, CT 06106\nUSA",
+              "name": "Walmart Supercenter",
+              "sourceInfo": {
+                "deviceTag": 602769403
+              },
+              "locationConfidence": 49.498154
+            },
+            "duration": {
+              "startTimestampMs": "1565819135000",
+              "endTimestampMs": "1565819965940"
+            },
+            "placeConfidence": "MEDIUM_CONFIDENCE",
+            "centerLatE7": 417403004,
+            "centerLngE7": -727135029,
+            "visitConfidence": 91,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 417407819,
+                "longitudeE7": -727124017,
+                "placeId": "ChIJY6JW-NSs54kR8jwPFgRVBXU",
+                "locationConfidence": 0.489165
+              },
+              {
+                "latitudeE7": 417412130,
+                "longitudeE7": -727116850,
+                "placeId": "ChIJNZ_uENWs54kRyyGr9pRSO2w",
+                "locationConfidence": 0.020709885
+              },
+              {
+                "latitudeE7": 417384344,
+                "longitudeE7": -727152705,
+                "placeId": "ChIJRREi5dWs54kRVLwVfLRTOlE",
+                "locationConfidence": 0.0052258405
+              },
+              {
+                "latitudeE7": 417421159,
+                "longitudeE7": -727125232,
+                "placeId": "ChIJ4bJf-NSs54kRDfLUIE7AIB8",
+                "locationConfidence": 0.004599091
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 417402932,
+        "centerLngE7": -727138593,
+        "visitConfidence": 91,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417412130,
+            "longitudeE7": -727116850,
+            "placeId": "ChIJNZ_uENWs54kRyyGr9pRSO2w",
+            "locationConfidence": 1.9213282
+          },
+          {
+            "latitudeE7": 417412890,
+            "longitudeE7": -727115575,
+            "placeId": "ChIJ5d__GdWs54kRKOGdHd0zDlU",
+            "locationConfidence": 0.02629735
+          },
+          {
+            "latitudeE7": 417402810,
+            "longitudeE7": -727154430,
+            "placeId": "ChIJaSHq_tWs54kRzECcPZomiVo",
+            "locationConfidence": 0.021863742
+          },
+          {
+            "latitudeE7": 417417090,
+            "longitudeE7": -727164800,
+            "placeId": "ChIJ61PDbdas54kRZH6UpG3XbmU",
+            "locationConfidence": 0.021250442
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417395857,
+          "longitudeE7": -727149366,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417305038,
+          "longitudeE7": -727211549,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565820006000",
+          "endTimestampMs": "1565820196000"
+        },
+        "distance": 1625,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.32416049104175
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.6401276562865122
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.013946648186392085
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417395858,
+              "lngE7": -727149581
+            },
+            {
+              "latE7": 417304801,
+              "lngE7": -727192535
+            },
+            {
+              "latE7": 417302207,
+              "lngE7": -727211151
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417307527,
+              "lngE7": -727183258,
+              "timestampMs": "1565820180000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565820245155",
+          "location": {
+            "latitudeE7": 417305038,
+            "longitudeE7": -727211549,
+            "accuracyMetres": 34
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417307460,
+          "longitudeE7": -727216296,
+          "placeId": "ChIJ37eMmDqt54kR7s6HzBfHBt0",
+          "address": "1000 New Britain Ave\nWest Hartford, CT 06110\nUSA",
+          "name": "Pep Boys Auto Parts & Service",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 95.41593
+        },
+        "duration": {
+          "startTimestampMs": "1565820196000",
+          "endTimestampMs": "1565822301413"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 417303714,
+        "centerLngE7": -727213303,
+        "visitConfidence": 95,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417282720,
+            "longitudeE7": -727221320,
+            "placeId": "ChIJGa5-eDqt54kRgU_vOvXt0x8",
+            "locationConfidence": 1.7577437
+          },
+          {
+            "latitudeE7": 417298066,
+            "longitudeE7": -727224098,
+            "placeId": "ChIJrTgQlzqt54kRrrzlT_Dn0iY",
+            "locationConfidence": 1.4468392
+          },
+          {
+            "latitudeE7": 417297395,
+            "longitudeE7": -727214241,
+            "placeId": "ChIJwWvcCjCt54kRAmM37N1NgRg",
+            "locationConfidence": 0.3620527
+          },
+          {
+            "latitudeE7": 417299065,
+            "longitudeE7": -727206957,
+            "placeId": "ChIJJx4AFDCt54kRYhpyzeegOyU",
+            "locationConfidence": 0.23423518
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417307460,
+          "longitudeE7": -727216296,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417395239,
+          "longitudeE7": -727196866,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565822301413",
+          "endTimestampMs": "1565822465000"
+        },
+        "distance": 1511,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.41014978207049
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.5534242618167065
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.020053267274129073
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417301864,
+              "lngE7": -727215270
+            },
+            {
+              "latE7": 417299690,
+              "lngE7": -727238388
+            },
+            {
+              "latE7": 417393455,
+              "lngE7": -727192535
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417301348,
+              "lngE7": -727230840,
+              "timestampMs": "1565822344000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565822577873",
+          "location": {
+            "latitudeE7": 417395239,
+            "longitudeE7": -727196866,
+            "accuracyMetres": 34
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417396491,
+          "longitudeE7": -727195052,
+          "placeId": "ChIJ24ngMyit54kRxSMG3a-tfvc",
+          "address": "509 New Park Ave\nWest Hartford, CT 06110\nUSA",
+          "name": "Chick-fil-A",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1565822465000",
+          "endTimestampMs": "1565827012000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417387320,
+            "longitudeE7": -727193890,
+            "placeId": "ChIJi1N3XCit54kRjWhXZRgoF90",
+            "locationConfidence": 1.8545096
+          },
+          {
+            "latitudeE7": 417368899,
+            "longitudeE7": -727210251,
+            "placeId": "ChIJDTZQpCit54kRcCyZEaO5EvM",
+            "locationConfidence": 1.0121226
+          },
+          {
+            "latitudeE7": 417400322,
+            "longitudeE7": -727229166,
+            "placeId": "ChIJh0exNiit54kRzcfbRM5VCKo",
+            "locationConfidence": 0.8109999
+          },
+          {
+            "latitudeE7": 417397460,
+            "longitudeE7": -727202610,
+            "placeId": "ChIJDZz-FCit54kRiDNyuIfVBv4",
+            "locationConfidence": 0.06466113
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417385414,
+          "longitudeE7": -727199724,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 417600631,
+          "longitudeE7": -727404769,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565827012000",
+          "endTimestampMs": "1565827713602"
+        },
+        "distance": 4574,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 99.34635333593789
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.6160588923598838
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.023002848785769536
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417385101,
+              "lngE7": -727199020
+            },
+            {
+              "latE7": 417428474,
+              "lngE7": -727301864
+            },
+            {
+              "latE7": 417600669,
+              "lngE7": -727405395
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417425425,
+              "lngE7": -727301672,
+              "timestampMs": "1565827117000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565827465000",
+          "location": {
+            "latitudeE7": 417615913,
+            "longitudeE7": -727392751,
+            "accuracyMetres": 63
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 417600631,
+          "longitudeE7": -727404769,
+          "placeId": "ChIJP3BZbeys54kRHptYVCFxkiM",
+          "address": "65 Memorial Rd\nWest Hartford, CT 06107\nUSA",
+          "name": "Blue Back Square",
+          "sourceInfo": {
+            "deviceTag": 602769403
+          },
+          "locationConfidence": 98.41435
+        },
+        "duration": {
+          "startTimestampMs": "1565827713602",
+          "endTimestampMs": "1565833568315"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 417601958,
+              "longitudeE7": -727402320,
+              "placeId": "ChIJ3WqkZ-ys54kRnSih_BSX_XE",
+              "address": "73 Isham Road #B-30\nWest Hartford, CT 06107\nUSA",
+              "name": "World of Beer",
+              "sourceInfo": {
+                "deviceTag": 602769403
+              },
+              "locationConfidence": 59.31274
+            },
+            "duration": {
+              "startTimestampMs": "1565827951606",
+              "endTimestampMs": "1565832428665"
+            },
+            "placeConfidence": "MEDIUM_CONFIDENCE",
+            "centerLatE7": 417601941,
+            "centerLngE7": -727403683,
+            "visitConfidence": 94,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 417603482,
+                "longitudeE7": -727402354,
+                "placeId": "ChIJOS4kP-ys54kR8p06lUHKp9g",
+                "locationConfidence": 27.138792
+              },
+              {
+                "latitudeE7": 417590529,
+                "longitudeE7": -727402808,
+                "placeId": "ChIJAQ_DaOys54kRGOC9O0mb6JE",
+                "locationConfidence": 3.3370228
+              },
+              {
+                "latitudeE7": 417600188,
+                "longitudeE7": -727411745,
+                "placeId": "ChIJcVwkT-ys54kRIGtaGGWuVBc",
+                "locationConfidence": 3.2276697
+              },
+              {
+                "latitudeE7": 417600324,
+                "longitudeE7": -727401381,
+                "placeId": "ChIJO6dHMeys54kRg8MMUSujSCY",
+                "locationConfidence": 1.8375852
+              },
+              {
+                "latitudeE7": 417594237,
+                "longitudeE7": -727409493,
+                "placeId": "ChIJsxgtze2s54kRqKDZk7hpADE",
+                "locationConfidence": 1.3024273
+              },
+              {
+                "latitudeE7": 417599148,
+                "longitudeE7": -727401592,
+                "placeId": "ChIJJyUmOeys54kRfau0gmG4LEI",
+                "locationConfidence": 0.4895245
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 417600961,
+        "centerLngE7": -727402800,
+        "visitConfidence": 94,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 417614630,
+            "longitudeE7": -727431769,
+            "placeId": "ChIJi7sECe2s54kRswyVKvK7A34",
+            "locationConfidence": 0.5265596
+          },
+          {
+            "latitudeE7": 417597444,
+            "longitudeE7": -727386246,
+            "placeId": "ChIJ6X2aieus54kRo2rKoB2Wwxs",
+            "locationConfidence": 0.10968144
+          },
+          {
+            "latitudeE7": 417598362,
+            "longitudeE7": -727386503,
+            "placeId": "ChIJB62UCiet54kRVdd1a49YBms",
+            "locationConfidence": 0.028624915
+          },
+          {
+            "latitudeE7": 417603200,
+            "longitudeE7": -727443182,
+            "placeId": "ChIJ4cmCk-2s54kRxOXXNI_Ck3c",
+            "locationConfidence": 0.026395468
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED",
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417597388,
+              "lngE7": -727391359,
+              "timestampMs": "1565827713602",
+              "accuracyMeters": 27
+            },
+            {
+              "latE7": 417597065,
+              "lngE7": -727404593,
+              "timestampMs": "1565827796714",
+              "accuracyMeters": 22
+            },
+            {
+              "latE7": 417597065,
+              "lngE7": -727404593,
+              "timestampMs": "1565827825433",
+              "accuracyMeters": 65
+            },
+            {
+              "latE7": 417602222,
+              "lngE7": -727402231,
+              "timestampMs": "1565829012197",
+              "accuracyMeters": 15
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 417600631,
+          "longitudeE7": -727404769,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "endLocation": {
+          "latitudeE7": 416593202,
+          "longitudeE7": -727927939,
+          "sourceInfo": {
+            "deviceTag": 602769403
+          }
+        },
+        "duration": {
+          "startTimestampMs": "1565833568315",
+          "endTimestampMs": "1565834515427"
+        },
+        "distance": 17328,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "MEDIUM",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 66.88873003154173
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 32.82573303780627
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.12183218200763318
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 417600669,
+              "lngE7": -727405395
+            },
+            {
+              "latE7": 417624664,
+              "lngE7": -727401123
+            },
+            {
+              "latE7": 417616310,
+              "lngE7": -727396774
+            },
+            {
+              "latE7": 417542114,
+              "lngE7": -727376861
+            },
+            {
+              "latE7": 417453613,
+              "lngE7": -727357482
+            },
+            {
+              "latE7": 417259941,
+              "lngE7": -727806854
+            },
+            {
+              "latE7": 416593208,
+              "lngE7": -727927551
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 417616759,
+              "lngE7": -727394073,
+              "timestampMs": "1565833721304",
+              "accuracyMeters": 74
+            },
+            {
+              "latE7": 417615330,
+              "lngE7": -727395545,
+              "timestampMs": "1565833795000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417541565,
+              "lngE7": -727375375,
+              "timestampMs": "1565833872000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 417490048,
+              "lngE7": -727360778,
+              "timestampMs": "1565833903000",
+              "accuracyMeters": 3
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1565834551833",
+          "location": {
+            "latitudeE7": 416593202,
+            "longitudeE7": -727927939,
+            "accuracyMetres": 36
+          }
+        }
+      }
+    }
+  ]
+}

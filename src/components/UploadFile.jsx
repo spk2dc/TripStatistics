@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Redirect, Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
-import demoFile1 from "../srcData/2019_AUGUST_small.json";
 
 const getUser = () => {
   const rawString = sessionStorage.getItem("user");
@@ -178,6 +177,7 @@ export default function UploadFile({ apiBaseURL }) {
 
       <br />
       <br />
+
       <Card
         border='dark'
         key='upload-card'
@@ -189,43 +189,39 @@ export default function UploadFile({ apiBaseURL }) {
           <Card.Title>
             Choose a provided file below to try out if you do not have your own!
           </Card.Title>
-          <form encType='multipart/form-data' className='p-4'>
-            <button
-              type='submit'
-              name='submit'
-              className='btn btn-outline-primary mx-3'
-              onClick={(e) => {
-                setTrip_Name("Demo File 1");
-                // const demoFile1 = require("../srcData/2019_AUGUST_small.json");
-                setSelectedFile(demoFile1);
-                onFileUpload(e);
-              }}
-            >
-              Upload Demo 1
-            </button>
+          <Link
+            to='/2019_AUGUST_small.json'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='m-2'
+            download
+          >
+            Download Demo 1
+          </Link>
 
-            <Link
-              to='/2019_AUGUST_limitTestUnder.json'
-              target='_blank'
-              rel='noopener noreferrer'
-              download
-            >
-              Download Demo 2
-            </Link>
+          <br />
 
-            <button
-              type='submit'
-              name='submit'
-              className='btn btn-outline-primary mx-3 my-1'
-              onClick={(e) => {
-                setTrip_Name("Demo File 3");
-                setSelectedFile("./2019_AUGUST_small.json");
-                onFileUpload(e);
-              }}
-            >
-              Upload Demo 3
-            </button>
-          </form>
+          <Link
+            to='/TripStatistics_Demo_File_1.json'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='m-2'
+            download
+          >
+            Download Demo 2
+          </Link>
+
+          <br />
+
+          <Link
+            to='/TripStatistics_Demo_File_2.json'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='m-2'
+            download
+          >
+            Download Demo 3
+          </Link>
         </Card.Body>
       </Card>
     </div>
