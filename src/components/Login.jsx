@@ -54,45 +54,47 @@ export default function Login({ apiBaseURL, getSession }) {
   // Render
   if (redirect) return <Redirect to='/profile' />;
   return (
-    <Card
-      border='primary'
-      key='upload-card'
-      text='black'
-      className='w-50 m-auto'
-    >
-      <Card.Header as='h3'>Login</Card.Header>
-      <Card.Body>
-        <form className='login text-center m-4' onSubmit={submitForm}>
-          <label htmlFor='email'>Email</label>
-          <br />
-          <input
-            type='text'
-            id='email'
-            name='email'
-            value={email}
-            onChange={(event) => {
-              setEmail(event.currentTarget.value);
-            }}
-          />
-          <br />
-          <label htmlFor='password'>Password</label>
-          <br />
-          <input
-            type='password'
-            id='password'
-            name='password'
-            value={password}
-            onChange={(event) => setPassword(event.currentTarget.value)}
-          />
-          <br />
-          <button className='btn btn-primary m-2' type='submit'>
-            Login
-          </button>
-        </form>
-      </Card.Body>
-      <Card.Footer className='text-muted' id='card-footer-login'>
-        Login Status
-      </Card.Footer>
-    </Card>
+    <div className='container'>
+      <Card
+        border='primary'
+        key='upload-card'
+        text='black'
+        className='custom-w-50 m-auto'
+      >
+        <Card.Header as='h3'>Login</Card.Header>
+        <Card.Body>
+          <form className='login text-center m-4' onSubmit={submitForm}>
+            <label htmlFor='email'>Email</label>
+            <br />
+            <input
+              type='text'
+              id='email'
+              name='email'
+              value={email}
+              onChange={(event) => {
+                setEmail(event.currentTarget.value);
+              }}
+            />
+            <br />
+            <label htmlFor='password'>Password</label>
+            <br />
+            <input
+              type='password'
+              id='password'
+              name='password'
+              value={password}
+              onChange={(event) => setPassword(event.currentTarget.value)}
+            />
+            <br />
+            <button className='btn btn-primary m-2' type='submit'>
+              Login
+            </button>
+          </form>
+        </Card.Body>
+        <Card.Footer className='text-muted' id='card-footer-login'>
+          Login Status
+        </Card.Footer>
+      </Card>
+    </div>
   );
 }

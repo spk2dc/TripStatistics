@@ -58,53 +58,55 @@ export default function Register({ apiBaseURL, getSession }) {
   // Render
   if (redirect) return <Redirect to='/profile' />;
   return (
-    <Card
-      border='primary'
-      key='upload-card'
-      text='black'
-      className='w-50 m-auto'
-    >
-      <Card.Header as='h3'>Register</Card.Header>
-      <Card.Body>
-        <form className='signup text-center m-4' onSubmit={submitForm}>
-          <label htmlFor='name'>Username</label>
-          <br />
-          <input
-            type='text'
-            name='name'
-            id='name'
-            value={username}
-            onChange={(event) => setUsername(event.currentTarget.value)}
-          />
-          <br />
-          <label htmlFor='email'>Email</label>
-          <br />
-          <input
-            type='text'
-            name='email'
-            id='email'
-            value={email}
-            onChange={(event) => setEmail(event.currentTarget.value)}
-          />
-          <br />
-          <label htmlFor='password'>Password</label>
-          <br />
-          <input
-            type='password'
-            name='password'
-            id='password'
-            value={password}
-            onChange={(event) => setPassword(event.currentTarget.value)}
-          />
-          <br />
-          <button className='btn btn-primary m-2' type='submit'>
-            Register
-          </button>
-        </form>
-      </Card.Body>
-      <Card.Footer className='text-muted' id='card-footer-register'>
-        Register Status
-      </Card.Footer>
-    </Card>
+    <div className='container'>
+      <Card
+        border='primary'
+        key='upload-card'
+        text='black'
+        className='custom-w-50 m-auto'
+      >
+        <Card.Header as='h3'>Register</Card.Header>
+        <Card.Body>
+          <form className='signup text-center m-4' onSubmit={submitForm}>
+            <label htmlFor='name'>Username</label>
+            <br />
+            <input
+              type='text'
+              name='name'
+              id='name'
+              value={username}
+              onChange={(event) => setUsername(event.currentTarget.value)}
+            />
+            <br />
+            <label htmlFor='email'>Email</label>
+            <br />
+            <input
+              type='text'
+              name='email'
+              id='email'
+              value={email}
+              onChange={(event) => setEmail(event.currentTarget.value)}
+            />
+            <br />
+            <label htmlFor='password'>Password</label>
+            <br />
+            <input
+              type='password'
+              name='password'
+              id='password'
+              value={password}
+              onChange={(event) => setPassword(event.currentTarget.value)}
+            />
+            <br />
+            <button className='btn btn-primary m-2' type='submit'>
+              Register
+            </button>
+          </form>
+        </Card.Body>
+        <Card.Footer className='text-muted' id='card-footer-register'>
+          Register Status
+        </Card.Footer>
+      </Card>
+    </div>
   );
 }

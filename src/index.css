@@ -49,3 +49,13 @@ table caption {
 .card-header-clickable {
   cursor: pointer;
 }
+
+.custom-w-50 {
+  width: 50% !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .custom-w-50 {
+    width: 100% !important;
+  }
+}
