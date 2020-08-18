@@ -2,21 +2,23 @@ import React, { useState, useEffect } from "react";
 
 export default function Map({ mapMarkers }) {
   let map;
-  let mapLoaded = false;
+  const [mapLoaded, setMapLoaded] = useState(false);
 
   // only create map once
   useEffect(() => {
     createMap();
-    console.log(`createMarkers condition`, mapLoaded);
-    if (mapLoaded) {
+    console.log(`createMarkers condition`, mapMarkers.length, mapLoaded);
+    if (mapMarkers.length > 0 && mapLoaded) {
       createMarkers(map);
     }
   }, [mapMarkers, mapLoaded]);
 
   const createMap = () => {
     // Attach your callback function to the `window` object
+    console.log(`createMap condition`, mapMarkers.length, mapLoaded);
     window.initMap = function () {
       var latLng = new window.google.maps.LatLng(43.642567, -79.387054);
+      console.log(`initMap condition`, mapMarkers.length, mapLoaded);
 
       map = new window.google.maps.Map(document.getElementById("map"), {
         center: latLng,
@@ -24,7 +26,8 @@ export default function Map({ mapMarkers }) {
         streetViewControl: false,
       });
 
-      mapLoaded = true;
+      setMapLoaded(true);
+      console.log(`initMap after`, mapMarkers.length, mapLoaded);
       createMarkers(map);
     };
 
@@ -36,13 +39,14 @@ export default function Map({ mapMarkers }) {
       script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places,visualization`;
       script.defer = true;
 
+      console.log(`create script condition`, mapLoaded);
       // Append the 'script' element to 'head'
       document.head.appendChild(script);
     }
   };
 
   const createMarkers = (embeddedMap) => {
-    mapLoaded = true;
+    setMapLoaded(true);
     let bounds = new window.google.maps.LatLngBounds();
     let heatmapLoc = [];
 
