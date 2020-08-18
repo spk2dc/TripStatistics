@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
 import demoFile1 from "../srcData/2019_AUGUST_small.json";
@@ -204,18 +204,14 @@ export default function UploadFile({ apiBaseURL }) {
               Upload Demo 1
             </button>
 
-            <button
-              type='submit'
-              name='submit'
-              className='btn btn-outline-primary mx-3'
-              onClick={(e) => {
-                setTrip_Name("Demo File 2");
-                setSelectedFile("./2019_AUGUST_small.json");
-                onFileUpload(e);
-              }}
+            <Link
+              to='/2019_AUGUST_limitTestUnder.json'
+              target='_blank'
+              rel='noopener noreferrer'
+              download
             >
-              Upload Demo 2
-            </button>
+              Download Demo 2
+            </Link>
 
             <button
               type='submit'
