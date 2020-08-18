@@ -66,7 +66,7 @@ export default function UploadFile({ apiBaseURL }) {
 
         document.getElementById(
           "card-footer-upload"
-        ).innerHTML = `<p>Status: ${err.data.status.code}</p><p>Message: ${err.data.status.message}</p>`;
+        ).innerHTML = `<p>Status: Error</p><p>Message: ${err}</p>`;
       });
   };
 
