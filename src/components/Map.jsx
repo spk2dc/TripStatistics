@@ -7,18 +7,24 @@ export default function Map({ mapMarkers }) {
   // only create map once
   useEffect(() => {
     createMap();
-    console.log(`createMarkers condition`, mapMarkers.length, mapLoaded);
-    if (mapMarkers.length > 0 && mapLoaded) {
+    console.log(`useEffect: `, mapMarkers.length, mapLoaded, window.google);
+    if (typeof window.google === "object") {
+      console.log(`useEffect markers: `, mapMarkers.length, map, window.google);
       createMarkers(map);
     }
-  }, [mapMarkers, mapLoaded]);
+  }, [mapMarkers]);
 
   const createMap = () => {
     // Attach your callback function to the `window` object
-    console.log(`createMap condition`, mapMarkers.length, mapLoaded);
+    console.log(`createMap begin`, mapMarkers.length, mapLoaded, window.google);
     window.initMap = function () {
       var latLng = new window.google.maps.LatLng(43.642567, -79.387054);
-      console.log(`initMap condition`, mapMarkers.length, mapLoaded);
+      console.log(
+        `initMap before`,
+        mapMarkers.length,
+        mapLoaded,
+        window.google
+      );
 
       map = new window.google.maps.Map(document.getElementById("map"), {
         center: latLng,
@@ -27,7 +33,7 @@ export default function Map({ mapMarkers }) {
       });
 
       setMapLoaded(true);
-      console.log(`initMap after`, mapMarkers.length, mapLoaded);
+      console.log(`initMap after`, mapMarkers.length, mapLoaded, window.google);
       createMarkers(map);
     };
 
@@ -39,7 +45,12 @@ export default function Map({ mapMarkers }) {
       script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_API_KEY_1}&callback=initMap&libraries=places,visualization`;
       script.defer = true;
 
-      console.log(`create script condition`, mapLoaded);
+      console.log(
+        `create script `,
+        mapMarkers.length,
+        mapLoaded,
+        window.google
+      );
       // Append the 'script' element to 'head'
       document.head.appendChild(script);
     }

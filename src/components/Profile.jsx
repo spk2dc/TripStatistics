@@ -11,7 +11,6 @@ export default function Profile({ sessionUser }) {
       text='black'
       className='w-50 m-auto'
     >
-      {console.log("sessionuser: ", sessionUser)}
       <Card.Header as='h3'>
         {"Welcome " +
           (sessionUser.hasOwnProperty("data")

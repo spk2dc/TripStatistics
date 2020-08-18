@@ -33,7 +33,7 @@ export default function Login({ apiBaseURL, getSession }) {
 
     // Store user in session storage
     const user = response.data;
-    console.log(`submitForm -> login response`, response);
+    // console.log(`submitForm -> login response`, response);
 
     // Display status message for login in case of error
     document.getElementById(
