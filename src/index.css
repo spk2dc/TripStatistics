@@ -34,6 +34,11 @@ code {
   background-size: cover;
 }
 
+.container-landing {
+  width: fit-content !important;
+  background-color: #f8f9fadb !important;
+}
+
 table caption {
   caption-side: top;
 }
