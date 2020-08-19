@@ -9,13 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  font-family: "Courgette", cursive;
-}
-
 body {
   padding-top: 70px;
   padding-bottom: 50px;
+  font-family: "Courgette", cursive !important;
 }
 
 code {
