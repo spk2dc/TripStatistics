@@ -47,7 +47,7 @@ export default function Login({ apiBaseURL, getSession }) {
       // Change redirect state to true in order to trigger redirect
       setTimeout(() => {
         setRedirect(true);
-      }, 1500);
+      }, 1000);
     }
   };
 

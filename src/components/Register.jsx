@@ -51,7 +51,7 @@ export default function Register({ apiBaseURL, getSession }) {
       // Change redirect state to true
       setTimeout(() => {
         setRedirect(true);
-      }, 1500);
+      }, 1000);
     }
   };
 
