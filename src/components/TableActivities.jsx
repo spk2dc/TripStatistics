@@ -10,14 +10,8 @@ export default function TableActivities({ activityArr }) {
           <th className='align-middle'>Type</th>
           <th className='align-middle'>Start Time</th>
           <th className='align-middle'>End Time</th>
-          <th className='align-middle'>
-            Start <br />
-            (Lat, Long)
-          </th>
-          <th className='align-middle'>
-            End <br />
-            (Lat, Long)
-          </th>
+          <th className='align-middle'>Start (Lat, Long)</th>
+          <th className='align-middle'>End (Lat, Long)</th>
         </tr>
       </thead>
       <tbody>
