@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Redirect, Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
-import DemoCard from "./DemoCard";
 
 const getUser = () => {
   const rawString = sessionStorage.getItem("user");

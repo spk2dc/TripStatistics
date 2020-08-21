@@ -15,7 +15,11 @@ export default function LandingPage({ getSession, sessionUser }) {
           Sign Up or Login to analyze your trips from Google Maps Location
           History!
         </p>
-        <a href='https://takeout.google.com/settings/takeout' target='_blank'>
+        <a
+          href='https://takeout.google.com/settings/takeout'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           Click here to downloaded your location data from Google
         </a>
         <br />

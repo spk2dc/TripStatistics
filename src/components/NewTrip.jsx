@@ -3,12 +3,6 @@ import { Redirect } from "react-router-dom";
 import UploadFile from "./UploadFile";
 import DemoCard from "./DemoCard";
 
-const getUser = () => {
-  const rawString = sessionStorage.getItem("user");
-  const userObject = JSON.parse(rawString);
-  return userObject;
-};
-
 export default function NewTrip({ apiBaseURL }) {
   // State Hook
   const [redirect, setRedirect] = useState(false);
