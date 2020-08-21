@@ -6,12 +6,18 @@ export default function TableActivities({ activityArr }) {
       {/* <caption>Activities </caption> */}
       <thead>
         <tr>
-          <th>Distance</th>
-          <th>Type</th>
-          <th>Start Time</th>
-          <th>End Time</th>
-          <th>Start (Lat,Long)</th>
-          <th>End (Lat,Long)</th>
+          <th className='align-middle'>Distance</th>
+          <th className='align-middle'>Type</th>
+          <th className='align-middle'>Start Time</th>
+          <th className='align-middle'>End Time</th>
+          <th className='align-middle'>
+            Start <br />
+            (Lat, Long)
+          </th>
+          <th className='align-middle'>
+            End <br />
+            (Lat, Long)
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -19,22 +25,34 @@ export default function TableActivities({ activityArr }) {
           if (val.hasOwnProperty("distance")) {
             const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
             const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
+            let dateOptions = {
+              timeZone: "UTC",
+              timeZoneName: "short",
+              hour12: false,
+            };
 
             return (
               <tr key={`table-activity-row${i}`}>
                 <td>{val.distance}</td>
                 <td>{val.activityType}</td>
-                <td>{new Date(startTimeRaw).toLocaleString()}</td>
-                <td>{new Date(endTimeRaw).toLocaleString()}</td>
                 <td>
-                  {val.startLocation.latitudeE7 / 10000000 +
-                    ", " +
-                    val.startLocation.longitudeE7 / 10000000}
+                  {new Date(startTimeRaw).toLocaleString(
+                    undefined,
+                    dateOptions
+                  )}
                 </td>
                 <td>
-                  {val.endLocation.latitudeE7 / 10000000 +
+                  {new Date(endTimeRaw).toLocaleString(undefined, dateOptions)}
+                </td>
+                <td>
+                  {val.startLocation.latitudeE7 / 1e7 +
                     ", " +
-                    val.endLocation.longitudeE7 / 10000000}
+                    val.startLocation.longitudeE7 / 1e7}
+                </td>
+                <td>
+                  {val.endLocation.latitudeE7 / 1e7 +
+                    ", " +
+                    val.endLocation.longitudeE7 / 1e7}
                 </td>
               </tr>
             );

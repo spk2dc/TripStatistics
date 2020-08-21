@@ -49,6 +49,11 @@ export default function AllTrips() {
         </thead>
         <tbody>
           {allData.map((val, i) => {
+            let dateOptions = {
+              timeZoneName: "short",
+              hour12: false,
+            };
+
             if (val.hasOwnProperty("id")) {
               return (
                 <tr
@@ -59,7 +64,12 @@ export default function AllTrips() {
                   <td>{val.id}</td>
                   <td>{val.trip_name}</td>
                   <td>{val.filename}</td>
-                  <td>{val.created_at}</td>
+                  <td>
+                    {new Date(val.created_at).toLocaleString(
+                      undefined,
+                      dateOptions
+                    )}
+                  </td>
                 </tr>
               );
             } else {

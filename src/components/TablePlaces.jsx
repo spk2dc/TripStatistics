@@ -20,15 +20,27 @@ export default function TablePlaces({ placeArr }) {
           if (val.hasOwnProperty("location")) {
             const startTimeRaw = parseInt(val.duration.startTimestampMs, 10);
             const endTimeRaw = parseInt(val.duration.endTimestampMs, 10);
+            let dateOptions = {
+              timeZone: "UTC",
+              timeZoneName: "short",
+              hour12: false,
+            };
 
             return (
               <tr key={`table-place-row${i}`}>
                 <td>{val.location.name}</td>
                 <td>{val.location.address}</td>
-                <td>{new Date(startTimeRaw).toLocaleString()}</td>
-                <td>{new Date(endTimeRaw).toLocaleString()}</td>
-                <td>{val.location.latitudeE7 / 10000000}</td>
-                <td>{val.location.longitudeE7 / 10000000}</td>
+                <td>
+                  {new Date(startTimeRaw).toLocaleString(
+                    undefined,
+                    dateOptions
+                  )}
+                </td>
+                <td>
+                  {new Date(endTimeRaw).toLocaleString(undefined, dateOptions)}
+                </td>
+                <td>{val.location.latitudeE7 / 1e7}</td>
+                <td>{val.location.longitudeE7 / 1e7}</td>
                 {/* <td>{val.location.placeId}</td> */}
               </tr>
             );
