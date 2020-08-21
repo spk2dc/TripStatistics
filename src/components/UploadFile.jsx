@@ -180,7 +180,7 @@ export default function UploadFile({ apiBaseURL }) {
 
       <Card
         border='dark'
-        key='upload-card'
+        key='demo-card'
         text='black'
         className='w-75 mx-auto my-3'
       >
@@ -190,37 +190,37 @@ export default function UploadFile({ apiBaseURL }) {
             Choose a provided file below to try out if you do not have your own!
           </Card.Title>
           <Link
-            to='/2019_AUGUST_small.json'
+            to='/TripStatistics_Demo_File_Taipei.json'
             target='_blank'
             rel='noopener noreferrer'
             className='m-2'
             download
           >
-            Download Demo 1
+            Download Demo - Taipei, Taiwan
           </Link>
 
           <br />
 
           <Link
-            to='/TripStatistics_Demo_File_1.json'
+            to='/TripStatistics_Demo_File_Kaohsiung.json'
             target='_blank'
             rel='noopener noreferrer'
             className='m-2'
             download
           >
-            Download Demo 2
+            Download Demo - Kaohsiung, Taiwan
           </Link>
 
           <br />
 
           <Link
-            to='/TripStatistics_Demo_File_2.json'
+            to='/TripStatistics_Demo_File_Hualien.json'
             target='_blank'
             rel='noopener noreferrer'
             className='m-2'
             download
           >
-            Download Demo 3
+            Download Demo - Hualien, Taiwan
           </Link>
         </Card.Body>
       </Card>

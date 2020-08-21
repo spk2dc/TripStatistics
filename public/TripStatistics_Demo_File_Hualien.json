@@ -1,0 +1,2260 @@
+{
+  "timelineObjects": [
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 237446729,
+          "longitudeE7": 1215391322,
+          "placeId": "ChIJgSggunipaDQR96fTWLjrnHQ",
+          "address": "974台灣花蓮縣壽豐鄉\n花46鄉道 974",
+          "name": "花46線16.5k",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 42.725758
+        },
+        "duration": {
+          "startTimestampMs": "1582517701000",
+          "endTimestampMs": "1582533891000"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 237441693,
+        "centerLngE7": 1215388836,
+        "visitConfidence": 71,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 237419186,
+            "longitudeE7": 1215312902,
+            "placeId": "ChIJybzOo8iuaDQReSJ18Kn5F5U",
+            "locationConfidence": 33.094307
+          },
+          {
+            "latitudeE7": 237470228,
+            "longitudeE7": 1209683340,
+            "placeId": "ChIJpcNhK8vVbjQRoH--QrDdIM8",
+            "locationConfidence": 13.917294
+          },
+          {
+            "latitudeE7": 230201614,
+            "longitudeE7": 1213245523,
+            "placeId": "ChIJ82el9vKgaDQRoDGNDCMauMY",
+            "locationConfidence": 10.262644
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 237439528,
+          "longitudeE7": 1215400084
+        },
+        "endLocation": {
+          "latitudeE7": 239929146,
+          "longitudeE7": 1216338986
+        },
+        "duration": {
+          "startTimestampMs": "1582533891000",
+          "endTimestampMs": "1582536755979"
+        },
+        "distance": 30026,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 97.35726714134216
+          },
+          {
+            "activityType": "STILL",
+            "probability": 1.3826274313032627
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.5679472349584103
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 0.35997708328068256
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.19787014462053776
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.05430371966212988
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.02782202500384301
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.020954043429810554
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.01898179907584563
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.0036664783692685887
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.0034446566132828593
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0027442929422250018
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0012428408808773383
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.0010965439287247136
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 5.326465952748549e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 237439994,
+              "lngE7": 1215400009
+            },
+            {
+              "latE7": 239263057,
+              "lngE7": 1215932388
+            },
+            {
+              "latE7": 239929027,
+              "lngE7": 1216338043
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1582536779859",
+          "location": {
+            "latitudeE7": 239929361,
+            "longitudeE7": 1216338377,
+            "accuracyMetres": 19
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 98.674286
+        },
+        "duration": {
+          "startTimestampMs": "1582536755979",
+          "endTimestampMs": "1582539844179"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239927486,
+        "centerLngE7": 1216333243,
+        "visitConfidence": 68,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.5129797
+          },
+          {
+            "latitudeE7": 239927163,
+            "longitudeE7": 1216333207,
+            "placeId": "ChIJ623_uIAgZjQRN1AZCXVu62M",
+            "locationConfidence": 0.23997496
+          },
+          {
+            "latitudeE7": 239955380,
+            "longitudeE7": 1216332240,
+            "placeId": "ChIJn-ffNoEgZjQRfvK_PvhfnRE",
+            "locationConfidence": 0.13549796
+          },
+          {
+            "latitudeE7": 239927387,
+            "longitudeE7": 1216335260,
+            "placeId": "ChIJ2eQwyIAgZjQROQl-eeSQKE4",
+            "locationConfidence": 0.10560897
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239926485,
+          "longitudeE7": 1216334517
+        },
+        "endLocation": {
+          "latitudeE7": 239968196,
+          "longitudeE7": 1216303407
+        },
+        "duration": {
+          "startTimestampMs": "1582539844179",
+          "endTimestampMs": "1582540344661"
+        },
+        "distance": 694,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 93.94317865371704
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 3.010249510407448
+          },
+          {
+            "activityType": "STILL",
+            "probability": 1.9127031788229942
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.5124245770275593
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.374543690122664
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.08959756814874709
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.06550529506057501
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.03782546264119446
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.03649262071121484
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.01207266905112192
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.0019108767446596175
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.0013639917597174644
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0011358794836269226
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 9.483589565206785e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 4.4384833586263994e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239925823,
+              "lngE7": 1216334609
+            },
+            {
+              "latE7": 239972953,
+              "lngE7": 1216309204
+            },
+            {
+              "latE7": 239967479,
+              "lngE7": 1216304397
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1582540405766",
+          "location": {
+            "latitudeE7": 239968193,
+            "longitudeE7": 1216303413,
+            "accuracyMetres": 100
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239968450,
+          "longitudeE7": 1216303440,
+          "placeId": "ChIJkdkIj4EgZjQRGsw7aq2GwoE",
+          "name": "美崙螺肉",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 56.50553
+        },
+        "duration": {
+          "startTimestampMs": "1582540344661",
+          "endTimestampMs": "1582547203000"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 239969000,
+        "centerLngE7": 1216306717,
+        "visitConfidence": 72,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239968859,
+            "longitudeE7": 1216303850,
+            "placeId": "ChIJh-1pj4EgZjQRzVpMhOh4xgs",
+            "locationConfidence": 35.481304
+          },
+          {
+            "latitudeE7": 239970968,
+            "longitudeE7": 1216305833,
+            "placeId": "ChIJufc9hoEgZjQR513EA9zdtLY",
+            "locationConfidence": 4.9699206
+          },
+          {
+            "latitudeE7": 239969169,
+            "longitudeE7": 1216304153,
+            "placeId": "ChIJF_haj4EgZjQRPpcRIe4tuMw",
+            "locationConfidence": 1.4220622
+          },
+          {
+            "latitudeE7": 239966714,
+            "longitudeE7": 1216305359,
+            "placeId": "ChIJ65xHhYEgZjQRQBB6MCulbJs",
+            "locationConfidence": 0.6134562
+          },
+          {
+            "latitudeE7": 239968379,
+            "longitudeE7": 1216307089,
+            "placeId": "ChIJAe4hhIEgZjQRtpLKGrurrwg",
+            "locationConfidence": 0.4501174
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239970232,
+          "longitudeE7": 1216309401
+        },
+        "endLocation": {
+          "latitudeE7": 239931993,
+          "longitudeE7": 1216337240
+        },
+        "duration": {
+          "startTimestampMs": "1582547203000",
+          "endTimestampMs": "1582547338000"
+        },
+        "distance": 553,
+        "activityType": "IN_PASSENGER_VEHICLE",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 82.91465044021606
+          },
+          {
+            "activityType": "STILL",
+            "probability": 9.635844081640244
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 4.220249876379967
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 2.875938266515732
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.21267940755933523
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.09724273113533854
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.01840092591010034
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.008973806689027697
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.007733478560112417
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.003679455039673485
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.0031754752853885293
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 8.685729881108273e-4
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 3.161667109452537e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.2413673857736285e-4
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 1.1996455668850103e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239970378,
+              "lngE7": 1216310501
+            },
+            {
+              "latE7": 239948883,
+              "lngE7": 1216334991
+            },
+            {
+              "latE7": 239932041,
+              "lngE7": 1216337585
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1582547413000",
+          "location": {
+            "latitudeE7": 239932685,
+            "longitudeE7": 1216338116,
+            "accuracyMetres": 71
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1582547338000",
+          "endTimestampMs": "1582548545000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239928042,
+            "longitudeE7": 1216337010,
+            "placeId": "ChIJ0S3dy4AgZjQRfs61R-PiiRc",
+            "locationConfidence": 5.8759656
+          },
+          {
+            "latitudeE7": 239955380,
+            "longitudeE7": 1216332240,
+            "placeId": "ChIJn-ffNoEgZjQRfvK_PvhfnRE",
+            "locationConfidence": 0.26994517
+          },
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.18971029
+          },
+          {
+            "latitudeE7": 239930392,
+            "longitudeE7": 1216336681,
+            "placeId": "ChIJeakpzIAgZjQReNOta2G5prA",
+            "locationConfidence": 0.078958936
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239928765,
+          "longitudeE7": 1216337006
+        },
+        "endLocation": {
+          "latitudeE7": 239929482,
+          "longitudeE7": 1216336575
+        },
+        "duration": {
+          "startTimestampMs": "1582548545934",
+          "endTimestampMs": "1582550210000"
+        },
+        "distance": 895,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 85.57308316230774
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 8.89812856912613
+          },
+          {
+            "activityType": "STILL",
+            "probability": 2.6030536741018295
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 1.183897815644741
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.5255143158137798
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.40644980035722256
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.3954642452299595
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.14386930270120502
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.10928957490250468
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.10432383278384805
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.043076041038148105
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.008790952415438369
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.003362242568982765
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.001370905556541402
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 3.352884505147813e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239928894,
+              "lngE7": 1216338119
+            },
+            {
+              "latE7": 239923553,
+              "lngE7": 1216315002
+            },
+            {
+              "latE7": 239945926,
+              "lngE7": 1216296005
+            },
+            {
+              "latE7": 239942932,
+              "lngE7": 1216307144
+            },
+            {
+              "latE7": 239929656,
+              "lngE7": 1216337966
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 239945354,
+              "lngE7": 1216296844,
+              "timestampMs": "1582549357578",
+              "accuracyMeters": 35
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1582550210000",
+          "endTimestampMs": "1582596874086"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239882526,
+          "longitudeE7": 1216267946,
+          "placeId": "ChIJ_47u6dWfaDQRGtAhLNs9O_k",
+          "address": "970台灣花蓮縣花蓮市民權路44號",
+          "name": "Mennonite Christian Hospital",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 94.48184
+        },
+        "duration": {
+          "startTimestampMs": "1582597554000",
+          "endTimestampMs": "1582603000153"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239881680,
+        "centerLngE7": 1216263740,
+        "visitConfidence": 65,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239881430,
+            "longitudeE7": 1216262200,
+            "placeId": "ChIJLWaI2tWfaDQRXCvsU6u0CMU",
+            "locationConfidence": 3.2407784
+          },
+          {
+            "latitudeE7": 239882060,
+            "longitudeE7": 1216258690,
+            "placeId": "ChIJFYcI0dWfaDQR2D6Utr5h5H8",
+            "locationConfidence": 1.4786949
+          },
+          {
+            "latitudeE7": 239887500,
+            "longitudeE7": 1216295960,
+            "placeId": "ChIJf20ObX8gZjQR5Tea4vUehFs",
+            "locationConfidence": 0.26450247
+          },
+          {
+            "latitudeE7": 239878102,
+            "longitudeE7": 1216263724,
+            "placeId": "ChIJ_47u6dWfaDQRCVYLRC0sUaE",
+            "locationConfidence": 0.15343775
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239888909,
+          "longitudeE7": 1216269045
+        },
+        "endLocation": {
+          "latitudeE7": 239945046,
+          "longitudeE7": 1216288446
+        },
+        "duration": {
+          "startTimestampMs": "1582603000153",
+          "endTimestampMs": "1582603693286"
+        },
+        "distance": 654,
+        "activityType": "CYCLING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "CYCLING",
+            "probability": 96.24308347702026
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.1153834871947765
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 1.002002041786909
+          },
+          {
+            "activityType": "STILL",
+            "probability": 0.9371382184326649
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.49417843110859394
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.13952116714790463
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.042326925904490054
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.009549510286888108
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.009212402073899284
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.004044180241180584
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.003193482552887872
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 1.842353071879188e-4
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 1.2149092754043522e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 2.8987750511078048e-5
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 2.1720015297432838e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239889221,
+              "lngE7": 1216269302
+            },
+            {
+              "latE7": 239919662,
+              "lngE7": 1216263656
+            },
+            {
+              "latE7": 239946517,
+              "lngE7": 1216286315
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239913762,
+          "longitudeE7": 1216260890,
+          "placeId": "ChIJEWCRGdWfaDQRewF3c7J72oY",
+          "address": "970台灣花蓮縣花蓮市中美路186號",
+          "name": "7-Eleven",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 91.98477
+        },
+        "duration": {
+          "startTimestampMs": "1582603693286",
+          "endTimestampMs": "1582606346409"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 239914258,
+        "centerLngE7": 1216259237,
+        "visitConfidence": 73,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239926398,
+            "longitudeE7": 1216276925,
+            "placeId": "ChIJ60g2rSqeaDQRV9GM4slUvpg",
+            "locationConfidence": 3.5326173
+          },
+          {
+            "latitudeE7": 239914771,
+            "longitudeE7": 1216259781,
+            "placeId": "ChIJx51nGdWfaDQROlCEukNUbrg",
+            "locationConfidence": 1.3248993
+          },
+          {
+            "latitudeE7": 239882526,
+            "longitudeE7": 1216267946,
+            "placeId": "ChIJ_47u6dWfaDQRGtAhLNs9O_k",
+            "locationConfidence": 0.99806345
+          },
+          {
+            "latitudeE7": 239918526,
+            "longitudeE7": 1216267241,
+            "placeId": "ChIJkUoWPNWfaDQRHxnmxmooKkc",
+            "locationConfidence": 0.73673725
+          },
+          {
+            "latitudeE7": 239911313,
+            "longitudeE7": 1216253152,
+            "placeId": "ChIJI05aHdWfaDQRtNgQaIrpQT8",
+            "locationConfidence": 0.5843574
+          },
+          {
+            "latitudeE7": 239912299,
+            "longitudeE7": 1216259140,
+            "placeId": "ChIJtdiiG9WfaDQRqcax2w3Ne6M",
+            "locationConfidence": 0.4908161
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239915010,
+          "longitudeE7": 1216259423
+        },
+        "endLocation": {
+          "latitudeE7": 239929466,
+          "longitudeE7": 1216272267
+        },
+        "duration": {
+          "startTimestampMs": "1582606346409",
+          "endTimestampMs": "1582606462000"
+        },
+        "distance": 207,
+        "activityType": "CYCLING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "CYCLING",
+            "probability": 93.7154233455658
+          },
+          {
+            "activityType": "STILL",
+            "probability": 2.814740315079689
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 1.8856113776564598
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 1.2146021239459515
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.31554673332720995
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.017339782789349556
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.015512686513829976
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.010988965368596837
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.0035117082006763667
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.003085370553890243
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0016861384210642427
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.0015280395018635318
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 3.975916115450673e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.999916889872111e-5
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 1.7910691596512152e-6
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239915027,
+              "lngE7": 1216259384
+            },
+            {
+              "latE7": 239919662,
+              "lngE7": 1216263656
+            },
+            {
+              "latE7": 239929447,
+              "lngE7": 1216272277
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239931408,
+          "longitudeE7": 1216267637,
+          "placeId": "ChIJkQ_SNNWfaDQR6jcSU_02uoc",
+          "address": "970台灣花蓮縣花蓮市中美路119號",
+          "name": "全聯美崙店",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 97.24797
+        },
+        "duration": {
+          "startTimestampMs": "1582606462000",
+          "endTimestampMs": "1582607467828"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 239929275,
+              "longitudeE7": 1216268158,
+              "placeId": "ChIJTxIWk68jaDQRVRkGMft_M-Y",
+              "address": "97061台灣花蓮縣花蓮市\n中美路113-6、113-7、113-8號",
+              "name": "全聯福利中心Pxmart 花蓮美崙",
+              "sourceInfo": {
+                "deviceTag": 2066993901
+              },
+              "locationConfidence": 92.61972
+            },
+            "duration": {
+              "startTimestampMs": "1582606462000",
+              "endTimestampMs": "1582607467828"
+            },
+            "placeConfidence": "MEDIUM_CONFIDENCE",
+            "centerLatE7": 239929833,
+            "centerLngE7": 1216270067,
+            "visitConfidence": 73,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 239926398,
+                "longitudeE7": 1216276925,
+                "placeId": "ChIJ60g2rSqeaDQRV9GM4slUvpg",
+                "locationConfidence": 1.4860177
+              },
+              {
+                "latitudeE7": 239930353,
+                "longitudeE7": 1216269832,
+                "placeId": "ChIJNabBtSqeaDQRcdBHrqKeVig",
+                "locationConfidence": 1.2027707
+              },
+              {
+                "latitudeE7": 239929275,
+                "longitudeE7": 1216268158,
+                "placeId": "ChIJQwWJtiqeaDQRHHgRL03HUOg",
+                "locationConfidence": 0.8065683
+              },
+              {
+                "latitudeE7": 239918526,
+                "longitudeE7": 1216267241,
+                "placeId": "ChIJkUoWPNWfaDQRHxnmxmooKkc",
+                "locationConfidence": 0.46615997
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 239929833,
+        "centerLngE7": 1216270067,
+        "visitConfidence": 73,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239926398,
+            "longitudeE7": 1216276925,
+            "placeId": "ChIJ60g2rSqeaDQRV9GM4slUvpg",
+            "locationConfidence": 1.5602748
+          },
+          {
+            "latitudeE7": 239918526,
+            "longitudeE7": 1216267241,
+            "placeId": "ChIJkUoWPNWfaDQRHxnmxmooKkc",
+            "locationConfidence": 0.4894542
+          },
+          {
+            "latitudeE7": 239932801,
+            "longitudeE7": 1216271329,
+            "placeId": "ChIJh1sXtyqeaDQRrzMPyxw4uco",
+            "locationConfidence": 0.21907446
+          },
+          {
+            "latitudeE7": 239933582,
+            "longitudeE7": 1216274466,
+            "placeId": "ChIJq5WjsCqeaDQRImyZsZ0HuaI",
+            "locationConfidence": 0.21391167
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239930752,
+          "longitudeE7": 1216269454
+        },
+        "endLocation": {
+          "latitudeE7": 239923592,
+          "longitudeE7": 1216321227
+        },
+        "duration": {
+          "startTimestampMs": "1582607467828",
+          "endTimestampMs": "1582607624162"
+        },
+        "distance": 531,
+        "activityType": "CYCLING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "CYCLING",
+            "probability": 89.80815410614014
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 4.6593062579631805
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 2.463005855679512
+          },
+          {
+            "activityType": "STILL",
+            "probability": 1.5451363287866116
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 1.344574335962534
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.11077108792960644
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.022825007908977568
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.012675400648731738
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.012549769598990679
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.010614417988108471
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.005860064993612468
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.003501636820146814
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 8.939261533669196e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.0303444923920324e-4
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 2.2233086838241434e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239932098,
+              "lngE7": 1216270599
+            },
+            {
+              "latE7": 239927921,
+              "lngE7": 1216276245
+            },
+            {
+              "latE7": 239924316,
+              "lngE7": 1216321182
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 97.18894
+        },
+        "duration": {
+          "startTimestampMs": "1582607624162",
+          "endTimestampMs": "1582608558693"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239928700,
+        "centerLngE7": 1216335875,
+        "visitConfidence": 67,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239928042,
+            "longitudeE7": 1216337010,
+            "placeId": "ChIJ0S3dy4AgZjQRfs61R-PiiRc",
+            "locationConfidence": 2.2755237
+          },
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.09461073
+          },
+          {
+            "latitudeE7": 239923371,
+            "longitudeE7": 1216312288,
+            "placeId": "ChIJBR6ah4AgZjQRnbCGOJUZO5A",
+            "locationConfidence": 0.08370998
+          },
+          {
+            "latitudeE7": 239924900,
+            "longitudeE7": 1216319500,
+            "placeId": "ChIJ5203kIAgZjQRcKi3vEgvLJE",
+            "locationConfidence": 0.06470765
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239928765,
+          "longitudeE7": 1216337003
+        },
+        "endLocation": {
+          "latitudeE7": 239915287,
+          "longitudeE7": 1216316968
+        },
+        "duration": {
+          "startTimestampMs": "1582608558693",
+          "endTimestampMs": "1582618112086"
+        },
+        "distance": 7133,
+        "activityType": "CYCLING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "CYCLING",
+            "probability": 87.60998845100403
+          },
+          {
+            "activityType": "STILL",
+            "probability": 4.959734156727791
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 3.453483432531357
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 1.92857775837183
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.7133688554167747
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.1601429539732635
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.09126236545853317
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.03468226350378245
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.03071339160669595
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.009604244405636564
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.004726021870737895
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.0019382194295758381
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0015231819816108327
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.2945032494826592e-4
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 1.152770437329309e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239928894,
+              "lngE7": 1216338119
+            },
+            {
+              "latE7": 239972419,
+              "lngE7": 1216331634
+            },
+            {
+              "latE7": 240229320,
+              "lngE7": 1216358108
+            },
+            {
+              "latE7": 240241813,
+              "lngE7": 1216296920
+            },
+            {
+              "latE7": 239915428,
+              "lngE7": 1216318206
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 240231590,
+              "lngE7": 1216360245,
+              "timestampMs": "1582610354109",
+              "accuracyMeters": 39
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 99.57214
+        },
+        "duration": {
+          "startTimestampMs": "1582618112086",
+          "endTimestampMs": "1582630688474"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239928774,
+        "centerLngE7": 1216336785,
+        "visitConfidence": 68,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239924900,
+            "longitudeE7": 1216319500,
+            "placeId": "ChIJ5203kIAgZjQRcKi3vEgvLJE",
+            "locationConfidence": 0.19899306
+          },
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.08544372
+          },
+          {
+            "latitudeE7": 239955380,
+            "longitudeE7": 1216332240,
+            "placeId": "ChIJn-ffNoEgZjQRfvK_PvhfnRE",
+            "locationConfidence": 0.03561454
+          },
+          {
+            "latitudeE7": 239941380,
+            "longitudeE7": 1216322090,
+            "placeId": "ChIJlbDbHYEgZjQRMksp8sGg2mo",
+            "locationConfidence": 0.029743187
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239928869,
+          "longitudeE7": 1216337084
+        },
+        "endLocation": {
+          "latitudeE7": 239946904,
+          "longitudeE7": 1216301986
+        },
+        "duration": {
+          "startTimestampMs": "1582630688474",
+          "endTimestampMs": "1582631240661"
+        },
+        "distance": 481,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 96.96358442306519
+          },
+          {
+            "activityType": "STILL",
+            "probability": 1.7054427415132523
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.8556753396987915
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.14053455088287592
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.10524634271860123
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.10330919176340103
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.09270647424273193
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.01359898888040334
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.007356826972682029
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.007216612721094862
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.003541892147040926
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 7.344194727920694e-4
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 6.948558620933909e-4
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 2.7622679681371665e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 7.464359441655688e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239929008,
+              "lngE7": 1216338043
+            },
+            {
+              "latE7": 239939174,
+              "lngE7": 1216312255
+            },
+            {
+              "latE7": 239946804,
+              "lngE7": 1216301879
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239947281,
+          "longitudeE7": 1216298141,
+          "placeId": "ChIJJV4dUoAgZjQRDMU4kOFYqzA",
+          "address": "970台灣花蓮縣花蓮市化道路11號",
+          "name": "Tkmart",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 60.45506
+        },
+        "duration": {
+          "startTimestampMs": "1582631240661",
+          "endTimestampMs": "1582634093850"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 239945400,
+        "centerLngE7": 1216292313,
+        "visitConfidence": 67,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239946126,
+            "longitudeE7": 1216287998,
+            "placeId": "ChIJl3WSLoAgZjQR1QKSqHe9000",
+            "locationConfidence": 18.359838
+          },
+          {
+            "latitudeE7": 239948630,
+            "longitudeE7": 1216305070,
+            "placeId": "ChIJpxGTrYEgZjQR-wIwipjff8M",
+            "locationConfidence": 12.849605
+          },
+          {
+            "latitudeE7": 239945780,
+            "longitudeE7": 1216287670,
+            "placeId": "ChIJjQnpLoAgZjQRmpYTN9uqJvw",
+            "locationConfidence": 2.5738611
+          },
+          {
+            "latitudeE7": 239944399,
+            "longitudeE7": 1216307439,
+            "placeId": "ChIJUcmcTbSfaDQRAcKokgOLw38",
+            "locationConfidence": 1.7241025
+          },
+          {
+            "latitudeE7": 239955550,
+            "longitudeE7": 1216291613,
+            "placeId": "ChIJrT8Rz4EgZjQRiApWUK5O2L4",
+            "locationConfidence": 0.6669921
+          },
+          {
+            "latitudeE7": 239939040,
+            "longitudeE7": 1216301610,
+            "placeId": "ChIJS9HIRYAgZjQR0tJ-uMCtfu4",
+            "locationConfidence": 0.64373106
+          },
+          {
+            "latitudeE7": 239945869,
+            "longitudeE7": 1216283739,
+            "placeId": "ChIJc5kgKIAgZjQRNMhUBmStZ-0",
+            "locationConfidence": 0.6431843
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239947215,
+          "longitudeE7": 1216299498
+        },
+        "endLocation": {
+          "latitudeE7": 239928763,
+          "longitudeE7": 1216337856
+        },
+        "duration": {
+          "startTimestampMs": "1582634093850",
+          "endTimestampMs": "1582634581000"
+        },
+        "distance": 440,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 96.86288833618164
+          },
+          {
+            "activityType": "STILL",
+            "probability": 2.2223418578505516
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.6026180926710367
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.10606971336528659
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.07576128700748086
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.06797675741836429
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.030619034077972174
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.01213444338645786
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.011984146840404719
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.004022416396765038
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.00289825584331993
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 4.459497631614795e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 1.3351375400816323e-4
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 7.208110446299543e-5
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 4.445446393219754e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239948024,
+              "lngE7": 1216300201
+            },
+            {
+              "latE7": 239942932,
+              "lngE7": 1216307144
+            },
+            {
+              "latE7": 239928779,
+              "lngE7": 1216338119
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 95.437515
+        },
+        "duration": {
+          "startTimestampMs": "1582634581000",
+          "endTimestampMs": "1582688258429"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239928644,
+        "centerLngE7": 1216336568,
+        "visitConfidence": 78,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239928042,
+            "longitudeE7": 1216337010,
+            "placeId": "ChIJ0S3dy4AgZjQRfs61R-PiiRc",
+            "locationConfidence": 4.249442
+          },
+          {
+            "latitudeE7": 239924900,
+            "longitudeE7": 1216319500,
+            "placeId": "ChIJ5203kIAgZjQRcKi3vEgvLJE",
+            "locationConfidence": 0.13143003
+          },
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.08097001
+          },
+          {
+            "latitudeE7": 239941380,
+            "longitudeE7": 1216322090,
+            "placeId": "ChIJlbDbHYEgZjQRMksp8sGg2mo",
+            "locationConfidence": 0.022617394
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239929913,
+          "longitudeE7": 1216336308
+        },
+        "endLocation": {
+          "latitudeE7": 239928765,
+          "longitudeE7": 1216337006
+        },
+        "duration": {
+          "startTimestampMs": "1582688258429",
+          "endTimestampMs": "1582691057944"
+        },
+        "distance": 1053,
+        "activityType": "MOTORCYCLING",
+        "confidence": "LOW",
+        "activities": [
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 53.644585609436035
+          },
+          {
+            "activityType": "STILL",
+            "probability": 30.374225974082947
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 14.206188917160034
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 1.2897447682917118
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.27894184459000826
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.11082892306149006
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.027447313186712563
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.02217030996689573
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.018630882550496608
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.01718819112284109
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.0066297427110839635
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.001980062916118186
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.0013691123058379162
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 5.925947448304214e-5
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 6.3843025088772265e-6
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239930114,
+              "lngE7": 1216337890
+            },
+            {
+              "latE7": 239940738,
+              "lngE7": 1216282501
+            },
+            {
+              "latE7": 239956512,
+              "lngE7": 1216294860
+            },
+            {
+              "latE7": 239961585,
+              "lngE7": 1216299743
+            },
+            {
+              "latE7": 239928894,
+              "lngE7": 1216338119
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 239956551,
+              "lngE7": 1216294785,
+              "timestampMs": "1582688625445",
+              "accuracyMeters": 23
+            }
+          ]
+        },
+        "parkingEvent": {
+          "timestampMs": "1582690804903",
+          "location": {
+            "latitudeE7": 239929337,
+            "longitudeE7": 1216331686,
+            "accuracyMetres": 137
+          }
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 96.74127
+        },
+        "duration": {
+          "startTimestampMs": "1582691057944",
+          "endTimestampMs": "1582712161983"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239928682,
+        "centerLngE7": 1216336445,
+        "visitConfidence": 76,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239928042,
+            "longitudeE7": 1216337010,
+            "placeId": "ChIJ0S3dy4AgZjQRfs61R-PiiRc",
+            "locationConfidence": 2.896216
+          },
+          {
+            "latitudeE7": 239924900,
+            "longitudeE7": 1216319500,
+            "placeId": "ChIJ5203kIAgZjQRcKi3vEgvLJE",
+            "locationConfidence": 0.14613615
+          },
+          {
+            "latitudeE7": 239940269,
+            "longitudeE7": 1216357341,
+            "placeId": "ChIJ9QCc74YgZjQRG94e9rB0pdY",
+            "locationConfidence": 0.088206485
+          },
+          {
+            "latitudeE7": 239955380,
+            "longitudeE7": 1216332240,
+            "placeId": "ChIJn-ffNoEgZjQRfvK_PvhfnRE",
+            "locationConfidence": 0.034263298
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239931201,
+          "longitudeE7": 1216329974
+        },
+        "endLocation": {
+          "latitudeE7": 239934240,
+          "longitudeE7": 1216322281
+        },
+        "duration": {
+          "startTimestampMs": "1582712161983",
+          "endTimestampMs": "1582712283017"
+        },
+        "distance": 85,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 94.25678849220276
+          },
+          {
+            "activityType": "STILL",
+            "probability": 2.2714676335453987
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.9223487004637718
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.7923275232315063
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.3415485145524144
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.17412238521501422
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.10644212597981095
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.09239636710844934
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.020603560551535338
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.011542966240085661
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.00605984496360179
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.002622048123157583
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.0012887619050161447
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 3.276036522947834e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.2233392681082478e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239931201,
+              "lngE7": 1216329956
+            },
+            {
+              "latE7": 239934062,
+              "lngE7": 1216322555
+            },
+            {
+              "latE7": 239934272,
+              "lngE7": 1216322479
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239934177,
+          "longitudeE7": 1216321792,
+          "placeId": "ChIJPTXY7oAgZjQRV9PynorEM-I",
+          "address": "970台灣花蓮縣花蓮市民享二街38號",
+          "name": "本家小吃",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 89.6268
+        },
+        "duration": {
+          "startTimestampMs": "1582712283017",
+          "endTimestampMs": "1582713675477"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 239933171,
+        "centerLngE7": 1216321886,
+        "visitConfidence": 83,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239928042,
+            "longitudeE7": 1216337010,
+            "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+            "locationConfidence": 6.610576
+          },
+          {
+            "latitudeE7": 239937020,
+            "longitudeE7": 1216305210,
+            "placeId": "ChIJab5AW4AgZjQRlUYT6VKtG84",
+            "locationConfidence": 2.0400229
+          },
+          {
+            "latitudeE7": 239947281,
+            "longitudeE7": 1216298141,
+            "placeId": "ChIJJV4dUoAgZjQRDMU4kOFYqzA",
+            "locationConfidence": 0.39601728
+          },
+          {
+            "latitudeE7": 239924900,
+            "longitudeE7": 1216319500,
+            "placeId": "ChIJ5203kIAgZjQRcKi3vEgvLJE",
+            "locationConfidence": 0.37211448
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239931066,
+          "longitudeE7": 1216320533
+        },
+        "endLocation": {
+          "latitudeE7": 239928820,
+          "longitudeE7": 1216337103
+        },
+        "duration": {
+          "startTimestampMs": "1582713675477",
+          "endTimestampMs": "1582714915356"
+        },
+        "distance": 170,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 89.65044021606445
+          },
+          {
+            "activityType": "STILL",
+            "probability": 7.003071159124374
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.9626909866929054
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.699459994211793
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.4509556572884321
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.07840424659661949
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.0701152894180268
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.03769340692088008
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.026648619677871466
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.010650913463905454
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0046026591007830575
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.0027420755941420794
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.0020712819605250843
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 3.7909460388618754e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 8.286575052807166e-5
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239931678,
+              "lngE7": 1216320419
+            },
+            {
+              "latE7": 239927597,
+              "lngE7": 1216338272
+            },
+            {
+              "latE7": 239928932,
+              "lngE7": 1216338043
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239928042,
+          "longitudeE7": 1216337010,
+          "placeId": "ChIJx48SPIMhZjQRa5QW0tvAbdw",
+          "address": "970台灣花蓮縣花蓮市民生路1號",
+          "name": "Uniquefun Hualien Outdoor activity & Tours 由你玩 花蓮體驗旅遊",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1582714915356",
+          "endTimestampMs": "1582715023000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "centerLatE7": 239928865,
+        "centerLngE7": 1216336630,
+        "visitConfidence": 100,
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 239935150,
+          "longitudeE7": 1216331676
+        },
+        "endLocation": {
+          "latitudeE7": 239946919,
+          "longitudeE7": 1216297949
+        },
+        "duration": {
+          "startTimestampMs": "1582717960232",
+          "endTimestampMs": "1582718465000"
+        },
+        "distance": 366,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 90.33946394920349
+          },
+          {
+            "activityType": "STILL",
+            "probability": 3.817296400666237
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 2.894102595746517
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 1.55557906255126
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.7721500471234322
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.24496146943420172
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.20233998075127602
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.11508293682709336
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.04451171844266355
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.005935282752034254
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.005835402043885551
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0013286443390825298
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 7.674160769965965e-4
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 4.368115696706809e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.993321120608016e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 239934997,
+              "lngE7": 1216331176
+            },
+            {
+              "latE7": 239942932,
+              "lngE7": 1216307144
+            },
+            {
+              "latE7": 239947376,
+              "lngE7": 1216297302
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 239947281,
+          "longitudeE7": 1216298141,
+          "placeId": "ChIJJV4dUoAgZjQRDMU4kOFYqzA",
+          "address": "970台灣花蓮縣花蓮市化道路11號",
+          "name": "Tkmart",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1582718465000",
+          "endTimestampMs": "1582719481000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 239948630,
+            "longitudeE7": 1216305070,
+            "placeId": "ChIJpxGTrYEgZjQR-wIwipjff8M",
+            "locationConfidence": 22.869959
+          },
+          {
+            "latitudeE7": 239946802,
+            "longitudeE7": 1216301390,
+            "placeId": "ChIJIcqwTIAgZjQR9p24NPbDpWc",
+            "locationConfidence": 0.6886736
+          },
+          {
+            "latitudeE7": 239944399,
+            "longitudeE7": 1216307439,
+            "placeId": "ChIJUcmcTbSfaDQRAcKokgOLw38",
+            "locationConfidence": 0.2279443
+          },
+          {
+            "latitudeE7": 239943188,
+            "longitudeE7": 1216282081,
+            "placeId": "ChIJP05IzYEgZjQRRSd08XwuMk8",
+            "locationConfidence": 0.22463936
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    }
+  ]
+}

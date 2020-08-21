@@ -1,0 +1,2225 @@
+{
+  "timelineObjects": [
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 250457181,
+          "longitudeE7": 1215071140,
+          "placeId": "ChIJVaA0uA6pQjQRIm19sS0WEMk",
+          "address": "108台灣台北市萬華區漢口街二段41號",
+          "name": "橙舍青年旅舍(台北一館)",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 41.9191
+        },
+        "duration": {
+          "startTimestampMs": "1580734624734",
+          "endTimestampMs": "1580776120804"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 250460092,
+        "centerLngE7": 1215055851,
+        "visitConfidence": 83,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 250458925,
+            "longitudeE7": 1215055312,
+            "placeId": "ChIJfw_mKQ-pQjQR0oR65gOASYg",
+            "locationConfidence": 20.796719
+          },
+          {
+            "latitudeE7": 250458400,
+            "longitudeE7": 1215053727,
+            "placeId": "ChIJaxN7KQ-pQjQRLpY_lUDtIwc",
+            "locationConfidence": 19.096329
+          },
+          {
+            "latitudeE7": 250456733,
+            "longitudeE7": 1215057925,
+            "placeId": "ChIJLTxM1A6pQjQR6j95WciFkpk",
+            "locationConfidence": 7.1663065
+          },
+          {
+            "latitudeE7": 250467752,
+            "longitudeE7": 1215058034,
+            "placeId": "ChIJqwxaJw-pQjQR07xuGOGto0I",
+            "locationConfidence": 1.7898176
+          },
+          {
+            "latitudeE7": 250457169,
+            "longitudeE7": 1215054839,
+            "placeId": "ChIJzUITKg-pQjQRSrGd5iynPAU",
+            "locationConfidence": 1.224374
+          },
+          {
+            "latitudeE7": 250462673,
+            "longitudeE7": 1215056697,
+            "placeId": "ChIJEd8JKA-pQjQRVSFMXeoOOH0",
+            "locationConfidence": 1.2213897
+          },
+          {
+            "latitudeE7": 250456890,
+            "longitudeE7": 1215058549,
+            "placeId": "ChIJLw3E1g6pQjQR_rWHdma5ZWs",
+            "locationConfidence": 1.0815315
+          },
+          {
+            "latitudeE7": 250451603,
+            "longitudeE7": 1215058027,
+            "placeId": "ChIJX10H1gipQjQRabBucTpTekU",
+            "locationConfidence": 1.0223079
+          },
+          {
+            "latitudeE7": 250459440,
+            "longitudeE7": 1215052140,
+            "placeId": "ChIJJ6OuLg-pQjQRDfq7CLUh-Ac",
+            "locationConfidence": 0.5769241
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 250459179,
+          "longitudeE7": 1215057384
+        },
+        "endLocation": {
+          "latitudeE7": 250489695,
+          "longitudeE7": 1215148721
+        },
+        "duration": {
+          "startTimestampMs": "1580776120804",
+          "endTimestampMs": "1580778317000"
+        },
+        "distance": 1169,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 95.72712182998657
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 1.4773041009902954
+          },
+          {
+            "activityType": "STILL",
+            "probability": 0.9694118052721024
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.8048314601182938
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.6409070920199156
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.13122326927259564
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.08670330862514675
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.08015174535103142
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.04836784501094371
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.018504486070014536
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.012338699889369309
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.002193562249885872
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 5.766606591350865e-4
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 2.0494319414865458e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 1.4789927718084073e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 250459194,
+              "lngE7": 1215057220
+            },
+            {
+              "latE7": 250457935,
+              "lngE7": 1215065155
+            },
+            {
+              "latE7": 250454597,
+              "lngE7": 1215082473
+            },
+            {
+              "latE7": 250469055,
+              "lngE7": 1215094070
+            },
+            {
+              "latE7": 250488758,
+              "lngE7": 1215101318
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 250455246,
+              "lngE7": 1215081482,
+              "timestampMs": "1580776714000",
+              "accuracyMeters": 11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 250487380,
+          "longitudeE7": 1215142210,
+          "placeId": "ChIJlWImqHKpQjQREk5-6lec4-w",
+          "address": "100台灣台北市中正區鄭州路8號",
+          "name": "Taipei Main Station",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1580778317000",
+          "endTimestampMs": "1580779245000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 250478142,
+            "longitudeE7": 1215169488,
+            "placeId": "ChIJCZEzfnKpQjQRy75KOs4xSsM",
+            "locationConfidence": 17.483301
+          },
+          {
+            "latitudeE7": 250487040,
+            "longitudeE7": 1215150450,
+            "placeId": "ChIJPy9YWG2pQjQRqhCGlO1Jbec",
+            "locationConfidence": 9.994624
+          },
+          {
+            "latitudeE7": 250478072,
+            "longitudeE7": 1215170185,
+            "placeId": "ChIJneUTn3KpQjQRGGR7w7CKOQg",
+            "locationConfidence": 1.6640115
+          },
+          {
+            "latitudeE7": 250495614,
+            "longitudeE7": 1215138922,
+            "placeId": "ChIJ6cxPB22pQjQRLik_97hS8Ow",
+            "locationConfidence": 0.17118078
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 250484537,
+          "longitudeE7": 1215153092
+        },
+        "endLocation": {
+          "latitudeE7": 250483152,
+          "longitudeE7": 1215161534
+        },
+        "duration": {
+          "startTimestampMs": "1580779245296",
+          "endTimestampMs": "1580779342000"
+        },
+        "distance": 86,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 86.03256940841675
+          },
+          {
+            "activityType": "STILL",
+            "probability": 9.236439317464828
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 2.8368784114718437
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 0.8976309560239315
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.5294861271977425
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.2886245958507061
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.05008178413845599
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.03657693159766495
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.0345927313901484
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.029912128229625523
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.01755899575073272
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.007873115100665018
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 0.0010301949259883258
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 5.773075372417225e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 1.662171598582063e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 250484542,
+              "lngE7": 1215153121
+            },
+            {
+              "latE7": 250484504,
+              "lngE7": 1215155639
+            },
+            {
+              "latE7": 250482635,
+              "lngE7": 1215160369
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 250477020,
+          "longitudeE7": 1215173735,
+          "placeId": "ChIJCZEzfnKpQjQRy75KOs4xSsM",
+          "address": "100台灣台北市中正區北平西路3號\n100臺灣",
+          "name": "Taipei Station",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1580779342000",
+          "endTimestampMs": "1580781433000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 250471778,
+            "longitudeE7": 1215172047,
+            "placeId": "ChIJcYy0Y3KpQjQRXiW_s2lGln8",
+            "locationConfidence": 3.60609
+          },
+          {
+            "latitudeE7": 250478072,
+            "longitudeE7": 1215170185,
+            "placeId": "ChIJneUTn3KpQjQRGGR7w7CKOQg",
+            "locationConfidence": 2.8171887
+          },
+          {
+            "latitudeE7": 250475267,
+            "longitudeE7": 1215181588,
+            "placeId": "ChIJ530MdHKpQjQRvGpW750pqI8",
+            "locationConfidence": 0.888437
+          },
+          {
+            "latitudeE7": 250483483,
+            "longitudeE7": 1215178643,
+            "placeId": "ChIJp5zchW2pQjQRjGcwPdDoOgc",
+            "locationConfidence": 0.02084174
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 250479206,
+          "longitudeE7": 1215170848
+        },
+        "endLocation": {
+          "latitudeE7": 226867850,
+          "longitudeE7": 1203069527
+        },
+        "duration": {
+          "startTimestampMs": "1580781433062",
+          "endTimestampMs": "1580798916000"
+        },
+        "distance": 309257,
+        "activityType": "IN_TRAIN",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 88.34259510040283
+          },
+          {
+            "activityType": "STILL",
+            "probability": 5.141142010688782
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 3.8333289325237274
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 1.490052044391632
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.662730960175395
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.1969372620806098
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.1354879466816783
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.06837408291175961
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.05627403734251857
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.0413094530813396
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.011423944670241326
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.011149381316499785
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.008306997187901288
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 8.859688932716381e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 6.96641606623416e-6
+          }
+        ],
+        "transitPath": {
+          "transitStops": [
+            {
+              "latitudeE7": 250479230,
+              "longitudeE7": 1215170800,
+              "placeId": "ChIJCZEzfnKpQjQRy75KOs4xSsM",
+              "name": "Taipei Station"
+            },
+            {
+              "latitudeE7": 226869270,
+              "longitudeE7": 1203078270,
+              "placeId": "ChIJ18Dqz3EFbjQRc2MldwIX_ik",
+              "name": "Xin Zuoying Station"
+            }
+          ],
+          "name": "High-Speed Rail",
+          "hexRgbColor": "000000"
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 249566933,
+              "lngE7": 1213610710,
+              "timestampMs": "1580782922000",
+              "accuracyMeters": 15
+            },
+            {
+              "latE7": 246864494,
+              "lngE7": 1208809147,
+              "timestampMs": "1580786854175",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 240807223,
+              "lngE7": 1205373016,
+              "timestampMs": "1580791183000",
+              "accuracyMeters": 27
+            },
+            {
+              "latE7": 237106029,
+              "lngE7": 1205399403,
+              "timestampMs": "1580793256000",
+              "accuracyMeters": 21
+            },
+            {
+              "latE7": 237112408,
+              "lngE7": 1205400589,
+              "timestampMs": "1580793260000",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 236725719,
+              "lngE7": 1204808238,
+              "timestampMs": "1580793676708",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227949889,
+              "lngE7": 1203002683,
+              "timestampMs": "1580798162000",
+              "accuracyMeters": 3
+            },
+            {
+              "latE7": 226950274,
+              "lngE7": 1203153307,
+              "timestampMs": "1580798818000",
+              "accuracyMeters": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 226874408,
+          "longitudeE7": 1203073967,
+          "placeId": "ChIJ18Dqz3EFbjQRc2MldwIX_ik",
+          "address": "813台灣高雄市左營區高鐵路105號",
+          "name": "Xin Zuoying Station",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1580798916000",
+          "endTimestampMs": "1580801723000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 226878494,
+            "longitudeE7": 1203091250,
+            "placeId": "ChIJafoL328FbjQRpslenT7FriE",
+            "locationConfidence": 23.414293
+          },
+          {
+            "latitudeE7": 226871026,
+            "longitudeE7": 1203087128,
+            "placeId": "ChIJgUwuKnAFbjQR0AU4N99psWc",
+            "locationConfidence": 13.83024
+          },
+          {
+            "latitudeE7": 226886290,
+            "longitudeE7": 1203076090,
+            "placeId": "ChIJj8kta3AFbjQRCy9bn5ZwwpA",
+            "locationConfidence": 0.49726984
+          },
+          {
+            "latitudeE7": 226880249,
+            "longitudeE7": 1203075386,
+            "placeId": "ChIJMTuZOHAFbjQR7et7jem1vSc",
+            "locationConfidence": 0.059578184
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 226874198,
+          "longitudeE7": 1203069332
+        },
+        "endLocation": {
+          "latitudeE7": 227475752,
+          "longitudeE7": 1204460053
+        },
+        "duration": {
+          "startTimestampMs": "1580801723507",
+          "endTimestampMs": "1580804801918"
+        },
+        "distance": 18980,
+        "activityType": "IN_BUS",
+        "confidence": "MEDIUM",
+        "activities": [
+          {
+            "activityType": "IN_BUS",
+            "probability": 76.095712184906
+          },
+          {
+            "activityType": "WALKING",
+            "probability": 10.490115731954575
+          },
+          {
+            "activityType": "STILL",
+            "probability": 8.872605115175247
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 4.177776351571083
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.10138540528714657
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.09935209527611732
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.056585686979815364
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.05535767995752394
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.024329718144144863
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.01078336572390981
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 0.007413725688820705
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.006479163857875392
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.0018296281268703751
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 2.708604824874783e-4
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 5.178639739256141e-6
+          }
+        ],
+        "transitPath": {
+          "transitStops": [
+            {
+              "latitudeE7": 226871520,
+              "longitudeE7": 1203087990,
+              "placeId": "ChIJgUwuKnAFbjQR0AU4N99psWc",
+              "name": "Taiwan High Speed Rail Zuoying Station"
+            },
+            {
+              "latitudeE7": 227462400,
+              "longitudeE7": 1204471660,
+              "placeId": "ChIJ-VfGALAWbjQRqLn6nHS7B-I",
+              "name": "Mazhuyuan"
+            }
+          ],
+          "name": "8501 Extend",
+          "hexRgbColor": "000000"
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 226876477,
+              "lngE7": 1203072230,
+              "timestampMs": "1580801738270",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 226851074,
+              "lngE7": 1203063039,
+              "timestampMs": "1580802046000",
+              "accuracyMeters": 5
+            },
+            {
+              "latE7": 226837162,
+              "lngE7": 1203067880,
+              "timestampMs": "1580802076399",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227019170,
+              "lngE7": 1203678835,
+              "timestampMs": "1580802769000",
+              "accuracyMeters": 5
+            },
+            {
+              "latE7": 227076037,
+              "lngE7": 1203822269,
+              "timestampMs": "1580802939000",
+              "accuracyMeters": 9
+            },
+            {
+              "latE7": 227303809,
+              "lngE7": 1204013510,
+              "timestampMs": "1580803268549",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227291361,
+              "lngE7": 1204044880,
+              "timestampMs": "1580803388187",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227299451,
+              "lngE7": 1204073556,
+              "timestampMs": "1580803550642",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227304785,
+              "lngE7": 1204073664,
+              "timestampMs": "1580803613508",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227279676,
+              "lngE7": 1204450111,
+              "timestampMs": "1580804298867",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227320562,
+              "lngE7": 1204473903,
+              "timestampMs": "1580804379000",
+              "accuracyMeters": 7
+            },
+            {
+              "latE7": 227472332,
+              "lngE7": 1204464313,
+              "timestampMs": "1580804725531",
+              "accuracyMeters": 8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227475135,
+          "longitudeE7": 1204460958,
+          "placeId": "ChIJzVC0VrcWbjQRdKJv0-uq1YQ",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 98.7726
+        },
+        "duration": {
+          "startTimestampMs": "1580804801918",
+          "endTimestampMs": "1580805453000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 227482960,
+              "longitudeE7": 1204453130,
+              "placeId": "ChIJ9y2oua8WbjQRRln0YZ8btLU",
+              "address": "84049台灣高雄市大樹區興田路153號",
+              "name": "Fo Guang Shan Monastery Reception",
+              "sourceInfo": {
+                "deviceTag": 2066993901
+              },
+              "locationConfidence": 97.13293
+            },
+            "duration": {
+              "startTimestampMs": "1580804801918",
+              "endTimestampMs": "1580805453000"
+            },
+            "placeConfidence": "HIGH_CONFIDENCE",
+            "centerLatE7": 227481667,
+            "centerLngE7": 1204453633,
+            "visitConfidence": 71,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 227494791,
+                "longitudeE7": 1204470808,
+                "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+                "locationConfidence": 0.5494276
+              },
+              {
+                "latitudeE7": 227487971,
+                "longitudeE7": 1204460257,
+                "placeId": "ChIJO6qlmK8WbjQRDD3agS-Yj_o",
+                "locationConfidence": 0.2863226
+              },
+              {
+                "latitudeE7": 227492630,
+                "longitudeE7": 1204475020,
+                "placeId": "ChIJwY4LgaUWbjQRD2Liqx9kK3U",
+                "locationConfidence": 0.19476832
+              },
+              {
+                "latitudeE7": 227461990,
+                "longitudeE7": 1204470514,
+                "placeId": "ChIJxW_3ALAWbjQRVz4OWwDlBNQ",
+                "locationConfidence": 0.120461494
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 227481667,
+        "centerLngE7": 1204453633,
+        "visitConfidence": 71,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227494791,
+            "longitudeE7": 1204470808,
+            "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+            "locationConfidence": 0.5587023
+          },
+          {
+            "latitudeE7": 227492630,
+            "longitudeE7": 1204475020,
+            "placeId": "ChIJwY4LgaUWbjQRD2Liqx9kK3U",
+            "locationConfidence": 0.19805615
+          },
+          {
+            "latitudeE7": 227461990,
+            "longitudeE7": 1204470514,
+            "placeId": "ChIJxW_3ALAWbjQRVz4OWwDlBNQ",
+            "locationConfidence": 0.122494966
+          },
+          {
+            "latitudeE7": 227481244,
+            "longitudeE7": 1204452034,
+            "placeId": "ChIJ_W2QCj4XbjQRNj5Lmhe-jQY",
+            "locationConfidence": 0.10779294
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227487075,
+          "longitudeE7": 1204450450
+        },
+        "endLocation": {
+          "latitudeE7": 227513596,
+          "longitudeE7": 1204453714
+        },
+        "duration": {
+          "startTimestampMs": "1580805453000",
+          "endTimestampMs": "1580805649000"
+        },
+        "distance": 296,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 79.50944304466248
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 13.38232010602951
+          },
+          {
+            "activityType": "STILL",
+            "probability": 3.4918133169412613
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 3.1283795833587646
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.15555074205622077
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.14211562229320407
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.08056601509451866
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.04936973564326763
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.02200318413088098
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.020330863480921835
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.006871308869449422
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.0061794584325980395
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 0.0038116097130114213
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.001186191184388008
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 5.880564799554122e-5
+          }
+        ]
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227516835,
+          "longitudeE7": 1204453048,
+          "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan Main Shrine",
+          "locationConfidence": 100.0
+        },
+        "duration": {
+          "startTimestampMs": "1580805649000",
+          "endTimestampMs": "1580859275000"
+        },
+        "placeConfidence": "USER_CONFIRMED",
+        "visitConfidence": 100,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227522624,
+            "longitudeE7": 1204459324,
+            "placeId": "ChIJhQ2AyqgWbjQRbej90MA_oT8",
+            "name": "Fo Guang Shan Amitabha Chanting Hall",
+            "sourceInfo": {
+              "deviceTag": 2066993901
+            },
+            "locationConfidence": 49.757847
+          },
+          {
+            "latitudeE7": 227516933,
+            "longitudeE7": 1204464203,
+            "placeId": "ChIJVzit9vcXbjQRw-8Frvbv1f4",
+            "locationConfidence": 6.3102465
+          },
+          {
+            "latitudeE7": 227519719,
+            "longitudeE7": 1204463151,
+            "placeId": "ChIJvTVxS68WbjQRXss4F_QZR3g",
+            "locationConfidence": 6.193459
+          },
+          {
+            "latitudeE7": 227494791,
+            "longitudeE7": 1204470808,
+            "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+            "locationConfidence": 4.684715
+          },
+          {
+            "latitudeE7": 227514263,
+            "longitudeE7": 1204449668,
+            "placeId": "ChIJ_wekJa8WbjQRVF2sScj6Ae8",
+            "locationConfidence": 3.9282193
+          },
+          {
+            "latitudeE7": 227524343,
+            "longitudeE7": 1204452806,
+            "placeId": "ChIJV1VVPq8WbjQR6QY0J1XerGk",
+            "locationConfidence": 3.3087206
+          },
+          {
+            "latitudeE7": 227499970,
+            "longitudeE7": 1204452160,
+            "placeId": "ChIJc2quRLoWbjQRHBNObmfkDqs",
+            "locationConfidence": 2.8048882
+          },
+          {
+            "latitudeE7": 227517497,
+            "longitudeE7": 1204461468,
+            "placeId": "ChIJSaVrrVsXbjQRmA1mkjopdxQ",
+            "locationConfidence": 2.7642903
+          },
+          {
+            "latitudeE7": 227503825,
+            "longitudeE7": 1204441300,
+            "placeId": "ChIJOXHH6K8WbjQRF8sg9M24d2Q",
+            "locationConfidence": 1.8921427
+          }
+        ],
+        "editConfirmationStatus": "CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227507818,
+          "longitudeE7": 1204449446
+        },
+        "endLocation": {
+          "latitudeE7": 227507818,
+          "longitudeE7": 1204449446
+        },
+        "duration": {
+          "startTimestampMs": "1580859275095",
+          "endTimestampMs": "1580874989924"
+        },
+        "distance": 1926,
+        "activityType": "WALKING",
+        "confidence": "LOW",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 55.00946044921875
+          },
+          {
+            "activityType": "STILL",
+            "probability": 42.34324097633362
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.765877939760685
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.349716329947114
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.1445031608454883
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.12943587498739362
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.12682231608778238
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.053805409697815776
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.027605934883467853
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.025012739934027195
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.016808253712952137
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0028360222131595947
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.002727950231928844
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0014970783013268374
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 6.526610832224833e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227496891,
+              "lngE7": 1204457855
+            },
+            {
+              "latE7": 227530479,
+              "lngE7": 1204471511
+            },
+            {
+              "latE7": 227519149,
+              "lngE7": 1204454421
+            },
+            {
+              "latE7": 227513008,
+              "lngE7": 1204452972
+            },
+            {
+              "latE7": 227501926,
+              "lngE7": 1204449462
+            },
+            {
+              "latE7": 227506179,
+              "lngE7": 1204448776
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 227528725,
+              "lngE7": 1204462891,
+              "timestampMs": "1580860506000",
+              "accuracyMeters": 9
+            },
+            {
+              "latE7": 227512875,
+              "lngE7": 1204450989,
+              "timestampMs": "1580867619357",
+              "accuracyMeters": 37
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227475135,
+          "longitudeE7": 1204460958,
+          "placeId": "ChIJzVC0VrcWbjQRdKJv0-uq1YQ",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 98.884224
+        },
+        "duration": {
+          "startTimestampMs": "1580874989924",
+          "endTimestampMs": "1580884671000"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 227482960,
+              "longitudeE7": 1204453130,
+              "placeId": "ChIJ9y2oua8WbjQRRln0YZ8btLU",
+              "address": "84049台灣高雄市大樹區興田路153號",
+              "name": "Fo Guang Shan Monastery Reception",
+              "sourceInfo": {
+                "deviceTag": 2066993901
+              },
+              "locationConfidence": 72.00063
+            },
+            "duration": {
+              "startTimestampMs": "1580874989924",
+              "endTimestampMs": "1580884671000"
+            },
+            "placeConfidence": "MEDIUM_CONFIDENCE",
+            "centerLatE7": 227499416,
+            "centerLngE7": 1204451311,
+            "visitConfidence": 73,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 227500114,
+                "longitudeE7": 1204443016,
+                "placeId": "ChIJzVC0VrcWbjQRQ3_C8cXHBs0",
+                "locationConfidence": 8.362834
+              },
+              {
+                "latitudeE7": 227499970,
+                "longitudeE7": 1204452160,
+                "placeId": "ChIJc2quRLoWbjQRHBNObmfkDqs",
+                "locationConfidence": 6.9559507
+              },
+              {
+                "latitudeE7": 227516835,
+                "longitudeE7": 1204453048,
+                "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+                "locationConfidence": 5.3380384
+              },
+              {
+                "latitudeE7": 227499092,
+                "longitudeE7": 1204447960,
+                "placeId": "ChIJT27QbooXbjQRDow0Bk4K1bQ",
+                "locationConfidence": 4.642677
+              },
+              {
+                "latitudeE7": 227494791,
+                "longitudeE7": 1204470808,
+                "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+                "locationConfidence": 0.80314136
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 227498850,
+        "centerLngE7": 1204448920,
+        "visitConfidence": 73,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227494791,
+            "longitudeE7": 1204470808,
+            "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+            "locationConfidence": 1.0333465
+          },
+          {
+            "latitudeE7": 227495616,
+            "longitudeE7": 1204434350,
+            "placeId": "ChIJeXrcW64WbjQRm0B-XwFuXMY",
+            "locationConfidence": 0.072858036
+          },
+          {
+            "latitudeE7": 227492630,
+            "longitudeE7": 1204475020,
+            "placeId": "ChIJwY4LgaUWbjQRD2Liqx9kK3U",
+            "locationConfidence": 0.002595935
+          },
+          {
+            "latitudeE7": 227489353,
+            "longitudeE7": 1204451702,
+            "placeId": "ChIJ3RpWHmAXbjQRs2X8U9H9lNE",
+            "locationConfidence": 0.002331268
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227502090,
+          "longitudeE7": 1204461024
+        },
+        "endLocation": {
+          "latitudeE7": 227521558,
+          "longitudeE7": 1204459426
+        },
+        "duration": {
+          "startTimestampMs": "1580884671000",
+          "endTimestampMs": "1580885437763"
+        },
+        "distance": 217,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 83.73757004737854
+          },
+          {
+            "activityType": "STILL",
+            "probability": 10.285220295190811
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 4.278287291526794
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.9150735102593899
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.3089594654738903
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.1387026975862682
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.13196803629398346
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.07022374775260687
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.06877987179905176
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.03220302751287818
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.028202790417708457
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.001882011019915808
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.0014715528777742293
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 8.144204912241548e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 6.360633506119484e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227501220,
+              "lngE7": 1204459457
+            },
+            {
+              "latE7": 227542800,
+              "lngE7": 1204478530
+            },
+            {
+              "latE7": 227551403,
+              "lngE7": 1204450149
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227516835,
+          "longitudeE7": 1204453048,
+          "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan Main Shrine",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 85.46912
+        },
+        "duration": {
+          "startTimestampMs": "1580885437763",
+          "endTimestampMs": "1580886092631"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 227521183,
+        "centerLngE7": 1204460933,
+        "visitConfidence": 72,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227522624,
+            "longitudeE7": 1204459324,
+            "placeId": "ChIJhQ2AyqgWbjQRbej90MA_oT8",
+            "locationConfidence": 8.617319
+          },
+          {
+            "latitudeE7": 227519719,
+            "longitudeE7": 1204463151,
+            "placeId": "ChIJvTVxS68WbjQRXss4F_QZR3g",
+            "locationConfidence": 2.9108121
+          },
+          {
+            "latitudeE7": 227522327,
+            "longitudeE7": 1204464474,
+            "placeId": "ChIJZ3GgragWbjQRCzLcNzMfTE8",
+            "locationConfidence": 0.62637347
+          },
+          {
+            "latitudeE7": 227524343,
+            "longitudeE7": 1204452806,
+            "placeId": "ChIJV1VVPq8WbjQR6QY0J1XerGk",
+            "locationConfidence": 0.5096097
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227521876,
+          "longitudeE7": 1204461574
+        },
+        "endLocation": {
+          "latitudeE7": 227536732,
+          "longitudeE7": 1204436133
+        },
+        "duration": {
+          "startTimestampMs": "1580886092631",
+          "endTimestampMs": "1580886881227"
+        },
+        "distance": 308,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 83.95220041275024
+          },
+          {
+            "activityType": "STILL",
+            "probability": 12.210279703140259
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 3.0599037185311317
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.28300529811531305
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.16836653230711818
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.08704796200618148
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.06693411851301789
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.06669325521215796
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.0385275692678988
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.03269241424277425
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.027888818294741213
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 0.003800475678872317
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0011167881893925369
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 9.497731298324652e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 5.896804395888466e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227521858,
+              "lngE7": 1204463195
+            },
+            {
+              "latE7": 227542800,
+              "lngE7": 1204478530
+            },
+            {
+              "latE7": 227533950,
+              "lngE7": 1204436416
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227576222,
+          "longitudeE7": 1204395000,
+          "placeId": "ChIJOQhWaKoWbjQRjLNVsSDCAOE",
+          "address": "840台灣高雄市大樹區統嶺路2號",
+          "name": "大佛平台",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 58.16088
+        },
+        "duration": {
+          "startTimestampMs": "1580886881227",
+          "endTimestampMs": "1580896782000"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 227570358,
+        "centerLngE7": 1204419583,
+        "visitConfidence": 65,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227571670,
+            "longitudeE7": 1204411430,
+            "placeId": "ChIJgeOzGKoWbjQR8WqL5EfHeXA",
+            "locationConfidence": 18.994562
+          },
+          {
+            "latitudeE7": 227554733,
+            "longitudeE7": 1204456928,
+            "placeId": "ChIJ2XOSZagWbjQRD49ohBSeXjU",
+            "locationConfidence": 8.100268
+          },
+          {
+            "latitudeE7": 227557247,
+            "longitudeE7": 1204446354,
+            "placeId": "ChIJIyteuakWbjQRln1N4fNgam8",
+            "locationConfidence": 7.971535
+          },
+          {
+            "latitudeE7": 227571569,
+            "longitudeE7": 1204403900,
+            "placeId": "ChIJ5TpwFqoWbjQRvKXq_vFeNQ0",
+            "locationConfidence": 2.9052644
+          },
+          {
+            "latitudeE7": 227551420,
+            "longitudeE7": 1204477050,
+            "placeId": "ChIJpTsW2qcWbjQRnZzOxt1VoPk",
+            "locationConfidence": 1.8160527
+          },
+          {
+            "latitudeE7": 227552439,
+            "longitudeE7": 1204477005,
+            "placeId": "ChIJY2APxKcWbjQRFCm53bgY04I",
+            "locationConfidence": 0.85671264
+          },
+          {
+            "latitudeE7": 227573050,
+            "longitudeE7": 1204403150,
+            "placeId": "ChIJQTiPFaoWbjQREQHV0mLrQBg",
+            "locationConfidence": 0.5501807
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED",
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 227540299,
+              "lngE7": 1204435003,
+              "timestampMs": "1580886941442",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227544498,
+              "lngE7": 1204447141,
+              "timestampMs": "1580889115887",
+              "accuracyMeters": 40
+            },
+            {
+              "latE7": 227567188,
+              "lngE7": 1204418359,
+              "timestampMs": "1580892011180",
+              "accuracyMeters": 48
+            },
+            {
+              "latE7": 227576234,
+              "lngE7": 1204396455,
+              "timestampMs": "1580895302334",
+              "accuracyMeters": 150
+            },
+            {
+              "latE7": 227560134,
+              "lngE7": 1204446688,
+              "timestampMs": "1580896779554",
+              "accuracyMeters": 150
+            }
+          ]
+        }
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227560029,
+          "longitudeE7": 1204446226
+        },
+        "endLocation": {
+          "latitudeE7": 227523062,
+          "longitudeE7": 1204456647
+        },
+        "duration": {
+          "startTimestampMs": "1580896782000",
+          "endTimestampMs": "1580902218481"
+        },
+        "distance": 1607,
+        "activityType": "WALKING",
+        "confidence": "LOW",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 53.19334268569946
+          },
+          {
+            "activityType": "STILL",
+            "probability": 44.70415711402893
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 1.257805246859789
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.5824221763759851
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.08702542399987578
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.059277715627104044
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.033846573205664754
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.03164966474287212
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.019874912686645985
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.013679955736733973
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.011516552331158891
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 0.0017023436157614924
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0015082793652254622
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 0.0013048020264250226
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 8.924659596232232e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227564544,
+              "lngE7": 1204449005
+            },
+            {
+              "latE7": 227560615,
+              "lngE7": 1204456100
+            },
+            {
+              "latE7": 227555141,
+              "lngE7": 1204457321
+            },
+            {
+              "latE7": 227568378,
+              "lngE7": 1204438476
+            },
+            {
+              "latE7": 227569007,
+              "lngE7": 1204436721
+            },
+            {
+              "latE7": 227570037,
+              "lngE7": 1204433670
+            },
+            {
+              "latE7": 227569026,
+              "lngE7": 1204436645
+            },
+            {
+              "latE7": 227570114,
+              "lngE7": 1204433517
+            },
+            {
+              "latE7": 227578983,
+              "lngE7": 1204434967
+            },
+            {
+              "latE7": 227551879,
+              "lngE7": 1204463348
+            },
+            {
+              "latE7": 227539367,
+              "lngE7": 1204457321
+            },
+            {
+              "latE7": 227548370,
+              "lngE7": 1204466705
+            },
+            {
+              "latE7": 227525653,
+              "lngE7": 1204456558
+            }
+          ]
+        },
+        "simplifiedRawPath": {
+          "points": [
+            {
+              "latE7": 227550621,
+              "lngE7": 1204453049,
+              "timestampMs": "1580897220809",
+              "accuracyMeters": 100
+            },
+            {
+              "latE7": 227562351,
+              "lngE7": 1204436035,
+              "timestampMs": "1580898709907",
+              "accuracyMeters": 20
+            },
+            {
+              "latE7": 227563438,
+              "lngE7": 1204431000,
+              "timestampMs": "1580898815685",
+              "accuracyMeters": 32
+            },
+            {
+              "latE7": 227563953,
+              "lngE7": 1204431000,
+              "timestampMs": "1580899112661",
+              "accuracyMeters": 21
+            },
+            {
+              "latE7": 227561321,
+              "lngE7": 1204439697,
+              "timestampMs": "1580900612680",
+              "accuracyMeters": 37
+            },
+            {
+              "latE7": 227539806,
+              "lngE7": 1204456635,
+              "timestampMs": "1580901512996",
+              "accuracyMeters": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227516835,
+          "longitudeE7": 1204453048,
+          "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan Main Shrine",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 64.456406
+        },
+        "duration": {
+          "startTimestampMs": "1580902218481",
+          "endTimestampMs": "1580909005809"
+        },
+        "placeConfidence": "MEDIUM_CONFIDENCE",
+        "centerLatE7": 227518460,
+        "centerLngE7": 1204460250,
+        "visitConfidence": 80,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227522624,
+            "longitudeE7": 1204459324,
+            "placeId": "ChIJhQ2AyqgWbjQRbej90MA_oT8",
+            "locationConfidence": 13.5275955
+          },
+          {
+            "latitudeE7": 227516933,
+            "longitudeE7": 1204464203,
+            "placeId": "ChIJVzit9vcXbjQRw-8Frvbv1f4",
+            "locationConfidence": 6.829992
+          },
+          {
+            "latitudeE7": 227517497,
+            "longitudeE7": 1204461468,
+            "placeId": "ChIJSaVrrVsXbjQRmA1mkjopdxQ",
+            "locationConfidence": 3.1730576
+          },
+          {
+            "latitudeE7": 227524343,
+            "longitudeE7": 1204452806,
+            "placeId": "ChIJV1VVPq8WbjQR6QY0J1XerGk",
+            "locationConfidence": 2.8112712
+          },
+          {
+            "latitudeE7": 227519719,
+            "longitudeE7": 1204463151,
+            "placeId": "ChIJvTVxS68WbjQRXss4F_QZR3g",
+            "locationConfidence": 2.2743604
+          },
+          {
+            "latitudeE7": 227494791,
+            "longitudeE7": 1204470808,
+            "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+            "locationConfidence": 2.1958878
+          },
+          {
+            "latitudeE7": 227514263,
+            "longitudeE7": 1204449668,
+            "placeId": "ChIJ_wekJa8WbjQRVF2sScj6Ae8",
+            "locationConfidence": 1.4465051
+          },
+          {
+            "latitudeE7": 227554733,
+            "longitudeE7": 1204456928,
+            "placeId": "ChIJ2XOSZagWbjQRD49ohBSeXjU",
+            "locationConfidence": 1.192696
+          },
+          {
+            "latitudeE7": 227551420,
+            "longitudeE7": 1204477050,
+            "placeId": "ChIJpTsW2qcWbjQRnZzOxt1VoPk",
+            "locationConfidence": 0.74004006
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227521012,
+          "longitudeE7": 1204462938
+        },
+        "endLocation": {
+          "latitudeE7": 227494018,
+          "longitudeE7": 1204460931
+        },
+        "duration": {
+          "startTimestampMs": "1580909005809",
+          "endTimestampMs": "1580909163570"
+        },
+        "distance": 300,
+        "activityType": "WALKING",
+        "confidence": "HIGH",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 95.7546591758728
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 2.4367161095142365
+          },
+          {
+            "activityType": "STILL",
+            "probability": 0.9947464801371098
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.34002470783889294
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 0.16525996616110206
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.11330212000757456
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.08139346609823406
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.05084433942101896
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.04920936771668494
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.009877142292680219
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.002948059955087956
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 5.723376489186194e-4
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 2.376722250119201e-4
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 1.1824751027234015e-4
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 1.0419196314614965e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227520999,
+              "lngE7": 1204463195
+            },
+            {
+              "latE7": 227510261,
+              "lngE7": 1204461212
+            },
+            {
+              "latE7": 227494316,
+              "lngE7": 1204459075
+            }
+          ]
+        }
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227475135,
+          "longitudeE7": 1204460958,
+          "placeId": "ChIJzVC0VrcWbjQRdKJv0-uq1YQ",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 94.52449
+        },
+        "duration": {
+          "startTimestampMs": "1580909163570",
+          "endTimestampMs": "1580949717625"
+        },
+        "placeConfidence": "HIGH_CONFIDENCE",
+        "childVisits": [
+          {
+            "location": {
+              "latitudeE7": 227482960,
+              "longitudeE7": 1204453130,
+              "placeId": "ChIJ9y2oua8WbjQRRln0YZ8btLU",
+              "address": "84049台灣高雄市大樹區興田路153號",
+              "name": "Fo Guang Shan Monastery Reception",
+              "sourceInfo": {
+                "deviceTag": 2066993901
+              },
+              "locationConfidence": 74.60998
+            },
+            "duration": {
+              "startTimestampMs": "1580909163570",
+              "endTimestampMs": "1580941237080"
+            },
+            "placeConfidence": "MEDIUM_CONFIDENCE",
+            "centerLatE7": 227501874,
+            "centerLngE7": 1204460974,
+            "visitConfidence": 79,
+            "otherCandidateLocations": [
+              {
+                "latitudeE7": 227516835,
+                "longitudeE7": 1204453048,
+                "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+                "locationConfidence": 7.0877457
+              },
+              {
+                "latitudeE7": 227503615,
+                "longitudeE7": 1204459347,
+                "placeId": "ChIJH-Sxcq8WbjQRj0zum9OL_dg",
+                "locationConfidence": 6.1968427
+              },
+              {
+                "latitudeE7": 227494791,
+                "longitudeE7": 1204470808,
+                "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+                "locationConfidence": 2.8979912
+              },
+              {
+                "latitudeE7": 227495378,
+                "longitudeE7": 1204460254,
+                "placeId": "ChIJrV90dq8WbjQRZT9iVtmEOqM",
+                "locationConfidence": 1.0514071
+              },
+              {
+                "latitudeE7": 227494808,
+                "longitudeE7": 1204474368,
+                "placeId": "ChIJdyi6KtwXbjQRnUmAfW9T_uU",
+                "locationConfidence": 0.70963556
+              },
+              {
+                "latitudeE7": 227488632,
+                "longitudeE7": 1204452456,
+                "placeId": "ChIJK3DeNq8WbjQRg-7FjDl09jg",
+                "locationConfidence": 0.6646381
+              },
+              {
+                "latitudeE7": 227489353,
+                "longitudeE7": 1204451702,
+                "placeId": "ChIJ3RpWHmAXbjQRs2X8U9H9lNE",
+                "locationConfidence": 0.46500683
+              }
+            ],
+            "editConfirmationStatus": "NOT_CONFIRMED"
+          }
+        ],
+        "centerLatE7": 227501874,
+        "centerLngE7": 1204460974,
+        "visitConfidence": 79,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227494791,
+            "longitudeE7": 1204470808,
+            "placeId": "ChIJg_Lwfq8WbjQRBFmBdnoAJ80",
+            "locationConfidence": 3.6715083
+          },
+          {
+            "latitudeE7": 227494808,
+            "longitudeE7": 1204474368,
+            "placeId": "ChIJdyi6KtwXbjQRnUmAfW9T_uU",
+            "locationConfidence": 0.89904785
+          },
+          {
+            "latitudeE7": 227489353,
+            "longitudeE7": 1204451702,
+            "placeId": "ChIJ3RpWHmAXbjQRs2X8U9H9lNE",
+            "locationConfidence": 0.5891241
+          },
+          {
+            "latitudeE7": 227492630,
+            "longitudeE7": 1204475020,
+            "placeId": "ChIJwY4LgaUWbjQRD2Liqx9kK3U",
+            "locationConfidence": 0.2901545
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "placeVisit": {
+        "location": {
+          "latitudeE7": 227516835,
+          "longitudeE7": 1204453048,
+          "placeId": "ChIJI1wCMa8WbjQR3eMlEzOzC7A",
+          "address": "84049台灣高雄市大樹區興田路153號",
+          "name": "Fo Guang Shan Main Shrine",
+          "sourceInfo": {
+            "deviceTag": 2066993901
+          },
+          "locationConfidence": 85.66236
+        },
+        "duration": {
+          "startTimestampMs": "1580949717625",
+          "endTimestampMs": "1580954543613"
+        },
+        "placeConfidence": "LOW_CONFIDENCE",
+        "centerLatE7": 227507688,
+        "centerLngE7": 1204450388,
+        "visitConfidence": 65,
+        "otherCandidateLocations": [
+          {
+            "latitudeE7": 227482960,
+            "longitudeE7": 1204453130,
+            "placeId": "ChIJ9y2oua8WbjQRRln0YZ8btLU",
+            "locationConfidence": 8.357305
+          },
+          {
+            "latitudeE7": 227514263,
+            "longitudeE7": 1204449668,
+            "placeId": "ChIJ_wekJa8WbjQRVF2sScj6Ae8",
+            "locationConfidence": 2.0181153
+          },
+          {
+            "latitudeE7": 227503825,
+            "longitudeE7": 1204441300,
+            "placeId": "ChIJOXHH6K8WbjQRF8sg9M24d2Q",
+            "locationConfidence": 1.3657081
+          },
+          {
+            "latitudeE7": 227524343,
+            "longitudeE7": 1204452806,
+            "placeId": "ChIJV1VVPq8WbjQR6QY0J1XerGk",
+            "locationConfidence": 0.5657759
+          },
+          {
+            "latitudeE7": 227516933,
+            "longitudeE7": 1204464203,
+            "placeId": "ChIJVzit9vcXbjQRw-8Frvbv1f4",
+            "locationConfidence": 0.5219394
+          },
+          {
+            "latitudeE7": 227522624,
+            "longitudeE7": 1204459324,
+            "placeId": "ChIJhQ2AyqgWbjQRbej90MA_oT8",
+            "locationConfidence": 0.46142593
+          }
+        ],
+        "editConfirmationStatus": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "activitySegment": {
+        "startLocation": {
+          "latitudeE7": 227504467,
+          "longitudeE7": 1204449446
+        },
+        "endLocation": {
+          "latitudeE7": 227503364,
+          "longitudeE7": 1204413949
+        },
+        "duration": {
+          "startTimestampMs": "1580954543613",
+          "endTimestampMs": "1580957939000"
+        },
+        "distance": 364,
+        "activityType": "WALKING",
+        "confidence": "MEDIUM",
+        "activities": [
+          {
+            "activityType": "WALKING",
+            "probability": 75.66399574279785
+          },
+          {
+            "activityType": "STILL",
+            "probability": 17.994242906570435
+          },
+          {
+            "activityType": "IN_PASSENGER_VEHICLE",
+            "probability": 4.200838133692741
+          },
+          {
+            "activityType": "IN_BUS",
+            "probability": 1.5476435422897339
+          },
+          {
+            "activityType": "IN_SUBWAY",
+            "probability": 0.23109170142561197
+          },
+          {
+            "activityType": "MOTORCYCLING",
+            "probability": 0.16373414546251297
+          },
+          {
+            "activityType": "CYCLING",
+            "probability": 0.05575855611823499
+          },
+          {
+            "activityType": "RUNNING",
+            "probability": 0.048449746100232005
+          },
+          {
+            "activityType": "IN_TRAIN",
+            "probability": 0.04327910428401083
+          },
+          {
+            "activityType": "FLYING",
+            "probability": 0.03281673998571932
+          },
+          {
+            "activityType": "IN_FERRY",
+            "probability": 0.012437545228749514
+          },
+          {
+            "activityType": "IN_TRAM",
+            "probability": 0.0026236544726998545
+          },
+          {
+            "activityType": "IN_VEHICLE",
+            "probability": 0.0015779562090756372
+          },
+          {
+            "activityType": "SKIING",
+            "probability": 7.748380994598847e-4
+          },
+          {
+            "activityType": "SAILING",
+            "probability": 7.362689302681247e-4
+          }
+        ],
+        "waypointPath": {
+          "waypoints": [
+            {
+              "latE7": 227504444,
+              "lngE7": 1204448852
+            },
+            {
+              "latE7": 227499275,
+              "lngE7": 1204452819
+            },
+            {
+              "latE7": 227504444,
+              "lngE7": 1204415283
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
