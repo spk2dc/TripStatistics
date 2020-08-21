@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Redirect, Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import axios from "axios";
+import DemoCard from "./DemoCard";
 
 const getUser = () => {
   const rawString = sessionStorage.getItem("user");
@@ -9,11 +10,10 @@ const getUser = () => {
   return userObject;
 };
 
-export default function UploadFile({ apiBaseURL }) {
+export default function UploadFile({ apiBaseURL, setRedirect }) {
   // State Hook
   const [selectedFile, setSelectedFile] = useState(null);
   const [trip_name, setTrip_Name] = useState("");
-  const [redirect, setRedirect] = useState(false);
 
   // On file select (from the pop up)
   const onFileChange = (event) => {
@@ -58,7 +58,7 @@ export default function UploadFile({ apiBaseURL }) {
           // Change redirect state to true in order to trigger redirect
           setTimeout(() => {
             setRedirect(true);
-          }, 1500);
+          }, 1000);
         }
       })
       .catch((err) => {
@@ -67,20 +67,6 @@ export default function UploadFile({ apiBaseURL }) {
         document.getElementById(
           "card-footer-upload"
         ).innerHTML = `<p>Status: Error</p><p>Message: ${err}</p>`;
-      });
-  };
-
-  // get uploaded file from database and extract data
-  const getDatabaseFile = () => {
-    axios
-      .get(`${apiBaseURL}/api/v1/all_maps/`)
-      .then((resp) => {
-        console.log(`getDatabaseFile -> resp`, resp.data.data[0].data);
-        document.getElementById("database_file").textContent =
-          resp.data.data[0].data;
-      })
-      .catch((err) => {
-        console.log(`getDatabaseFile -> err`, err);
       });
   };
 
@@ -119,112 +105,54 @@ export default function UploadFile({ apiBaseURL }) {
   };
 
   //Render
-  if (redirect) return <Redirect to='/all_trips' />;
   return (
-    <div className='container'>
-      <Card
-        border='dark'
-        key='upload-card'
-        text='black'
-        className='w-75 m-auto'
-      >
-        <Card.Header as='h3'>New Trip</Card.Header>
-        <Card.Body>
-          <Card.Title>Upload JSON File</Card.Title>
-          <form
-            encType='multipart/form-data'
-            className='p-4 border border-success rounded'
-          >
-            <label htmlFor='trip_name' className='lead mx-2'>
-              Trip Name{" "}
-            </label>
-            <input
-              type='text'
-              name='trip_name'
-              className=''
-              value={trip_name}
-              onChange={(event) => {
-                setTrip_Name(event.currentTarget.value);
-              }}
-            />
-            <br />
-            <input
-              type='file'
-              name='filename'
-              className=''
-              onChange={(e) => {
-                onFileChange(e);
-              }}
-            />
-            <button
-              type='submit'
-              name='submit'
-              className='btn btn-primary'
-              onClick={(e) => {
-                onFileUpload(e);
-              }}
-            >
-              Upload
-            </button>
-          </form>
-          {fileData()}
-        </Card.Body>
-        <Card.Footer className='text-muted' id='card-footer-upload'>
-          *Note: Please ensure file is less than 65535 bytes (65 KB) in size due
-          to Heroku PostgreSQL database limitations
-        </Card.Footer>
-      </Card>
-
-      <br />
-      <br />
-
-      <Card
-        border='dark'
-        key='demo-card'
-        text='black'
-        className='w-75 mx-auto my-3'
-      >
-        <Card.Header as='h3'>Demo Files</Card.Header>
-        <Card.Body>
-          <Card.Title>
-            Choose a provided file below to try out if you do not have your own!
-          </Card.Title>
-          <Link
-            to='/TripStatistics_Demo_File_Taipei.json'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='m-2'
-            download
-          >
-            Download Demo - Taipei, Taiwan
-          </Link>
-
+    <Card border='dark' key='upload-card' text='black' className='w-75 m-auto'>
+      <Card.Header as='h3'>New Trip</Card.Header>
+      <Card.Body>
+        <Card.Title>Upload JSON File</Card.Title>
+        <form
+          encType='multipart/form-data'
+          className='p-4 border border-success rounded'
+        >
+          <label htmlFor='trip_name' className='lead mx-2'>
+            Trip Name{" "}
+          </label>
+          <input
+            type='text'
+            name='trip_name'
+            className=''
+            value={trip_name}
+            onChange={(event) => {
+              setTrip_Name(event.currentTarget.value);
+            }}
+          />
           <br />
-
-          <Link
-            to='/TripStatistics_Demo_File_Kaohsiung.json'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='m-2'
-            download
+          <input
+            type='file'
+            name='filename'
+            className=''
+            onChange={(e) => {
+              onFileChange(e);
+            }}
+          />
+          <button
+            type='submit'
+            name='submit'
+            className='btn btn-primary'
+            onClick={(e) => {
+              onFileUpload(e);
+            }}
           >
-            Download Demo - Kaohsiung, Taiwan
-          </Link>
-
-          <br />
-
-          <Link
-            to='/TripStatistics_Demo_File_Hualien.json'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='m-2'
-            download
-          >
-            Download Demo - Hualien, Taiwan
-          </Link>
-        </Card.Body>
-      </Card>
-    </div>
+            Upload
+          </button>
+        </form>
+        {fileData()}
+      </Card.Body>
+      <Card.Footer className='text-muted' id='card-footer-upload'>
+        *Note: Please ensure file is less than 65535 bytes (65 KB) in size due
+        to Heroku PostgreSQL database limitations
+      </Card.Footer>
+    </Card>
   );
 }
 

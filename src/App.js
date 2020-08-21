@@ -9,7 +9,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import AllTrips from "./components/AllTrips";
-import UploadFile from "./components/UploadFile";
+import NewTrip from "./components/NewTrip";
 import NavBar from "./components/NavBar";
 import LandingPage from "./components/LandingPage";
 import OneTrip from "./components/OneTrip";
@@ -64,7 +64,7 @@ function App() {
           <OneTrip />
         </Route>
         <Route exact path='/new_trip'>
-          <UploadFile apiBaseURL={baseURL} />
+          <NewTrip apiBaseURL={baseURL} />
         </Route>
         <Route component={Error} />
       </Switch>
