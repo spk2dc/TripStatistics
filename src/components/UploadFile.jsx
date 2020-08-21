@@ -23,6 +23,18 @@ export default function UploadFile({ apiBaseURL, setRedirect }) {
   const onFileUpload = (event) => {
     event.preventDefault();
 
+    if (!selectedFile || !trip_name) {
+      console.log(
+        `selectedFile or trip_name does not exist`,
+        selectedFile,
+        trip_name
+      );
+      document.getElementById(
+        "card-footer-upload"
+      ).innerHTML = `<p>Status: Missing input</p><p>Message: No file or trip name entered</p>`;
+      return;
+    }
+
     // Create an object of formData
     const formData = new FormData();
 
